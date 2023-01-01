@@ -101,14 +101,6 @@ const Weather = (props: Props) => {
           <p className="text-xs text-start font-light  whitespace-nowrap">
             {info?.country}
           </p>
-          {/* <div className="p-6 max-w-sm mx-auto bg-slate-200 hover:opacity-20 rounded-md shadow-lg bg-opacity-10">
-            <div className="shrink-0">
-            </div>
-            <div>
-              <div className="text-xl font-medium text-black">ChitChat</div>
-              <p className="text-slate-500">You have a new message!</p>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
