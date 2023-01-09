@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import './App.scss';
-import LayoutManger from './components/LayoutManager';
+import Layout from './components/Layout';
 // const { app } = window.require('@electron/remote');
 function App() {
-  return <LayoutManger />;
+  return <Layout />;
 }
 
 export default App;

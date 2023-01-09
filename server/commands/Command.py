@@ -19,10 +19,15 @@ class Command(ABC):
         }
     def getSimilarity(self, text) -> float:
         #find the simualrities between the input command and the commands associated with this command
-        similarities = MatchCommand.getSimilarities(text, self.commands)
+        similarities = MatchCommand.getSimilarities(text[:max([len(command) for command in self.commands])], self.commands)
         #find the average similarity between the input command and the commands associated with this command
         return max(similarities), self.handle
 
-    def fail(self, text) -> None:
-        Audio.output("Sorry can you try that again?")
+    def fail(self) -> None:
         #TODO catagorize the failure
+        Audio.output("Sorry can you try that again?")
+        return {
+           'status': 400,
+            'route': 'fail',
+            'payload': {'content': 'Requested failed'}
+        }

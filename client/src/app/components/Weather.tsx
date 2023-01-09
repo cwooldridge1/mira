@@ -75,7 +75,7 @@ const Weather = (props: Props) => {
   }, []);
 
   return !info ? null : (
-    <div className="flex flex-row text-black ml-5">
+    <div className="flex flex-row text-black">
       <div className="flex overflow-hidden grid-cols-2 grid-rows-2 gap-10">
         <div className="">
           {info?.temp ? (
