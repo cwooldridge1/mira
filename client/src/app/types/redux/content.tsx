@@ -1,5 +1,3 @@
-import { ComponentType } from 'react';
-
 export interface Content {
   type: string;
   props: object;

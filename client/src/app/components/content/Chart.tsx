@@ -10,7 +10,7 @@ type Props = {
 const Chart = ({ ticker }: any) => {
   return (
     <TradingViewWidget
-      theme={'dark'}
+      theme={'Dark'}
       symbol={ticker}
       autosize={true}
       details={true}

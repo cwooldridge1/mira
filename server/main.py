@@ -2,6 +2,8 @@ import socketio
 import eventlet
 import socketio
 from multiprocessing import Queue, Process
+from dotenv import load_dotenv
+load_dotenv()
 sio = socketio.Server(async_handlers=True, cors_allowed_origins='*')
 app = socketio.WSGIApp(sio)
 
@@ -26,10 +28,11 @@ def backgroundTask(queue:Queue):
         sio.sleep(0.1)            
 
 if __name__ == '__main__':
-    from commands import Chart
+    from commands import Chart, Code
     from Listener import Listener
     listener:Listener = Listener()
     listener.addCommand(Chart())
+    listener.addCommand(Code())
     queue = Queue()
     receiveProcess = Process(target=listener.run, args=(queue,))
     receiveProcess.start()

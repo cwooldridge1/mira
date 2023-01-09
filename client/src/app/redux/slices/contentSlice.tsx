@@ -7,6 +7,12 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 const initialState: InitialState = {
   content: [],
+  // [
+  //   {
+  //     type: 'code',
+  //     props: { text: 'print("hello world")', language: 'python' },
+  //   },
+  // ],
 };
 
 export const containerSlice = createSlice({
