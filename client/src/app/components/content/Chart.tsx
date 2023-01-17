@@ -7,7 +7,7 @@ type Props = {
   ticker: string;
 };
 
-const Chart = ({ ticker }: any) => {
+const Chart = ({ ticker }: Props) => {
   return (
     <TradingViewWidget
       theme={'Dark'}

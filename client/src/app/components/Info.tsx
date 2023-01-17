@@ -6,7 +6,8 @@ import React, {
   useState,
 } from 'react';
 import Clock from './Clock';
-import Notification from './Notification';
+import Notification from './ui/NotificationTile';
+import NotificationManager from './NotificationManager';
 import Weather from './Weather';
 import { LayoutContext } from './Layout';
 type Props = {};
@@ -15,11 +16,11 @@ const Info = (props: Props) => {
   const { content } = useContext(LayoutContext);
   const notifications = [1];
   const bg =
-    'p-5 bg-slate-200 hover:bg-white hover:backdrop-blur-md hover:bg-opacity-20 shadow-lg backdrop-filter backdrop-blur-md bg-opacity-20';
+    'p-5 bg-slate-200 hover:bg-white hover:backdrop-blur-md hover:bg-opacity-20 shadow-lg backdrop-filter backdrop-blur-md bg-opacity-20 rounded-md';
   const classes = {
     content: {
       container: `${bg} basis-1/4 pt-10 flex-col justify-center h-screen`,
-      info: '',
+      info: 'h-full overflow-auto no-scrollbar',
     },
     idle: {
       container: `${bg} w-full sm:w-3/4 relative container`,
@@ -62,7 +63,11 @@ const Info = (props: Props) => {
             <Weather />
           </div>
           {notifications.length > 0 && (
-            <div>
+            <div
+              className={`h-full overflow-auto no-scrollbar ${
+                content.length ? 'w-full' : 'lg:w-1/3 w-full ml-4'
+              }`}
+            >
               <div className="flex">
                 <div
                   className="p-2 bg-indigo-800 items-center text-indigo-100 leading-none rounded-full inline-flex backdrop-blur-md bg-opacity-20 "
@@ -83,23 +88,22 @@ const Info = (props: Props) => {
                   </svg>
                 </div>
               </div>
-              <div className="container overflow-auto no-scrollbar">
-                <Notification
-                  title="Doctor Appointment"
-                  desc="Coming up at 11PM"
-                  img="google-calendar.png"
-                />
-                <Notification
-                  title="Trade Executed!"
-                  desc="Bought 100x shares of SPXL @ $100.21"
-                  img="alpaca.png"
-                />
-                <Notification
-                  title="Trade Executed!"
-                  desc="Bought 100x shares of SPXL @ $100.21"
-                  img="alpaca.png"
-                />
-              </div>
+              <NotificationManager />
+              {/* <Notification
+                title="Doctor Appointment"
+                desc="Coming up at 11PM"
+                img="google-calendar.png"
+              />
+              <Notification
+                title="Trade Executed!"
+                desc="Bought 100x shares of SPXL @ $100.21"
+                img="alpaca.png"
+              />
+              <Notification
+                title="Trade Executed!"
+                desc="Bought 100x shares of SPXL @ $100.21"
+                img="alpaca.png"
+              /> */}
             </div>
           )}
         </div>

@@ -1,12 +1,12 @@
 import React from 'react';
-import { CodeBlock, CopyBlock, dracula } from 'react-code-blocks';
+import { CopyBlock, dracula } from 'react-code-blocks';
 import withContent from '../hocs/withContent';
 type Props = {
   text: string;
   language: string;
 };
 
-const Code = ({ text, language }: any) => {
+const Code = ({ text, language }: Props) => {
   return (
     <div className="w-full">
       <CopyBlock
