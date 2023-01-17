@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentManager from './ContentManager';
 import { useSelector } from 'react-redux';
-import { Content } from '../types/redux/content';
+import { Content } from '../types/redux/contentReduxTypes';
 import { RootState } from '../redux';
 import Info from './Info';
 

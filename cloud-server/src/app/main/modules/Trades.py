@@ -14,11 +14,11 @@ def addorder(func):
     Decorator to add a new order
     '''
     def wrapper(*args, **kwargs):
-        res = func(*args, **kwargs)
-        orders[res.id] = res
+        result = func(*args, **kwargs)
+        orders[result.id] = result
         #emit to all client that an order was placed
-        sio.emit('notification', SocketResponse(type='order-created', status=200, data=res._raw))
-        return res
+        sio.emit('notification', SocketResponse(type='trade', status=200, data=result._raw))
+        return result
     return wrapper
 
 class Trades(object):

@@ -1,9 +1,6 @@
-export interface Notification {
-  type: string;
-  props: object;
-}
+import { NotificationProps } from '..';
 interface InitialState {
-  notifications: Array<Notification>;
+  notifications: Array<NotificationProps>;
 }
 const UpdateNotificationAction = 'NOTIFICATIONS';
 export default InitialState;

@@ -2,6 +2,7 @@ from .. import sio, orders
 from .modules.Trades import Trades
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from .modules.Trades import Trades
+from ..types.responses import SocketResponse
 
 
 def tradeExecutionListener():
@@ -14,5 +15,9 @@ def tradeExecutionListener():
                     if result.status == 'filled':
                         #emit and remove id
                         del orders[result.id]
-                        sio.emit('trade-execution', result._raw) #._raw is the raw json data
+                        sio.emit('notification', SocketResponse(type='trade', status=200, data=result._raw)) #._raw is the raw json data
+                    elif result.status == 'canceled':
+                        #remove id and let client know
+                        del orders[result.id]
+                        sio.emit('notification', SocketResponse(type='trade', status=200, data=result._raw)) 
         sio.sleep(5)          
