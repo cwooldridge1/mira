@@ -1,12 +1,7 @@
 import traceback
-from Audio import Audio
-from commands import Command
+from .Audio import Audio
+from .commands import Command
 from typing import List
-from threading import Thread
-# from serversocket import send
-# from socketserver import send 
-import json
-from multiprocessing import Queue
 
 class Listener():
     def __init__(self):
@@ -17,7 +12,7 @@ class Listener():
 
     def addCommand(self, command: Command) -> None:
         self.__commands.append(command)
-    def run(self, q:Queue):
+    def run(self):
         while True:
             try:
                 text:str = Audio.input()
@@ -25,9 +20,7 @@ class Listener():
                     text = text[len(self.__WAKE)+1:]
                     func = self.bestCommand(text)
                     if func is not None: 
-                        res = func(text)
-                        q.put((res['route'], res['payload']))
-
+                        func(text)
                     else:
                         Audio.output('Sorry I did not recognize that command')
             except Exception:

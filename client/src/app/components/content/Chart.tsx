@@ -1,13 +1,9 @@
 import React from 'react';
-import withContent from '../hocs/withContent';
+import { ContentProps } from '../../types';
 // @ts-ignore
 import TradingViewWidget from 'react-tradingview-widget';
 
-type Props = {
-  ticker: string;
-};
-
-const Chart = ({ ticker }: Props) => {
+const Chart = ({ data: { ticker } }: ContentProps) => {
   return (
     <TradingViewWidget
       theme={'Dark'}
@@ -18,4 +14,4 @@ const Chart = ({ ticker }: Props) => {
   );
 };
 
-export default withContent(Chart);
+export default Chart;

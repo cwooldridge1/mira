@@ -1,8 +1,8 @@
 // Please note that this gist follows the repo available at: https://github.com/delasign/react-redux-tutorial
 import InitialState, {
   UpdateContentAction,
-  Content,
 } from '../../types/redux/contentReduxTypes';
+import { ContentProps } from '../../types';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 const initialState: InitialState = {
@@ -13,7 +13,7 @@ export const containerSlice = createSlice({
   name: UpdateContentAction,
   initialState: initialState,
   reducers: {
-    addContent: (state, action: PayloadAction<Content>) => {
+    addContent: (state, action: PayloadAction<ContentProps>) => {
       state.content.push(action.payload);
     },
   },
