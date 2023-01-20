@@ -1,9 +1,6 @@
-export interface Content {
-  type: string;
-  props: object;
-}
+import { ContentProps } from '../';
 interface InitialState {
-  content: Content[];
+  content: ContentProps[];
 }
 const UpdateContentAction: string = 'CONTENT';
 

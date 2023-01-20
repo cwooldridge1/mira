@@ -1,18 +1,19 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Chart, Code } from './content';
 import { RootState } from '../redux';
-import { Content } from '../types/redux/contentReduxTypes';
+import { ContentProps } from '../types';
+import * as components from './content';
+
+interface ContentComponents {
+  [key: string]: React.ComponentType<ContentProps>;
+}
+const contentComponentsIndex: ContentComponents = components;
 
 const ContentManager = () => {
   const { content } = useSelector((state: RootState) => state.content);
-  const components: { [key: string]: React.ComponentType } = {
-    chart: Chart,
-    code: Code,
-  };
-  const renderContent = (obj: Content, i: number) => {
-    const Component = components[obj.type];
-    return <Component key={i} {...obj.props} />;
+  const renderContent = (obj: ContentProps, i: number) => {
+    const Component = contentComponentsIndex[obj.type];
+    return <Component key={i} {...obj} />;
   };
 
   return <>{content.map(renderContent)}</>;

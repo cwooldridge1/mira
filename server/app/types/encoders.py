@@ -1,6 +1,6 @@
-
 import json
 from pydantic import BaseModel
+
 class CustomJSONEncoder(json.JSONEncoder):
     def default(self, o):
         if issubclass(o, BaseModel):
@@ -18,3 +18,4 @@ class JSONWrapper(object):
     @staticmethod
     def loads(*args, **kwargs):
         return json.loads(*args, **kwargs)
+

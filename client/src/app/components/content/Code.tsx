@@ -1,12 +1,8 @@
 import React from 'react';
 import { CopyBlock, dracula } from 'react-code-blocks';
-import withContent from '../hocs/withContent';
-type Props = {
-  text: string;
-  language: string;
-};
+import { ContentProps } from '../../types';
 
-const Code = ({ text, language }: Props) => {
+const Code = ({ data: { text, language } }: ContentProps) => {
   return (
     <div className="w-full">
       <CopyBlock
@@ -21,4 +17,4 @@ const Code = ({ text, language }: Props) => {
   );
 };
 
-export default withContent(Code);
+export default Code;

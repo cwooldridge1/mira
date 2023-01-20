@@ -1,19 +1,12 @@
-import React, {
-  useContext,
-  useEffect,
-  useLayoutEffect,
-  useMemo,
-  useState,
-} from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import Clock from './Clock';
-import Notification from './ui/NotificationTile';
 import NotificationManager from './NotificationManager';
 import Weather from './Weather';
-import { LayoutContext } from './Layout';
-type Props = {};
+import { useSelector } from 'react-redux';
+import { RootState } from '../redux';
 
-const Info = (props: Props) => {
-  const { content } = useContext(LayoutContext);
+const Info = () => {
+  const { content } = useSelector((state: RootState) => state.content);
   const notifications = [1];
   const bg =
     'p-5 bg-slate-200 hover:bg-white hover:backdrop-blur-md hover:bg-opacity-20 shadow-lg backdrop-filter backdrop-blur-md bg-opacity-20 rounded-md';
