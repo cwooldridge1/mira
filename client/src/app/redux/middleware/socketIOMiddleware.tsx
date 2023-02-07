@@ -13,7 +13,7 @@ export const socketContentMiddleware: Middleware = (store) => {
   });
 
   return (next) => (action: any) => {
-    // to emit data to server
+    // to emit data to server e.g.
     // if (actions.sendMessage.match(action) && socket) {
     //     socket.emit('ON_ROOM_MESSAGE', action.payload);
     // }
@@ -22,7 +22,7 @@ export const socketContentMiddleware: Middleware = (store) => {
   };
 };
 export const socketNotificationMiddleware: Middleware = (store) => {
-  const socket = io('http://127.0.0.1:5001');
+  const socket = io(CLOUD_URL);
   socket.on('notification', (data) => {
     store.dispatch(addNotification(data));
   });

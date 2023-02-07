@@ -1,7 +1,7 @@
 from .Command import Command
 from ..Audio import Audio
 from ....types.responses import ContentResponse
-class Chart(Command):
+class ChartCommand(Command):
     commands = ['Display a graph', 'Present a plot', 'Show a chart', 'Display a table', 'Bring up a graph', 'Show a plot', 'Present a chart', 'Bring up a table', 'Display a graph', 'Present a plot', 'Show a chart', 'Bring up a graph', 'Show a plot', 'pull up chart']
     def handle(self, text):
         '''
@@ -13,6 +13,6 @@ class Chart(Command):
             ticker = Audio.input().upper()
         else:
             ticker = text[1].upper()
-        Audio.output(f'Sure ill pull up a chart of {ticker}')
         resp = ContentResponse(type='chart', data={'ticker': ticker})
         super().output(resp)
+        Audio.output(f'Sure ill pull up a chart of {ticker}')

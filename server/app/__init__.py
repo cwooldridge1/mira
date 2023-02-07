@@ -22,10 +22,14 @@ def createVoiceCommandListener()-> Listener:
     '''
     This function gives commands to a listener object that matches voice commands to a given command that is registed with the listener
     '''
-    from .main.modules.commands import Chart, Code
-    listener= Listener()
-    listener.addCommand(Chart(messageQueue=messageQueue))
-    listener.addCommand(Code(messageQueue=messageQueue))
+    from .main.modules.commands import ChartCommand, CodeCommand, FallbackCommand, AddTaskCommand, DeleteTaskCommand, GetTasksCommand
+    listener= Listener(FallbackCommand(messageQueue=messageQueue)) # gives the listener a special command to fall back on if the command is not understood
+    listener.addCommand(ChartCommand(messageQueue=messageQueue))
+    listener.addCommand(CodeCommand(messageQueue=messageQueue))
+    listener.addCommand(AddTaskCommand(messageQueue=messageQueue))
+    listener.addCommand(DeleteTaskCommand(messageQueue=messageQueue))
+    listener.addCommand(GetTasksCommand(messageQueue=messageQueue))
+
     return listener
 
 def startVoiceCommandListener(listener:Listener)->None:

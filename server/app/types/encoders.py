@@ -3,8 +3,9 @@ from pydantic import BaseModel
 
 class CustomJSONEncoder(json.JSONEncoder):
     def default(self, o):
-        if issubclass(o, BaseModel):
+        if issubclass(type(o), BaseModel):
             return o.dict()
+        
         return super().default(self, o)
 
         
