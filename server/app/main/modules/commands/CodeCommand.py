@@ -2,7 +2,8 @@ from .Command import Command
 from ..Audio import Audio
 from ....types.responses import ContentResponse
 from ..OpenAI import OpenAI
-class Code(Command):
+
+class CodeCommand(Command):
     commands =  [    "Code up",    "Implement code for",    "Write the code for", 'Right code in'   "Program",    "Develop",    "Code out",    "Create code for",    "Craft the code for",    "Write the programming for",    "Construct the code for",    "Assemble the code for",    "Compose the code for",    "Write the programming logic for",    "Write the code implementation for",    "Write the software for",    "Code the solution for",    "Write the technical solution for",    "Write the codebase for",    "Write the software implementation for",    "Write the code execution for", "Pull up code of"]
     languages = {
     "abap": "abap",
@@ -50,26 +51,27 @@ class Code(Command):
     "matlab": "matlab",
     "objective-c": "objectivec"}
 
-    def getProgrammingLanguage(self, text:str) -> str:
-        '''
-        Matches the a text to a given programming laguage so the UI knows what language to represent the code in. Defaults to python if the language is not found
-        :param text: is the user command
-        '''
-        language = 'python'
-        for word in text.split(' '):
-            word = word.lower()
-            if word in self.languages:
-                language = self.languages[word]
-        return language
-    def handle(self, text):
+    def handle(self, prompt):
         '''
         Gets the code
         '''
         try:
-            answer = OpenAI.ask(text)
+            answer = OpenAI.ask(prompt)
         except IOError:
             super().fail()
         else:
-            Audio.output(f'Sure, heres how you do it')
-            resp = ContentResponse(type='code', data={'text': answer, 'language': self.getProgrammingLanguage(text)})
+            resp = ContentResponse(type='code', data={'text': answer, 'language': self.getProgrammingLanguage(prompt)})
             super().output(resp)
+            Audio.output(f'Sure, heres how you do it')
+
+
+    def getProgrammingLanguage(self, prompt:str) -> str:
+        '''
+        Matches the a prompt to a given programming laguage so the UI knows what language to represent the code in. Defaults to python if the language is not found
+        '''
+        language = 'python'
+        for word in prompt.split(' '):
+            word = word.lower()
+            if word in self.languages:
+                language = self.languages[word]
+        return language

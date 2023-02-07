@@ -1,29 +1,35 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useLayoutEffect, useState, useMemo } from 'react';
 import Clock from './Clock';
 import NotificationManager from './NotificationManager';
 import Weather from './Weather';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux';
+import ContentViewToggle from './ContentViewToggle';
 
 const Info = () => {
   const { content } = useSelector((state: RootState) => state.content);
-  const notifications = [1];
+  const { notifications } = useSelector(
+    (state: RootState) => state.notifications
+  );
   const bg =
     'p-5 bg-slate-200 hover:bg-white hover:backdrop-blur-md hover:bg-opacity-20 shadow-lg backdrop-filter backdrop-blur-md bg-opacity-20 rounded-md';
-  const classes = {
-    content: {
-      container: `${bg} basis-1/4 pt-10 flex-col justify-center h-screen`,
-      info: 'h-full overflow-auto no-scrollbar',
-    },
-    idle: {
-      container: `${bg} w-full sm:w-3/4 relative container`,
-      info: 'flex flex-col justify-center items-center transition duration-500 ease-in-out translate-x-1 h-64',
-    },
-    idleNotifications: {
-      container: `${bg} w-full sm:w-3/4 relative container`,
-      info: 'flex justify-between -translate-x-1 duration-500 ease-in-out h-64',
-    },
-  };
+  const classes = useMemo(
+    () => ({
+      content: {
+        container: `${bg} basis-1/4 pt-10 flex-col justify-center h-screen`,
+        info: 'h-full overflow-auto no-scrollbar',
+      },
+      idle: {
+        container: `${bg} w-full sm:w-3/4 relative container`,
+        info: 'flex flex-col justify-center items-center transition duration-500 ease-in-out translate-x-1 h-64',
+      },
+      idleNotifications: {
+        container: `${bg} w-full sm:w-3/4 relative container`,
+        info: 'flex justify-between -translate-x-1 duration-500 ease-in-out h-64',
+      },
+    }),
+    []
+  );
   const [currentClass, setCurrentClass] = useState(classes.content);
 
   useLayoutEffect(() => {
@@ -36,7 +42,7 @@ const Info = () => {
     } else {
       setCurrentClass(classes.content);
     }
-  }, [content]);
+  }, [content, notifications, classes]);
   const Wrapper = ({ children }: any) => {
     return content.length ? (
       <>{children}</>
@@ -55,13 +61,14 @@ const Info = () => {
             <Clock />
             <Weather />
           </div>
+          {content.length > 0 && <ContentViewToggle />}
           {notifications.length > 0 && (
             <div
               className={`h-full overflow-auto no-scrollbar ${
                 content.length ? 'w-full' : 'lg:w-1/3 w-full ml-4'
               }`}
             >
-              <div className="flex">
+              {/* <div className="flex">
                 <div
                   className="p-2 bg-indigo-800 items-center text-indigo-100 leading-none rounded-full inline-flex backdrop-blur-md bg-opacity-20 "
                   role="alert"
@@ -80,23 +87,8 @@ const Info = () => {
                     <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" />
                   </svg>
                 </div>
-              </div>
+              </div> */}
               <NotificationManager />
-              {/* <Notification
-                title="Doctor Appointment"
-                desc="Coming up at 11PM"
-                img="google-calendar.png"
-              />
-              <Notification
-                title="Trade Executed!"
-                desc="Bought 100x shares of SPXL @ $100.21"
-                img="alpaca.png"
-              />
-              <Notification
-                title="Trade Executed!"
-                desc="Bought 100x shares of SPXL @ $100.21"
-                img="alpaca.png"
-              /> */}
             </div>
           )}
         </div>

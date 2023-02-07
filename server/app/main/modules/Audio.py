@@ -8,16 +8,13 @@ class Audio:
     __tld = 'co.in'
     @staticmethod
     def output(text:str):
-        '''
-        Speak the text
-        :param text: Text to speak
-        :return: None. However outputs an audio
-        '''
+        return
         tts = gTTS(text, lang=Audio.__lang,tld=Audio.__tld)
         # Save the audio file
         tts.save('audio.mp3')
         # Play the audio file
         os.system("mpg123 audio.mp3")
+
     @staticmethod
     def input() -> str:
         '''

@@ -1,6 +1,6 @@
 import select
 import eventlet
-eventlet.monkey_patch()
+# eventlet.monkey_patch()
 
 if __name__ == '__main__':
     from app import createApp

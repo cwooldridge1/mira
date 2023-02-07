@@ -1,14 +1,16 @@
 export interface NotificationProps {
+  id: string;
   type: string;
   status: number;
-  data: { [key: string]: number | string | boolean | null };
   time: number;
+  data: { [key: string]: number | string | boolean | null };
 }
 export interface ContentProps {
+  id: string;
   type: string;
   status: number;
-  data: { [key: string]: number | string | boolean | null };
   time: number;
+  data: { [key: string]: number | string | boolean | null };
 }
 export interface NotificationTileProps extends Pick<NotificationProps, any> {
   title: string;

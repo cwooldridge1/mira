@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux';
 import { ContentProps } from '../types';
+import withContent from './hocs/withContent';
 import * as components from './content';
 
 interface ContentComponents {
@@ -10,13 +11,28 @@ interface ContentComponents {
 const contentComponentsIndex: ContentComponents = components;
 
 const ContentManager = () => {
-  const { content } = useSelector((state: RootState) => state.content);
+  const { content, activeContent } = useSelector(
+    (state: RootState) => state.content
+  );
   const renderContent = (obj: ContentProps, i: number) => {
-    const Component = contentComponentsIndex[obj.type];
-    return <Component key={i} {...obj} />;
+    const Component = withContent(contentComponentsIndex[obj.type]);
+    // <div className="h-1/2 w-1/2">
+    return activeContent ? (
+      <Component key={i} {...obj} />
+    ) : (
+      <div className="h-1/2 w-1/2">
+        <Component key={i} {...obj} />
+      </div>
+    );
   };
 
-  return <>{content.map(renderContent)}</>;
+  return activeContent ? (
+    <> {renderContent(activeContent, 0)}</>
+  ) : (
+    <div className="flex flex-wrap overflow-auto h-full w-full pt-11 no-scrollbar">
+      {content.map(renderContent)}
+    </div>
+  );
 };
 
 export default ContentManager;

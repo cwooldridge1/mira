@@ -28,3 +28,11 @@ body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+$z-index-range: 1-100;
+
+@each $i in $z-index-range {
+  .z-#{$i} {
+    z-index: $i;
+  }
+}

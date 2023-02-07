@@ -12,10 +12,9 @@ class Command(ABC):
         self.messageQueue = messageQueue
 
     @abstractmethod
-    def handle(self, text):
+    def handle(self, prompt):
         '''
         Used to handle a command and create a response. Must call the output method
-        :param text: the text command you want to be handled
         '''
         pass
 
@@ -25,15 +24,14 @@ class Command(ABC):
         '''
         self.messageQueue.put(resp)
 
-    def getSimilarity(self, text) -> float:
+    def getSimilarity(self, prompt) -> float:
         '''
         Used to fin dthe similarity between a text command and the commands that are associated to this class instance
-        :param text: the text command you wish to match against
         '''
         #find the simualrities between the input command and the commands associated with this command
-        similarities = MatchCommand.getSimilarities(text[:max([len(command) for command in self.commands])], self.commands)
+        similarities = MatchCommand.getSimilarities(prompt[:max([len(command) for command in self.commands])], self.commands)
         #find the max similarity between the input command and the commands associated with this command
-        return max(similarities), self.handle
+        return max(similarities)
 
     def fail(self) -> None:
         #TODO catagorize the failure
