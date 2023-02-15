@@ -8,7 +8,7 @@ class Audio:
     __tld = 'co.in'
     @staticmethod
     def output(text:str):
-        return
+    
         tts = gTTS(text, lang=Audio.__lang,tld=Audio.__tld)
         # Save the audio file
         tts.save('audio.mp3')
@@ -27,6 +27,5 @@ class Audio:
             try:
                 said = r.recognize_google(audio)
             except Exception as e:
-                print("Exception: " + str(e))
                 pass
         return said.lower()

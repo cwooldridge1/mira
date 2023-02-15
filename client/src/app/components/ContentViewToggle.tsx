@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../redux';
 import { setActiveContent } from '../redux/slices/contentSlice';
-import IconButton from './ui/IconButton';
+import NotificationButton from './ui/NotificationButton';
 
 const ContentViewToggle = () => {
   const dispatch = useDispatch();
@@ -14,9 +14,11 @@ const ContentViewToggle = () => {
   };
 
   return (
-    <IconButton onClick={toggleContent}>
-      <i className="fa-solid fa-border-all"></i>
-    </IconButton>
+    <NotificationButton
+      icon="fa-solid fa-border-all"
+      color="bg-grey"
+      onClick={toggleContent}
+    />
   );
 };
 

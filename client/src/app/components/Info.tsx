@@ -5,6 +5,10 @@ import Weather from './Weather';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux';
 import ContentViewToggle from './ContentViewToggle';
+import List from './ui/List';
+import NotificationButton from './ui/NotificationButton';
+import CircleCheckMarkIcon from './ui/icons/CircleCheckMarkIcon';
+import CircleXmarkIcon from './ui/icons/CircleXmarkIcon';
 
 const Info = () => {
   const { content } = useSelector((state: RootState) => state.content);
@@ -61,14 +65,23 @@ const Info = () => {
             <Clock />
             <Weather />
           </div>
-          {content.length > 0 && <ContentViewToggle />}
+          <div className="w-100 flex justify-center">
+            {content.length > 0 && <ContentViewToggle />}
+            <NotificationButton
+              icon="fa-solid fa-bell"
+              showBell={notifications.length > 0}
+            />
+            <NotificationButton color={'bg-success'} icon="fa-solid fa-list" />
+          </div>
+
           {notifications.length > 0 && (
-            <div
-              className={`h-full overflow-auto no-scrollbar ${
-                content.length ? 'w-full' : 'lg:w-1/3 w-full ml-4'
-              }`}
-            >
-              {/* <div className="flex">
+            <>
+              <div
+                className={`h-full overflow-auto no-scrollbar ${
+                  content.length ? 'w-full' : 'lg:w-1/3 w-full ml-4'
+                }`}
+              >
+                {/* <div className="flex">
                 <div
                   className="p-2 bg-indigo-800 items-center text-indigo-100 leading-none rounded-full inline-flex backdrop-blur-md bg-opacity-20 "
                   role="alert"
@@ -88,9 +101,25 @@ const Info = () => {
                   </svg>
                 </div>
               </div> */}
-              <NotificationManager />
-            </div>
+                <NotificationManager />
+              </div>
+            </>
           )}
+
+          <List>
+            <List.Item>jeel</List.Item>
+            <List.Item>jeel</List.Item>
+            <List.Item>jeel</List.Item>
+            <List.Item>
+              <span className="flex w-full justify-between">
+                <div>afhd</div>
+                <div className="items-center justify-center text-center">
+                  <CircleXmarkIcon classModifier="pr-1" />
+                  <CircleCheckMarkIcon />
+                </div>
+              </span>
+            </List.Item>
+          </List>
         </div>
       </div>
     </Wrapper>

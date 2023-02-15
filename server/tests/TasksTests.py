@@ -1,5 +1,5 @@
 from unittest import TestCase
-from app.main.modules.Tasks import Tasks
+from app.main.modules.tasks import Tasks
 
 
 TASK_LIST_TITLE = 'test'

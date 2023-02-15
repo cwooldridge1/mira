@@ -1,4 +1,4 @@
-import { Middleware, Dispatch, AnyAction } from 'redux';
+import { Middleware } from 'redux';
 import { io } from 'socket.io-client';
 import { addContent } from '../slices/contentSlice';
 import { addNotification } from '../slices/notificationSlice';

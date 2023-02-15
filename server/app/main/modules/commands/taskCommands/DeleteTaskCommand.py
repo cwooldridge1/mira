@@ -1,18 +1,25 @@
 from .TaskCommand import TaskCommand
-from ...Tasks import Tasks
 from ...Audio import Audio
-from app.types.responses import ContentResponse
 
 class DeleteTaskCommand(TaskCommand):
     commands =  ['delete task', 'remove task']
+    actionWords = {'delete', 'remove'}
 
     def handle(self, prompt:str):
 
-        taskName = self.extractTaskName(prompt)
+        taskTitle = self.extractTaskTitle(prompt)
 
-        taskList = Tasks.getTaskList()
-        taskList.deleteTask(taskName)
+        self.taskList.deleteTask(taskTitle)
 
-        resp = ContentResponse(type='tasks', data={'tasks': taskList.getTasks()})
-        super().output(resp)
-        Audio.output(f'Sure ill delete the task for {taskName}')
+        super().outputTasks()
+        Audio.output(f'Sure ill delete the task for {taskTitle}')
+
+
+    def getSimilarity(self, prompt) -> float:
+        score =  super().getSimilarity(prompt)
+        #the prompt must contain one of the key word task and must contain ones of the action words
+        words = set(prompt.split(' '))
+        if 'task' not in words:
+            return 0
+
+        return score if any(word in self.actionWords for word in words) else 0

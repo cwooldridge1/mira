@@ -5,3 +5,4 @@ from .FallbackCommand import FallbackCommand
 from .taskCommands import AddTaskCommand
 from .taskCommands import DeleteTaskCommand
 from .taskCommands import GetTasksCommand
+from .taskCommands import CompleteTaskCommand

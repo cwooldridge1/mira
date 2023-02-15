@@ -4,15 +4,17 @@ from collections import deque
 from typing import List
 
 from app.main.modules.Listener import Listener
-from app.main.modules.commands import ChartCommand, CodeCommand, FallbackCommand, Command, GetTasksCommand, AddTaskCommand, DeleteTaskCommand
+from app.main.modules.commands import ChartCommand, CodeCommand, FallbackCommand, Command, GetTasksCommand, AddTaskCommand, DeleteTaskCommand, CompleteTaskCommand
 from app.types.responses import ContentResponse
 
-from app.main.modules.Tasks import Tasks, Task
+from app.main.modules.tasks import Tasks, Task
+
+from os import environ
 
 
 
 
-TASK_LIST_NAME = 'test'
+TASK_LIST_NAME = environ.get('DEFAULT_GOOGLE_TASK_LIST')
 
 class MockQueue:
     '''
@@ -47,6 +49,7 @@ class CommandTest(TestCase):
         self.listener.addCommand(AddTaskCommand(messageQueue=self.messageQueue))
         self.listener.addCommand(GetTasksCommand(messageQueue=self.messageQueue))
         self.listener.addCommand(DeleteTaskCommand(messageQueue=self.messageQueue))
+        self.listener.addCommand(CompleteTaskCommand(messageQueue=self.messageQueue))
 
         try:
             self.taskList = Tasks.getTaskList(TASK_LIST_NAME)
@@ -60,31 +63,33 @@ class CommandTest(TestCase):
 
     
     
-    def assertPromptWillAddTask(self, prompt, expectedTaskName):
+    def assertPromptWillAddTask(self, prompt, expectedtaskTitle):
         command = self.listener.getBestCommand(prompt)
         self.assertTrue(isinstance(command, AddTaskCommand))
 
         command.handle(prompt)
         
-        self.taskList.getTask(expectedTaskName)
+        self.taskList.getTask(expectedtaskTitle)
 
         tasks: List[Task] = self.messageQueue.get().data['tasks']
         
-        self.assertIn(expectedTaskName, [task.title for task in tasks])
+        self.assertIn(expectedtaskTitle, [task.title for task in tasks])
 
-    def assertPromptWillDeleteTask(self, prompt, expectedTaskName):
+
+    def assertPromptWillDeleteTask(self, prompt, expectedtaskTitle):
         command = self.listener.getBestCommand(prompt)
         self.assertTrue(isinstance(command, DeleteTaskCommand))
 
         command.handle(prompt)
-        self.assertRaises(ValueError, self.taskList.getTask, expectedTaskName)
+        self.assertRaises(ValueError, self.taskList.getTask, expectedtaskTitle)
 
         tasks: List[Task] = self.messageQueue.get().data['tasks']
-        self.assertNotIn(expectedTaskName, [task.title for task in tasks])
+        self.assertNotIn(expectedtaskTitle, [task.title for task in tasks])
+
 
     def assertPromptWillGetTasks(self, prompt):
         command = self.listener.getBestCommand(prompt)
-        print(prompt, command)
+        # print(prompt, command)
         self.assertTrue(isinstance(command, GetTasksCommand))
 
         command.handle(prompt)
@@ -95,9 +100,20 @@ class CommandTest(TestCase):
         self.assertCountEqual(expectedTasks, actualTasks)
 
 
+    def assertPromptWillCompleteTask(self, prompt, expectedtaskTitle):
+        command = self.listener.getBestCommand(prompt)
+        self.assertTrue(isinstance(command, CompleteTaskCommand))
+
+        command.handle(prompt)
+        self.assertRaises(ValueError, self.taskList.getTask, expectedtaskTitle)
+
+        tasks: List[Task] = self.messageQueue.get().data['tasks']
+        self.assertNotIn(expectedtaskTitle, [task.title for task in tasks])
+
 
     def tearDown(self) -> None:
         self.messageQueue.get()
+
 
     @classmethod
     def tearDownClass(cls) -> None:
