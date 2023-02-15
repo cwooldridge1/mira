@@ -33,11 +33,11 @@ class Listener():
 
     def getBestCommand(self, prompt) -> Command:
         commandConfidences = [command.getSimilarity(prompt) for command in self.__commands]
+
         bestConfidence = float(environ.get('CONFIDENCE_THRESHOLD'))
         bestConfidenceIndex = -1 
-
         for i, confidence in enumerate(commandConfidences):
             if confidence > bestConfidence:
                 bestConfidenceIndex, bestConfidence = i, confidence
-
+                
         return self.__fallback if bestConfidenceIndex == -1 else self.__commands[bestConfidenceIndex]

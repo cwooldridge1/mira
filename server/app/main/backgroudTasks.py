@@ -7,6 +7,5 @@ def messageEmitter():
     while True:
         if not messageQueue.empty():
             message = messageQueue.get()
-            print(message.dict())
             sio.emit('content', message)
         sio.sleep(0.1)           

@@ -1,18 +1,42 @@
 from ..Command import Command
+from ...tasks import Tasks, Task
+from app.types.responses import ContentResponse
+from typing import List
+from os import environ
 
+TASK_LIST_NAME = environ.get('DEFAULT_GOOGLE_TASK_LIST')
 class TaskCommand(Command):
-    def extractTaskName(self, prompt):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+        try:
+            self.taskList = Tasks.getTaskList(TASK_LIST_NAME)
+        except:
+            Tasks.addTaskList(TASK_LIST_NAME)
+            self.taskList = Tasks.getTaskList(TASK_LIST_NAME)
+
+    def extractTaskTitle(self, prompt):
         prompt = prompt.split('task')
         if len(prompt) == 1:
             raise ValueError('Task name not found')
         
-        taskName = prompt[-1].strip()
+        taskTitle = prompt[-1].strip()
 
         #if the first word is 'for' then we need to trim this
-        if taskName[:3] == 'for':
-            taskName = taskName[4:] # 4 to also remove the space
-        elif taskName[:2] == 'to':
-            taskName = taskName[3:]
+        if taskTitle[:3] == 'for':
+            taskTitle = taskTitle[4:] # 4 to also remove the space
+        elif taskTitle[:2] == 'to':
+            taskTitle = taskTitle[3:]
 
 
-        return taskName
+        return taskTitle
+
+    def outputTasks(self, tasks: List[Task] = None):
+        '''
+        Function outputs the tasklist to the client. If tasks are not given then will pull tasks from the default list
+        '''
+        tasks = tasks if tasks else self.taskList.getTasks()
+
+        resp =  ContentResponse(type='tasks', data={'tasks': tasks})
+        super().output(resp)

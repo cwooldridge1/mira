@@ -22,7 +22,7 @@ const withContent = (WrappedComonent: React.ComponentType<ContentProps>) => {
 
     return activeContent === null ? (
       <div className="mx-auto bg-slate-200 rounded-md shadow-lg flex items-center backdrop-filter backdrop-blur-md bg-opacity-20 h-5/6 w-5/6 relative">
-        <div className="absolute w-full h-full bg-transparent z-10 hover:bg-slate-100 hover:backdrop-blur-sm hover:bg-opacity-5 flex justify-center items-center opacity-0 hover:opacity-100  text-slate-400">
+        <div className="absolute w-full h-full bg-transparent z-10 hover:bg-slate-100 hover:backdrop-blur-sm hover:bg-opacity-5 flex justify-center items-center opacity-0 hover:opacity-100  text-grey">
           <i
             onClick={onSelect}
             className="fa-solid fa-expand text-5xl p-20 cursor-pointer"

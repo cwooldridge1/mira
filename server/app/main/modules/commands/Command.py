@@ -29,7 +29,7 @@ class Command(ABC):
         Used to fin dthe similarity between a text command and the commands that are associated to this class instance
         '''
         #find the simualrities between the input command and the commands associated with this command
-        similarities = MatchCommand.getSimilarities(prompt[:max([len(command) for command in self.commands])], self.commands)
+        similarities = MatchCommand.getSimilarities(prompt, self.commands)
         #find the max similarity between the input command and the commands associated with this command
         return max(similarities)
 

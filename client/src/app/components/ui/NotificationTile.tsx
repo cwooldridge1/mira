@@ -3,11 +3,11 @@ import Tile from './Tile';
 import { NotificationTileProps } from '../../types';
 
 const Notification = ({ title, desc, img, time }: NotificationTileProps) => {
-  const formatDate = (unixTimestamp: number) => {
+  const getUpdatedTime = () => {
     const now = new Date();
     const currentTime = now.getTime();
-    const date = new Date(unixTimestamp);
-    const timeDifference = currentTime - unixTimestamp;
+    const date = new Date(time);
+    const timeDifference = currentTime - time;
     const oneHour = 60 * 60 * 1000;
     const oneDay = 24 * oneHour;
     const oneWeek = 7 * oneDay;
@@ -39,12 +39,13 @@ const Notification = ({ title, desc, img, time }: NotificationTileProps) => {
     }
   };
 
-  const [formattedDate, setFormattedDate] = useState(formatDate(time));
+  const [formattedDate, setFormattedDate] = useState(getUpdatedTime);
   useEffect(() => {
     const interval = setInterval(() => {
-      setFormattedDate(formatDate(time));
+      setFormattedDate(getUpdatedTime());
     }, 1000);
     return () => clearInterval(interval);
+    //eslint-disable-next-line
   }, []);
 
   return (
