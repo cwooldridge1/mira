@@ -43,8 +43,8 @@ const List = ({ children }: ListProps) => {
   }
 
   return (
-    <div className="flex justify-center">
-      <ul className="bg-white bg-opacity-75 rounded-lg border border-gray-200 w-96 text-gray-900 shadow-lg">
+    <div className="flex justify-center max-w-full">
+      <ul className="bg-white bg-opacity-75 rounded-lg border border-gray-200 text-gray-900 shadow-lg w-full">
         {updatedChildren}
       </ul>
     </div>
@@ -58,9 +58,7 @@ List.Item = ({
   border = 'border-b',
 }: ItemProps) => {
   return (
-    <li className={`border-gray-200  w-full ${px} ${py} ${border}`}>
-      {children}
-    </li>
+    <li className={`border-gray-200 ${px} ${py} ${border}`}>{children}</li>
   );
 };
 

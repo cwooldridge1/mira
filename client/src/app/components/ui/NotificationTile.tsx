@@ -1,8 +1,8 @@
 import React, { memo, useEffect, useState } from 'react';
 import Tile from './Tile';
-import { NotificationTileProps } from '../../types';
+import { NotificationProps } from '../../types';
 
-const Notification = ({ title, desc, img, time }: NotificationTileProps) => {
+const Notification = ({ title, desc, img, time }: NotificationProps) => {
   const getUpdatedTime = () => {
     const now = new Date();
     const currentTime = now.getTime();

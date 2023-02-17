@@ -1,6 +1,5 @@
-import select
+import select #DO NOT DELETE IMOPRT IT IS ACTUALLY NEEDED
 import eventlet
-# eventlet.monkey_patch()
 
 if __name__ == '__main__':
     from app import createApp

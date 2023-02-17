@@ -1,6 +1,6 @@
 from ..Command import Command
 from ...tasks import Tasks, Task
-from app.types.responses import ContentResponse
+from app.types.responses import TasksResponse
 from typing import List
 from os import environ
 
@@ -38,5 +38,5 @@ class TaskCommand(Command):
         '''
         tasks = tasks if tasks else self.taskList.getTasks()
 
-        resp =  ContentResponse(type='tasks', data={'tasks': tasks})
+        resp =  TasksResponse(data={'tasks': tasks})
         super().output(resp)
