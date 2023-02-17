@@ -33,11 +33,16 @@ export const containerSlice = createSlice({
         state.content = content;
       }
     },
+    toggleContent(state) {
+      if (current(state.activeContent) || current(state.content.length) === 0)
+        state.activeContent = null;
+      else state.activeContent = state.content[0];
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { addContent, deleteContent, setActiveContent } =
+export const { addContent, deleteContent, setActiveContent, toggleContent } =
   containerSlice.actions;
 // You must export the reducer as follows for it to be able to be read by the store.
 export default containerSlice.reducer;

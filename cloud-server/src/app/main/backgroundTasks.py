@@ -21,3 +21,5 @@ def tradeExecutionListener():
                         del orders[result.id]
                         sio.emit('notification', SocketResponse(type='trade', status=200, data=result._raw)) 
         sio.sleep(5)          
+
+

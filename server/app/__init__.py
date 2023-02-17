@@ -11,6 +11,7 @@ messageQueue = Queue()
 
 
 def createApp():
+    import app.main.events
     app = socketio.WSGIApp(sio)
     #configure app
     startVoiceCommandListener(createVoiceCommandListener())
