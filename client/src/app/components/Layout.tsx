@@ -11,7 +11,7 @@ import Info from './Info';
 const Layout = () => {
   const content = useSelector((state: RootState) => state.content.content);
   return (
-    <div className="flex flex-row h-screen">
+    <div className="flex flex-row h-screen overflow-hidden">
       <Info />
       {!!content.length && (
         <div className="basis-3/4 flex flex-col items-center justify-center">
