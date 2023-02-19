@@ -25,29 +25,12 @@ const Info = () => {
   const [showTasks, setShowTasks] = useState(false);
   const bg =
     'p-5 bg-slate-200 hover:bg-white hover:backdrop-blur-md hover:bg-opacity-20 shadow-lg backdrop-filter backdrop-blur-md bg-opacity-20 rounded-md';
-  // const classes = useMemo(
-  //   () => ({
-  //     content: {
-  //       container: `${bg} basis-1/4 pt-10 flex-col justify-center h-screen`,
-  //       info: 'h-full overflow-auto no-scrollbar',
-  //     },
-  //     idle: {
-  //       container: `${bg} w-full sm:w-3/4 relative container`,
-  //       info: 'flex flex-col justify-center items-center transition duration-500 ease-in-out translate-x-1 h-64',
-  //     },
-  //     idleNotifications: {
-  //       container: `${bg} w-full sm:w-3/4 relative container`,
-  //       info: 'flex justify-between -translate-x-1 duration-500 ease-in-out h-64',
-  //     },
-  //   }),
-  //   []
-  // );
 
   const layout = {
     horizontal: {
       container: bg + 'w-full sm:w-3/4 relative container',
       info: showTasks
-        ? 'flex justify-between w-full'
+        ? 'flex justify-between w-full h-64'
         : 'flex flex-col justify-center items-center transition duration-500 ease-in-out translate-x-1 h-64',
     },
     vertical: {
@@ -91,7 +74,13 @@ const Info = () => {
             <Weather />
           </div>
 
-          <div className={content.length ? 'w-full' : 'lg:w-1/3 w-full ml-4'}>
+          <div
+            className={
+              content.length
+                ? 'w-full relative flex flex-col'
+                : 'lg:w-1/3 w-full flex flex-col'
+            }
+          >
             <div className="w-100 flex justify-center">
               <NotificationButton
                 icon="fa-solid fa-border-all"
@@ -110,8 +99,9 @@ const Info = () => {
                 active={showTasks}
               />
             </div>
+
             {showTasks && (
-              <div className="overflow-auto no-scrollbar justify-center">
+              <div className="overflow-auto no-scrollbar flex-grow h-64">
                 <Tasks />
               </div>
             )}
