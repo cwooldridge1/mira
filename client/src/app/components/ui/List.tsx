@@ -8,10 +8,20 @@ type ItemProps = {
 };
 
 type ListProps = {
-  children: React.ReactElement<ItemProps>[] | React.ReactElement<ListProps>;
+  children:
+    | React.ReactElement<ItemProps>[]
+    | React.ReactElement<ListProps>
+    | undefined;
 };
 
 const List = ({ children }: ListProps) => {
+  if (!children) {
+    return (
+      <div className="w-full px-6 py-2 text-center text-muted">
+        Nothing to show
+      </div>
+    );
+  }
   let updatedChildren: React.ReactElement<ItemProps>[] = [];
   if (Array.isArray(children)) {
     if (children.length === 1) {

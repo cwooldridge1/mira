@@ -18,7 +18,13 @@ const NotificationManager = () => {
     const Component = withNotification(notificationComponentsIndex[obj.type]);
     return <Component {...obj} key={i} />;
   };
-  return <>{notifications.map(renderContent)}</>;
+  return notifications.length ? (
+    <>{notifications.map(renderContent)}</>
+  ) : (
+    <div className="w-full px-6 py-2 text-center text-muted">
+      Nothing to show
+    </div>
+  );
 };
 
 export default NotificationManager;

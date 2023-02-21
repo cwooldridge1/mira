@@ -4,10 +4,7 @@ import NotificationManager from './NotificationManager';
 import Weather from './Weather';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux';
-import List from './ui/List';
 import NotificationButton from './ui/NotificationButton';
-import CircleCheckMarkIcon from './ui/icons/CircleCheckMarkIcon';
-import CircleXmarkIcon from './ui/icons/CircleXmarkIcon';
 import { setActiveContent } from '../redux/slices/contentSlice';
 import { useDispatch } from 'react-redux';
 import { ThunkDispatch } from '@reduxjs/toolkit';
@@ -22,14 +19,14 @@ const Info = () => {
   const { notifications } = useSelector(
     (state: RootState) => state.notifications
   );
-  const [showTasks, setShowTasks] = useState(false);
+  const [activeInfo, setActiceInfo] = useState<string | null>(null); // tasks, notifications
   const bg =
     'p-5 bg-slate-200 hover:bg-white hover:backdrop-blur-md hover:bg-opacity-20 shadow-lg backdrop-filter backdrop-blur-md bg-opacity-20 rounded-md';
 
   const layout = {
     horizontal: {
       container: bg + 'w-full sm:w-3/4 relative container',
-      info: showTasks
+      info: activeInfo
         ? 'flex justify-between w-full h-64'
         : 'flex flex-col justify-center items-center transition duration-500 ease-in-out translate-x-1 h-64',
     },
@@ -46,13 +43,16 @@ const Info = () => {
     } else {
       setCurrentLayout(layout.vertical);
     }
-  }, [content, notifications, showTasks]);
+  }, [content, notifications, activeInfo]);
 
   const toggleContent = () => {
     dispatch(setActiveContent(activeContent ? null : content[0]));
   };
   const toggleTasks = () => {
-    setShowTasks(!showTasks);
+    setActiceInfo(activeInfo === 'tasks' ? null : 'tasks');
+  };
+  const toggleNotifications = () => {
+    setActiceInfo(activeInfo === 'notifications' ? null : 'notifications');
   };
 
   const Wrapper = ({ children }: any) => {
@@ -90,23 +90,23 @@ const Info = () => {
               <NotificationButton
                 icon="fa-solid fa-bell"
                 showBell={notifications.length > 0}
+                onClick={toggleNotifications}
+                active={activeInfo === 'notifications'}
               />
               <NotificationButton
                 color={'bg-success'}
                 icon="fa-solid fa-list"
                 onClick={toggleTasks}
                 showBell={tasks.length > 0}
-                active={showTasks}
+                active={activeInfo === 'tasks'}
               />
             </div>
 
-            {showTasks && (
+            {activeInfo && (
               <div className="overflow-auto no-scrollbar flex-grow h-64">
-                <Tasks />
+                {activeInfo === 'tasks' ? <Tasks /> : <NotificationManager />}
               </div>
             )}
-
-            {/* <NotificationManager /> */}
           </div>
         </div>
       </div>

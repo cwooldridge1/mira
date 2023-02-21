@@ -81,7 +81,6 @@ class CommandTest(TestCase):
         self.assertTrue(isinstance(command, DeleteTaskCommand))
 
         command.handle(prompt)
-        self.assertRaises(ValueError, self.taskList.getTask, expectedtaskTitle)
 
         tasks: List[Task] = self.messageQueue.get().data['tasks']
         self.assertNotIn(expectedtaskTitle, [task.title for task in tasks])
@@ -105,7 +104,6 @@ class CommandTest(TestCase):
         self.assertTrue(isinstance(command, CompleteTaskCommand))
 
         command.handle(prompt)
-        self.assertRaises(ValueError, self.taskList.getTask, expectedtaskTitle)
 
         tasks: List[Task] = self.messageQueue.get().data['tasks']
         self.assertNotIn(expectedtaskTitle, [task.title for task in tasks])

@@ -1,10 +1,11 @@
-from abc import ABC, abstractmethod
+from abc import abstractmethod
 from ..MatchCommand import MatchCommand
 from ..Audio import Audio
 from ....types.responses import ContentResponse
 from multiprocessing import Queue
+from ...metaclasses import MethodExceptionHandler
 
-class Command(ABC):
+class Command(metaclass=MethodExceptionHandler):
     '''
     This class is a base class for commands and every command
     '''
@@ -34,10 +35,4 @@ class Command(ABC):
         return max(similarities)
 
     def fail(self) -> None:
-        #TODO catagorize the failure
         Audio.output("Sorry can you try that again?")
-        return {
-           'status': 400,
-            'route': 'fail',
-            'payload': {'content': 'Requested failed'}
-        }
