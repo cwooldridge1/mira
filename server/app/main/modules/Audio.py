@@ -8,12 +8,13 @@ class Audio:
     __tld = 'co.in'
     @staticmethod
     def output(text:str):
+        if os.environ.get('ENV') != 'test':
     
-        tts = gTTS(text, lang=Audio.__lang,tld=Audio.__tld)
-        # Save the audio file
-        tts.save('audio.mp3')
-        # Play the audio file
-        os.system("mpg123 audio.mp3")
+            tts = gTTS(text, lang=Audio.__lang,tld=Audio.__tld)
+            # Save the audio file
+            tts.save('audio.mp3')
+            # Play the audio file
+            os.system("mpg123 audio.mp3")
 
     @staticmethod
     def input() -> str:

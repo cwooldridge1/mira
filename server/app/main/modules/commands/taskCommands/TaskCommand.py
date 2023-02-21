@@ -1,6 +1,7 @@
 from ..Command import Command
 from ...tasks import Tasks, Task
 from app.types.responses import TasksResponse
+from ...Audio import Audio
 from typing import List
 from os import environ
 
@@ -32,6 +33,7 @@ class TaskCommand(Command):
 
         return taskTitle
 
+
     def outputTasks(self, tasks: List[Task] = None):
         '''
         Function outputs the tasklist to the client. If tasks are not given then will pull tasks from the default list
@@ -40,3 +42,6 @@ class TaskCommand(Command):
 
         resp =  TasksResponse(data={'tasks': tasks})
         super().output(resp)
+
+    def fail(self):
+        Audio.output("Sorry, I could not find that task")

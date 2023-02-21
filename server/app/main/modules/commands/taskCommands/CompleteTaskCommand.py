@@ -10,6 +10,7 @@ class CompleteTaskCommand(TaskCommand):
         taskTitle = self.extractTaskTitle(prompt)
 
         self.taskList.markTaskComplete(taskTitle)
+           
 
         super().outputTasks()
         Audio.output(f'Sure ill mark {taskTitle} as complete')

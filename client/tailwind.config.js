@@ -10,6 +10,7 @@ module.exports = {
         primary: 'rgb(96 165 250)',
         warning: ' rgb(251 191 36)',
         grey: 'rgb(148 163 184)',
+        muted: 'rgb(51 65 85)',
       },
     },
   },
