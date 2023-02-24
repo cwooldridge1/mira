@@ -3,7 +3,7 @@ from app.main.modules.tasks import Tasks
 
 
 TASK_LIST_TITLE = 'test'
-TASK_NAME = 'test'
+TASK_NAME = 'Test'
 
 class TaskTests(TestCase):
 

@@ -11,6 +11,7 @@ class GetTasksCommand(TaskCommand):
 
         if len(tasks) == 0:
             Audio.output('You currently do not have any tasks')
+            return
 
         audioOutputText = 'Here are the tasks you have: ' + '.'.join([task.title for task in tasks])
         Audio.output(audioOutputText)

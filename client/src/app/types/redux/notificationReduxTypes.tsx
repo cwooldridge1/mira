@@ -1,6 +1,7 @@
 import { NotificationProps } from '..';
 interface InitialState {
-  notifications: Array<NotificationProps>;
+  notifications: NotificationProps[];
+  notificationToasts: NotificationProps[];
 }
 const UpdateNotificationAction = 'NOTIFICATIONS';
 export default InitialState;

@@ -12,7 +12,6 @@ const withContent = (WrappedComonent: React.ComponentType<ContentProps>) => {
     const dispatch = useDispatch();
     const { activeContent } = useSelector((state: RootState) => state.content);
     const onDelete = () => {
-      console.log('onDelete');
       dispatch(deleteContent(props));
     };
 
