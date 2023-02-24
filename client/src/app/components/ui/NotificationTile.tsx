@@ -1,8 +1,19 @@
 import React, { memo, useEffect, useState } from 'react';
 import Tile from './Tile';
 import { NotificationProps } from '../../types';
+import { useDispatch } from 'react-redux';
+import { deleteNotificationById } from '../../redux/slices/notificationSlice';
 
-const Notification = ({ title, desc, img, time }: NotificationProps) => {
+const Notification = ({
+  title,
+  desc,
+  img,
+  time,
+  id,
+  onLeftSwipe,
+}: NotificationProps) => {
+  const dispatch = useDispatch();
+
   const getUpdatedTime = () => {
     const now = new Date();
     const currentTime = now.getTime();
@@ -48,8 +59,12 @@ const Notification = ({ title, desc, img, time }: NotificationProps) => {
     //eslint-disable-next-line
   }, []);
 
+  const defaultOnLeftSwipe = () => {
+    dispatch(deleteNotificationById(id));
+  };
+
   return (
-    <Tile>
+    <Tile onLeftSwipe={onLeftSwipe || defaultOnLeftSwipe}>
       <>
         {!!img && (
           <div className="shrink-0">

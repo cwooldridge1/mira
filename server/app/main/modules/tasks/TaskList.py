@@ -19,7 +19,7 @@ class TaskList:
         self.title = title
 
 
-    def addTask(self, title, due=None) -> None:
+    def addTask(self, title:str, due=None) -> None:
         #https://developers.google.com/tasks/reference/rest/v1/tasks
         task = {
             'title': title
@@ -45,9 +45,13 @@ class TaskList:
         return [Task.parse_obj(task) for task in TaskService.tasks().list(tasklist=self.id).execute()['items']]
 
 
-    def getTask(self, title) -> Task:
+    def getTask(self, title:str) -> Task:
+        '''
+        method is not case sensitive
+        '''
         tasks = self.getTasks()
+        title = title.lower()
         for task in tasks:
-            if task.title == title:
+            if task.title.lower() == title:
                 return task
         raise ValueError(f'No task with title "{title}" found')

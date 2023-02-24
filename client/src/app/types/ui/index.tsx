@@ -5,3 +5,10 @@ export interface IconProps {
   color?: string;
   classModifier?: string;
 }
+
+export interface InteractiveContainerProps {
+  children: JSX.Element | JSX.Element[] | string;
+  onLeftSwipe?: () => void;
+  onRightSwipe?: () => void;
+  [key: string]: any;
+}

@@ -8,14 +8,11 @@ type ItemProps = {
 };
 
 type ListProps = {
-  children:
-    | React.ReactElement<ItemProps>[]
-    | React.ReactElement<ListProps>
-    | undefined;
+  children: React.ReactElement<ItemProps>[] | React.ReactElement<ListProps>;
 };
 
 const List = ({ children }: ListProps) => {
-  if (!children) {
+  if (!children || (Array.isArray(children) && children.length === 0)) {
     return (
       <div className="w-full px-6 py-2 text-center text-muted">
         Nothing to show
