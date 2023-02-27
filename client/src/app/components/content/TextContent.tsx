@@ -1,7 +1,7 @@
 import React from 'react';
 import { ContentProps } from '../../types';
 
-const Text = ({ data: { text } }: ContentProps) => {
+const TextContent = ({ data: { text } }: ContentProps) => {
   return (
     <div className="p-2">
       <div
@@ -14,4 +14,4 @@ const Text = ({ data: { text } }: ContentProps) => {
   );
 };
 
-export default Text;
+export default TextContent;

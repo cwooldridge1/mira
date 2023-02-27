@@ -3,7 +3,7 @@ import { ContentProps } from '../../types';
 // @ts-ignore
 import TradingViewWidget from 'react-tradingview-widget';
 
-const Chart = ({ data: { ticker } }: ContentProps) => {
+const ChartContent = ({ data: { ticker } }: ContentProps) => {
   return (
     <TradingViewWidget
       theme={'Dark'}
@@ -14,4 +14,4 @@ const Chart = ({ data: { ticker } }: ContentProps) => {
   );
 };
 
-export default Chart;
+export default ChartContent;

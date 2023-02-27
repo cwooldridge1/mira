@@ -1,6 +1,6 @@
 import React from 'react';
 import { NotificationProps } from '../../types';
-import Notification from '../ui/NotificationTile';
+import Notification from '../NotificationTile';
 
 const Trade = ({ data, time, id, ...props }: NotificationProps) => {
   const { side, symbol, filled_avg_price, qty, status } = data;

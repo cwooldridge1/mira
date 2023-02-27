@@ -1,8 +1,8 @@
 import React, { memo, useEffect, useState } from 'react';
-import Tile from './Tile';
-import { NotificationProps } from '../../types';
+import Tile from './ui/Tile';
+import { NotificationTileProps } from '../types';
 import { useDispatch } from 'react-redux';
-import { deleteNotificationById } from '../../redux/slices/notificationSlice';
+import { deleteNotificationById } from '../redux/slices/notificationSlice';
 
 const Notification = ({
   title,
@@ -11,7 +11,7 @@ const Notification = ({
   time,
   id,
   onLeftSwipe,
-}: NotificationProps) => {
+}: NotificationTileProps) => {
   const dispatch = useDispatch();
 
   const getUpdatedTime = () => {
@@ -70,7 +70,7 @@ const Notification = ({
           <div className="shrink-0">
             <img
               className="h-100 w-12"
-              src={require(`../../../styles/notification-icons/${img}`)}
+              src={require(`../../assets/notification-icons/${img}`)}
               alt={img}
             />
           </div>

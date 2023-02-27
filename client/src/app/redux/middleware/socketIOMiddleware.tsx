@@ -4,7 +4,7 @@ import { addContent } from '../slices/contentSlice';
 import { addNotification } from '../slices/notificationSlice';
 import { updateTasks } from '../slices/taskSlice';
 //@ts-ignore
-import notificationAudio from '../../../sounds/notificationAudio.mp3';
+import notificationAudio from '../../../assets/sounds/notificationAudio.mp3';
 
 const LOCAL_URL: string = process.env.REACT_APP_LOCAL_URL;
 const CLOUD_URL: string = process.env.REACT_APP_CLOUD_URL;

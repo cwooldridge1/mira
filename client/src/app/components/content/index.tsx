@@ -1,3 +1,3 @@
-export { default as chart } from './Chart';
-export { default as code } from './Code';
-export { default as text } from './Text';
+export { default as chart } from './ChartContent';
+export { default as code } from './CodeContent';
+export { default as text } from './TextContent';

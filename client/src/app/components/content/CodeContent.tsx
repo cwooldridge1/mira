@@ -2,7 +2,7 @@ import React from 'react';
 import { CopyBlock, dracula } from 'react-code-blocks';
 import { ContentProps } from '../../types';
 
-const Code = ({ data: { text, language } }: ContentProps) => {
+const CodeContent = ({ data: { text, language } }: ContentProps) => {
   return (
     <div className="w-full overflow-auto">
       <CopyBlock
@@ -17,4 +17,4 @@ const Code = ({ data: { text, language } }: ContentProps) => {
   );
 };
 
-export default Code;
+export default CodeContent;
