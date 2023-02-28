@@ -6,6 +6,7 @@ import {
   deleteContent,
   setActiveContent,
 } from '../../redux/slices/contentSlice';
+import CircleXmarkIcon from '../ui/icons/CircleXmarkIcon';
 
 const withContent = (WrappedComonent: React.ComponentType<ContentProps>) => {
   return (props: ContentProps) => {
@@ -27,10 +28,7 @@ const withContent = (WrappedComonent: React.ComponentType<ContentProps>) => {
             className="fa-solid fa-expand text-5xl p-20 cursor-pointer"
           ></i>
           <div className="absolute top-0 right-0">
-            <i
-              onClick={onDelete}
-              className="fa-solid fa-xmark rounded-full p-2 text-white cursor-pointer"
-            ></i>
+            <CircleXmarkIcon onClick={onDelete} />
           </div>
         </div>
         <div className="h-full w-full overflow-hidden">

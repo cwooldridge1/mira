@@ -57,12 +57,7 @@ class CommandTest(TestCase):
             Tasks.addTaskList(TASK_LIST_NAME)
             self.taskList = Tasks.getTaskList(TASK_LIST_NAME)
 
-    def assertBestCommand(self, prompt:str, expectedCommandType:Command):
-        command = self.listener.getBestCommand(prompt)
-        assert isinstance(command, expectedCommandType), f'Expected {type(expectedCommandType)} but got type {type(command)}'
 
-    
-    
     def assertPromptWillAddTask(self, prompt, expectedtaskTitle):
         command = self.listener.getBestCommand(prompt)
         self.assertTrue(isinstance(command, AddTaskCommand))
@@ -97,16 +92,6 @@ class CommandTest(TestCase):
         actualTasks = [task.title for task in self.messageQueue.get().data['tasks']]
 
         self.assertCountEqual(expectedTasks, actualTasks)
-
-
-    def assertPromptWillCompleteTask(self, prompt, expectedtaskTitle):
-        command = self.listener.getBestCommand(prompt)
-        self.assertTrue(isinstance(command, CompleteTaskCommand))
-
-        command.handle(prompt)
-
-        tasks: List[Task] = self.messageQueue.get().data['tasks']
-        self.assertNotIn(expectedtaskTitle, [task.title for task in tasks])
 
 
     def tearDown(self) -> None:

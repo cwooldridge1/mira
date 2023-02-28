@@ -1,9 +1,9 @@
 from .. import sio
 
 @sio.on('connect')
-def handle_connect():
+def connect():
     print('Client connected')
 
 @sio.on('disconnect')
-def handle_disconnect():
+def disconnect():
     print('Client disconnected')
