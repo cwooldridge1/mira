@@ -6,10 +6,8 @@ from .TaskService import TaskService
 class Task(BaseModel):
   id: str
   title: str
-  updated: str
   status: Optional[str] #"needsAction" or "completed"
   due: str = None
-  deleted: bool = False
 
 
 

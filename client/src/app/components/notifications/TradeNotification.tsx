@@ -1,8 +1,9 @@
 import React from 'react';
 import { NotificationProps } from '../../types';
-import Notification from '../NotificationTile';
+import NotificationTile from '../NotificationTile';
+import alpacaImage from '../../../assets/notification-icons/alpaca.png';
 
-const Trade = ({ data, time, id, ...props }: NotificationProps) => {
+const TradeNotification = ({ data, time, id, ...props }: NotificationProps) => {
   const { side, symbol, filled_avg_price, qty, status } = data;
   let title: string =
     status === 'accepted'
@@ -19,15 +20,15 @@ const Trade = ({ data, time, id, ...props }: NotificationProps) => {
           side === 'buy' ? 'Bought' : 'Sold'
         } ${qty}x ${qty} of ${symbol} @ $${filled_avg_price}`;
   return (
-    <Notification
+    <NotificationTile
       {...props}
       title={title}
       desc={desc}
-      img={'alpaca.png'}
+      img={alpacaImage}
       time={time}
       id={id}
     />
   );
 };
 
-export default Trade;
+export default TradeNotification;

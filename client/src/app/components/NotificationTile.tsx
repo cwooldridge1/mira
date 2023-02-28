@@ -4,7 +4,7 @@ import { NotificationTileProps } from '../types';
 import { useDispatch } from 'react-redux';
 import { deleteNotificationById } from '../redux/slices/notificationSlice';
 
-const Notification = ({
+const NotificationTile = ({
   title,
   desc,
   img,
@@ -70,8 +70,8 @@ const Notification = ({
           <div className="shrink-0">
             <img
               className="h-100 w-12"
-              src={require(`../../assets/notification-icons/${img}`)}
-              alt={img}
+              src={img}
+              alt={'icon for notification'}
             />
           </div>
         )}
@@ -87,4 +87,4 @@ const Notification = ({
   );
 };
 
-export default memo(Notification);
+export default memo(NotificationTile);
