@@ -1,8 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, memo } from 'react';
 import { ArrowDownIcon, ArrowUpIcon } from '@heroicons/react/24/outline';
-type Props = {};
 
-const Weather = (props: Props) => {
+const Weather = () => {
   interface WeatherData {
     name: string;
     country: string;
@@ -15,7 +14,7 @@ const Weather = (props: Props) => {
       min: number;
     };
   }
-  const [info, setInfo] = useState<WeatherData>();
+  const [currentWeather, setCurrentWeather] = useState<WeatherData>();
   const background = {
     sunny:
       'linear-gradient(284deg, #abccbb 26%, rgba(255,255,255,0) 69%), linear-gradient(160deg, #e4b814 52%, rgba(255,255,255,0) 62%), linear-gradient(147deg, #e37669 89%, rgba(255,255,255,0) 96%), linear-gradient(219deg, #f3d0dd 18%, rgba(255,255,255,0) 65%), radial-gradient(ellipse at -173% -79%, rgba(255,255,255,0) 0%, #271807 54%)',
@@ -36,7 +35,7 @@ const Weather = (props: Props) => {
     )
       .then((r) => r.json())
       .then((d) => {
-        setInfo({
+        setCurrentWeather({
           name: d.location.name,
           country: d.location.country,
           city: d.location.name,
@@ -74,45 +73,37 @@ const Weather = (props: Props) => {
     //eslint-disable-next-line
   }, []);
 
-  return !info ? null : (
-    <div className="flex flex-row text-black ml-5">
+  return !currentWeather ? null : (
+    <div className="flex flex-row text-black">
       <div className="flex overflow-hidden grid-cols-2 grid-rows-2 gap-10">
         <div className="">
-          {info?.temp ? (
+          {currentWeather?.temp ? (
             <p className="text-7xl font-light tracking-tighter">
-              {info?.temp?.current}
+              {currentWeather?.temp?.current}
               <span className="align-top text-lg font-normal">°</span>
             </p>
           ) : null}
         </div>
         <div className="row-span-2 mt-2 justify-self-start truncate">
-          <p className=" text-start font-light">{info?.condition}</p>
-          {info?.temp ? (
+          <p className=" text-start font-light">{currentWeather?.condition}</p>
+          {currentWeather?.temp ? (
             <p className="text-start font-light">
               <ArrowUpIcon className="h-2 inline-flex align-middle" />
-              {info.temp?.max}
+              {currentWeather.temp?.max}
               <span className="align-top font-normal text-xs">°</span>{' '}
               <ArrowDownIcon className="h-2 inline-flex align-middle" />
-              {info.temp?.min}
+              {currentWeather.temp?.min}
               <span className="align-top font-normal text-xs">°</span>
             </p>
           ) : null}
 
           <p className="text-xs text-start font-light  whitespace-nowrap">
-            {info?.country}
+            {currentWeather?.country}
           </p>
-          {/* <div className="p-6 max-w-sm mx-auto bg-slate-200 hover:opacity-20 rounded-md shadow-lg bg-opacity-10">
-            <div className="shrink-0">
-            </div>
-            <div>
-              <div className="text-xl font-medium text-black">ChitChat</div>
-              <p className="text-slate-500">You have a new message!</p>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
   );
 };
 
-export default Weather;
+export default memo(Weather);
