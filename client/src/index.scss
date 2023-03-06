@@ -18,3 +18,21 @@ body {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+$z-index-range: 1-100;
+
+@each $i in $z-index-range {
+  .z-#{$i} {
+    z-index: $i;
+  }
+}

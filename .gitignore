@@ -1,0 +1,4 @@
+
+*.pyc
+.converage
+server/audio.mp3
