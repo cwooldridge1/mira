@@ -5,14 +5,15 @@ import alpacaImage from '../../../assets/notification-icons/alpaca.png';
 
 const TradeNotification = ({ data, time, id, ...props }: NotificationProps) => {
   const { side, symbol, filled_avg_price, qty, status } = data;
+  console.log(data);
   let title: string =
-    status === 'accepted'
+    status === 'accepted' || status === 'pending_new'
       ? 'Order Created!'
       : status === 'canceled'
       ? 'Order Canceled'
       : 'Order Executed';
   let desc: string =
-    status === 'accepted'
+    status === 'accepted' || status === 'pending_new'
       ? `${side === 'buy' ? 'Buy' : 'Sell'} order for ${qty}x of ${symbol}`
       : status === 'canceled'
       ? `Canceled ${side} order for ${qty}x of ${symbol}`
