@@ -15,11 +15,11 @@ def tradeExecutionListener():
                     if result.status == 'filled':
                         #emit and remove id
                         del orders[result.id]
-                        sio.emit('notification', SocketResponse(type='trade', status=200, data=result._raw)) #._raw is the raw json data
+                        sio.emit('notification', SocketResponse(type='trade', status=200, data=result._raw, event='notification')) #._raw is the raw json data
                     elif result.status == 'canceled':
                         #remove id and let client know
                         del orders[result.id]
-                        sio.emit('notification', SocketResponse(type='trade', status=200, data=result._raw)) 
+                        sio.emit('notification', SocketResponse(type='trade', status=200, data=result._raw, event='notification')) #._raw is the raw json data
         sio.sleep(5)          
 
 

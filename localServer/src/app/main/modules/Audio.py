@@ -1,6 +1,9 @@
 from gtts import gTTS
 import os
 import speech_recognition as sr
+import asyncio
+from ...types import CircularBuffer
+
 class Audio:
     #the language to speak
     __lang = 'en'
@@ -30,3 +33,6 @@ class Audio:
             except Exception as e:
                 pass
         return said.lower()
+
+
+
