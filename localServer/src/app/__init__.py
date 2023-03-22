@@ -2,17 +2,27 @@
 from dotenv import load_dotenv
 load_dotenv()
 import socketio
+from flask_socketio import SocketIO
 import socketio
+from flask import Flask
+from flask_cors import CORS
 from multiprocessing import Queue, Process
-from .types.encoders import JSONWrapper
+from .types.encoders import JSONWrapper, CustomJSONEncoder
 from .main.modules.Listener import Listener
-sio = socketio.Server(async_handlers=True, cors_allowed_origins='*', json=JSONWrapper)
+# sio = socketio.Server(async_handlers=True, cors_allowed_origins='*', json=JSONWrapper)
+sio = SocketIO(cors_allowed_origins='*', json=JSONWrapper)
 messageQueue = Queue()
 
 
 def createApp():
+    app = Flask(__name__)
+    app.json_encoder = CustomJSONEncoder
+    CORS(app)
+
+    #init SIO
+    sio.init_app(app)
     import app.main.events
-    app = socketio.WSGIApp(sio)
+    # app = socketio.WSGIApp(sio)
     #configure app
     startVoiceCommandListener(createVoiceCommandListener())
     configureBackgroundTasks()
@@ -45,5 +55,6 @@ def configureBackgroundTasks():
     '''
     This function is to configure all background tasks to run in the SIO application
     '''
-    from .main.backgroudTasks import messageEmitter
+    from .main.backgroundTasks import messageEmitter, listener
     sio.start_background_task(messageEmitter)
+    sio.start_background_task(listener)

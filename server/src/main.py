@@ -1,5 +1,6 @@
 import select #THIS IS NEEDED DO NOT DELETE OR YOU WILL GET ERROR
 import eventlet
+from os import environ 
 eventlet.monkey_patch()
 
 
@@ -9,4 +10,5 @@ app = createApp()
 
 if __name__ == '__main__':
     # Use the eventlet WSGI server
-    eventlet.wsgi.server(eventlet.listen(('0.0.0.0', 80)), app)
+    DOMAIN, PORT = ('localhost', 8080) if environ.get('ENV') == 'DEV' else ('0.0.0.0', 80)
+    eventlet.wsgi.server(eventlet.listen((DOMAIN, PORT)), app)

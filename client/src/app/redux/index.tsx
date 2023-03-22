@@ -3,18 +3,17 @@ import { configureStore } from '@reduxjs/toolkit';
 import contentReducer from './slices/contentSlice';
 import notificationReducer from './slices/notificationSlice';
 import taskReducer from './slices/taskSlice';
-import {
-  socketContentMiddleware,
-  socketNotificationMiddleware,
-} from './middleware/socketIOMiddleware';
+import audioSlice from './slices/audioSlice';
+import { socketioMiddleware } from './middleware/socketioMiddleware';
 const store = configureStore({
   reducer: {
     // You are free to call the LHS what you like, but it must have a reducer on the RHS.
     content: contentReducer,
     notifications: notificationReducer,
     tasks: taskReducer,
+    audio: audioSlice,
   },
-  middleware: [socketContentMiddleware, socketNotificationMiddleware],
+  middleware: [socketioMiddleware],
 });
 
 export default store;

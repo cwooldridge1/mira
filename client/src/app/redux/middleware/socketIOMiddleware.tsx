@@ -3,14 +3,20 @@ import { io } from 'socket.io-client';
 import { addContent } from '../slices/contentSlice';
 import { addNotification } from '../slices/notificationSlice';
 import { updateTasks } from '../slices/taskSlice';
+
 //@ts-ignore
 import notificationAudio from '../../../assets/sounds/notificationAudio.mp3';
+import { listener } from '../../../listener';
 
-const LOCAL_URL: string = process.env.REACT_APP_LOCAL_URL;
-const CLOUD_URL: string = process.env.REACT_APP_CLOUD_URL;
+const SERVER_URL: string = process.env.REACT_APP_SERVER_URL;
 
-export const socketContentMiddleware: Middleware = (store) => {
-  const socket = io(LOCAL_URL);
+export const socketioMiddleware: Middleware = (store) => {
+  const socket = io(SERVER_URL);
+  socket.on('notification', (data) => {
+    const audio = new Audio(notificationAudio);
+    audio.play();
+    store.dispatch(addNotification(data));
+  });
   socket.on('content', (data) => {
     store.dispatch(addContent(data));
   });
@@ -18,19 +24,14 @@ export const socketContentMiddleware: Middleware = (store) => {
     store.dispatch(updateTasks(data));
   });
 
-  return (next) => (action: any) => {
-    next(action);
-  };
-};
-export const socketNotificationMiddleware: Middleware = (store) => {
-  const socket = io(CLOUD_URL);
-  socket.on('notification', (data) => {
-    const audio = new Audio(notificationAudio);
-    audio.play();
-    store.dispatch(addNotification(data));
-  });
+  listener();
 
   return (next) => (action: any) => {
+    // console.log(action);
+    if (action.type === 'AUDIO/addTranscript') {
+      console.log(action.payload);
+      socket.emit('transcript', action.payload);
+    }
     next(action);
   };
 };
