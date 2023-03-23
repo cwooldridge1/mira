@@ -5,8 +5,7 @@ from typing import Dict
 from ... import orders
 from ...types.orders import OrderType
 from ... import sio
-from ...types.responses import SocketResponse
-
+from ...types.responses import TradeNotificationResponse
 
 
 def addorder(func):
@@ -16,17 +15,20 @@ def addorder(func):
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)
         orders[result.id] = result
-        #emit to all client that an order was placed
-        sio.emit('notification', SocketResponse(type='trade', status=200, data=result._raw))
+        # emit to all client that an order was placed
+        resp = TradeNotificationResponse(data=result._raw)
+        sio.emit(resp.event, resp)
         return result
     return wrapper
+
 
 class Trades(object):
     '''
     This class is used to interact with alpacas trade API
     '''
 
-    API = tradeapi.REST(os.environ.get('ALPACA_KEY'), os.environ.get('ALPACA_SECRET_KEY'), base_url=os.environ.get('ALPACA_URL'))
+    API = tradeapi.REST(os.environ.get('ALPACA_KEY'), os.environ.get(
+        'ALPACA_SECRET_KEY'), base_url=os.environ.get('ALPACA_URL'))
 
     @staticmethod
     def getAccount() -> Account:
@@ -37,7 +39,7 @@ class Trades(object):
 
     @staticmethod
     @addorder
-    def placeTrade(order:OrderType) -> Order:
+    def placeTrade(order: OrderType) -> Order:
         '''
         Places an trade to be executed
         :param order: is the order you wish to place
@@ -46,7 +48,7 @@ class Trades(object):
         return Trades.API.submit_order(**order.dict())
 
     @staticmethod
-    def getPosition(symbol:str) -> Position:
+    def getPosition(symbol: str) -> Position:
         '''
         Gets the position for the given symbol
         :param symbol: is the symbol you wish to get the position for
@@ -56,7 +58,7 @@ class Trades(object):
 
     @staticmethod
     @addorder
-    def closePosition(symbol:str) -> Order:
+    def closePosition(symbol: str) -> Order:
         '''
         Closes the position for the given symbol
         :param symbol: is the symbol you wish to close the position for
@@ -73,7 +75,7 @@ class Trades(object):
         return {order.id: order for order in Trades.API.list_orders(status='open')}
 
     @staticmethod
-    def getOrder(oid:str) -> Order:
+    def getOrder(oid: str) -> Order:
         '''
         Gets the order with the given id
         '''
