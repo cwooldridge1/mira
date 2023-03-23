@@ -6,6 +6,7 @@ import { updateTasks } from '../slices/taskSlice';
 import {
   setServerIsListening,
   setServerIsLoadingResponse,
+  setServerErrorMsg,
 } from '../slices/audioSlice';
 
 //@ts-ignore
@@ -30,6 +31,12 @@ export const socketioMiddleware: Middleware = (store) => {
   socket.on('loading-response', (data) => {
     store.dispatch(setServerIsListening(false));
     store.dispatch(setServerIsLoadingResponse(true));
+  });
+
+  socket.on('error', (data) => {
+    store.dispatch(setServerErrorMsg(data.data.msg));
+    store.dispatch(setServerIsListening(false));
+    store.dispatch(setServerIsLoadingResponse(false));
   });
 
   socket.on('content', (data) => {

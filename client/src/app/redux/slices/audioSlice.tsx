@@ -7,6 +7,7 @@ const initialState: InitialState = {
   audio: [],
   serverIsListening: false,
   serverIsLoadingResponse: false,
+  serverErrorMsg: null,
 };
 
 export const containerSlice = createSlice({
@@ -22,6 +23,9 @@ export const containerSlice = createSlice({
     setServerIsLoadingResponse: (state, action: PayloadAction<boolean>) => {
       state.serverIsLoadingResponse = action.payload;
     },
+    setServerErrorMsg: (state, action: PayloadAction<string>) => {
+      state.serverErrorMsg = action.payload;
+    },
   },
 });
 
@@ -30,6 +34,7 @@ export const {
   addTranscript,
   setServerIsListening,
   setServerIsLoadingResponse,
+  setServerErrorMsg,
 } = containerSlice.actions;
 // You must export the reducer as follows for it to be able to be read by the store.
 export default containerSlice.reducer;
