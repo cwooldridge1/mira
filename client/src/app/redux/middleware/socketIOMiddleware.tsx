@@ -3,6 +3,10 @@ import { io } from 'socket.io-client';
 import { addContent } from '../slices/contentSlice';
 import { addNotification } from '../slices/notificationSlice';
 import { updateTasks } from '../slices/taskSlice';
+import {
+  setServerIsListening,
+  setServerIsLoadingResponse,
+} from '../slices/audioSlice';
 
 //@ts-ignore
 import notificationAudio from '../../../assets/sounds/notificationAudio.mp3';
@@ -19,17 +23,24 @@ export const socketioMiddleware: Middleware = (store) => {
   });
   socket.on('content', (data) => {
     store.dispatch(addContent(data));
+    store.dispatch(setServerIsLoadingResponse(false));
+  });
+  socket.on('loading-response', (data) => {
+    store.dispatch(setServerIsListening(false));
+    store.dispatch(setServerIsLoadingResponse(true));
   });
   socket.on('tasks', (data) => {
     store.dispatch(updateTasks(data));
+    store.dispatch(setServerIsLoadingResponse(false));
+  });
+  socket.on('wake', (data) => {
+    store.dispatch(setServerIsListening(true));
   });
 
   listener();
 
   return (next) => (action: any) => {
-    // console.log(action);
     if (action.type === 'AUDIO/addTranscript') {
-      console.log(action.payload);
       socket.emit('transcript', action.payload);
     }
     next(action);
