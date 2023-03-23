@@ -32,7 +32,7 @@ const AudioStreamHeader = () => {
   return (
     <>
       {(serverIsListening || serverIsLoadingResponse) && (
-        <div className="bg-white absolute top-0 right-0 flex justify-between rounded-full items-center m-3 z-10 mx-w-3/4 max-w-full max-h-20">
+        <div className="bg-white absolute top-0 right-0 flex justify-between rounded-full items-center m-3 z-50 mx-w-3/4 max-w-full max-h-20">
           {serverIsListening && (
             <div className="ml-5 mr-5 p-3">{transcripts.at(-1)}</div>
           )}
