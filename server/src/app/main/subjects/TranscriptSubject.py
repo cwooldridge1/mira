@@ -8,8 +8,10 @@ class TranscriptSubject:
         self.transcripts = CircularBuffer(size=100)
         self.isTalking = False
 
+
     def registerObserver(self, observer: TranscriptObserver):
         self._observers.append(observer)
+
 
     def notifyObservers(self, data, method):
         for observer in self._observers:
@@ -33,8 +35,10 @@ class TranscriptSubject:
 
         self.transcripts.append(transcript)
 
+
     def onTranscriptEnd(self, transcript:str):
         self.notifyObservers(transcript, 'onTranscriptEnd') 
+
 
     def onTranscriptStart(self, transcript: str):
         self.notifyObservers(transcript, 'onTranscriptStart') 

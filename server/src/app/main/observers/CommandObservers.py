@@ -2,23 +2,24 @@ from . import TranscriptObserver
 from ..modules.commands import Command
 from typing import List
 from ...types.responses import SocketResponse
+from flask_socketio import SocketIO
 import re 
 
 class CommandObserver(TranscriptObserver):
-    def __init__(self, commands: List[Command], fallbackCommand: Command, sio):
+    def __init__(self, commands: List[Command], fallbackCommand: Command, sio: SocketIO):
         self.__commands = commands
         self.__fallbackCommand = fallbackCommand
         self.__WAKE = 'hey mira'
         self.sio = sio
         self.isWoken = False
 
-    def formatTranscript(self, transcript):
+    def formatTranscript(self, transcript:str):
         return re.sub(r'[^a-zA-Z0-9\s]','',transcript).lower()
 
-    def transcriptHasWakeupCommand(self, transcript):
+    def transcriptHasWakeupCommand(self, transcript:str):
         return transcript.count(self.__WAKE) > 0
 
-    def onTranscriptReceived(self, transcript):
+    def onTranscriptReceived(self, transcript:str):
         '''
         use to let the client know that the server is listening if we havent already
         '''
@@ -36,7 +37,7 @@ class CommandObserver(TranscriptObserver):
                 self.isWoken = True
 
     
-    def onTranscriptEnd(self, transcript):
+    def onTranscriptEnd(self, transcript:str):
         if self.isWoken:
             try:
                 loadingResp =  SocketResponse(
@@ -58,7 +59,7 @@ class CommandObserver(TranscriptObserver):
             self.isWoken = False
 
 
-    def getBestCommand(self, prompt) -> Command:
+    def getBestCommand(self, prompt:str) -> Command:
         commandConfidences = [command.getSimilarity(prompt) for command in self.__commands]
 
         bestConfidence = 0.4
