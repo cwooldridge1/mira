@@ -1,6 +1,8 @@
 import RecordRTC, { StereoAudioRecorder } from 'recordrtc';
 import store from './app/redux';
 
+const SERVER_URL: string = process.env.REACT_APP_SERVER_URL;
+
 // set initial state of application variables
 let socket: WebSocket | null;
 let recorder: RecordRTC | null;
@@ -18,7 +20,7 @@ const listener = async () => {
     recorder = null;
   }
 
-  const response = await fetch('http://127.0.0.1:8080/assembly-token'); // get temp session token from server
+  const response = await fetch(`${SERVER_URL}/assembly-token`); // get temp session token from server
   const data = await response.json();
 
   if (data.error) {

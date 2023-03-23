@@ -9,15 +9,6 @@ x-server:
   container_name: server
   platform: "linux/amd64"
 
-x-local-server:
-  &default-local-server
-  image: 549896682433.dkr.ecr.us-west-2.amazonaws.com/mira-local-server:latest
-  build: 
-    context: ../
-    dockerfile: ./production/localServerConfig/Dockerfile.LocalServer
-  container_name: local-server
-  privileged: true
-
 
 services:
   server:
@@ -27,13 +18,8 @@ services:
     << : *default-server
     image: 549896682433.dkr.ecr.us-west-2.amazonaws.com/mira:0.0.0
 
-  local-server:
-    *default-local-server
     
 
-  local-server-version:
-    << : *default-local-server
-    image: 549896682433.dkr.ecr.us-west-2.amazonaws.com/mira-local-server:0.0.0
   
 
 
