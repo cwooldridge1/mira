@@ -11,6 +11,13 @@ class SocketResponse(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid4()))
     event:str
 
+class ErrorMsg(BaseModel):
+    msg:str = 'An error occurred while processing the request'
+class SocketErrorResponse(SocketResponse):
+    type: str = 'error'
+    status: int = 500
+    event: str = 'error'
+    data: ErrorMsg = ErrorMsg()
 
 class ContentResponse(SocketResponse):
     event:str = 'content'

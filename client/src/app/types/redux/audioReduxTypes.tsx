@@ -3,6 +3,7 @@ interface InitialState {
   audio: any[];
   serverIsListening: boolean;
   serverIsLoadingResponse: boolean;
+  serverErrorMsg: string | null;
 }
 const AudioAction: string = 'AUDIO';
 

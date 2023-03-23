@@ -1,7 +1,7 @@
 from . import TranscriptObserver
 from ..modules.commands import Command
 from typing import List
-from ...types.responses import SocketResponse
+from ...types.responses import SocketResponse, SocketErrorResponse
 from flask_socketio import SocketIO
 import re 
 
@@ -16,7 +16,7 @@ class CommandObserver(TranscriptObserver):
     def formatTranscript(self, transcript:str):
         return re.sub(r'[^a-zA-Z0-9\s]','',transcript).lower()
 
-    def transcriptHasWakeupCommand(self, transcript:str):
+    def transcriptHasWakeCommand(self, transcript:str):
         return transcript.count(self.__WAKE) > 0
 
     def onTranscriptReceived(self, transcript:str):
@@ -26,7 +26,7 @@ class CommandObserver(TranscriptObserver):
         if not self.isWoken:
             transcript = self.formatTranscript(transcript)
 
-            if self.transcriptHasWakeupCommand(transcript):
+            if self.transcriptHasWakeCommand(transcript):
                 resp =  SocketResponse(
                     type='wake',
                     status =200,
@@ -53,8 +53,14 @@ class CommandObserver(TranscriptObserver):
 
                 command = self.getBestCommand(prompt)
                 command.handle(prompt)
+
             except Exception as e:
                 print(e)
+                try:
+                    resp = SocketErrorResponse()
+                    self.sio.emit(resp.event, resp)
+                except Exception as e:
+                    print(e)
 
             self.isWoken = False
 
