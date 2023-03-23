@@ -2,12 +2,13 @@ from abc import abstractmethod
 from ..MatchCommand import MatchCommand
 from ....types.responses import ContentResponse
 from ...metaclasses import MethodExceptionHandler
+from flask_socketio import SocketIO
 
 class Command(metaclass=MethodExceptionHandler):
     '''
     This class is a base class for commands and every command
     '''
-    def __init__(self, sio):
+    def __init__(self, sio: SocketIO):
         self.sio = sio
 
     @abstractmethod

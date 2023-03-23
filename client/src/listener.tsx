@@ -48,6 +48,7 @@ const listener = async () => {
   socket.onclose = (event: CloseEvent) => {
     console.log(event);
     socket = null;
+    listener();
   };
 
   socket.onopen = () => {

@@ -16,25 +16,30 @@ const SERVER_URL: string = process.env.REACT_APP_SERVER_URL;
 
 export const socketioMiddleware: Middleware = (store) => {
   const socket = io(SERVER_URL);
+
   socket.on('notification', (data) => {
     const audio = new Audio(notificationAudio);
     audio.play();
     store.dispatch(addNotification(data));
   });
-  socket.on('content', (data) => {
-    store.dispatch(addContent(data));
-    store.dispatch(setServerIsLoadingResponse(false));
+
+  socket.on('wake', (data) => {
+    store.dispatch(setServerIsListening(true));
   });
+
   socket.on('loading-response', (data) => {
     store.dispatch(setServerIsListening(false));
     store.dispatch(setServerIsLoadingResponse(true));
   });
+
+  socket.on('content', (data) => {
+    store.dispatch(addContent(data));
+    store.dispatch(setServerIsLoadingResponse(false));
+  });
+
   socket.on('tasks', (data) => {
     store.dispatch(updateTasks(data));
     store.dispatch(setServerIsLoadingResponse(false));
-  });
-  socket.on('wake', (data) => {
-    store.dispatch(setServerIsListening(true));
   });
 
   listener();
