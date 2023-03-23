@@ -5,7 +5,6 @@ import alpacaImage from '../../../assets/notification-icons/alpaca.png';
 
 const TradeNotification = ({ data, time, id, ...props }: NotificationProps) => {
   const { side, symbol, filled_avg_price, qty, status } = data;
-  console.log(data);
   let title: string =
     status === 'accepted' || status === 'pending_new'
       ? 'Order Created!'

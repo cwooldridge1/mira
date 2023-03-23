@@ -14,7 +14,7 @@ const ToastManager = () => {
   };
 
   return (
-    <div className="absolute top-0 right-0 max-h-full overflow-auto no-scrollbar z-50 w-80 mr-2">
+    <div className="absolute top-0 right-0 max-h-full overflow-auto no-scrollbar z-10 w-80 mr-2">
       {notificationToasts.map((obj, i) =>
         renderNotification(
           { ...obj, onLeftSwipe: () => onLeftSwipe(obj.id) },
