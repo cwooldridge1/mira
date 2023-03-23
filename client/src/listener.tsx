@@ -42,6 +42,7 @@ const listener = async () => {
   socket.onerror = (event: Event) => {
     console.error(event);
     socket!.close();
+    listener();
   };
 
   socket.onclose = (event: CloseEvent) => {

@@ -36,7 +36,7 @@ def createCommandObserver()-> CommandObserver:
 
     commands = [command(sio) for command in [ChartCommand, CodeCommand, AddTaskCommand, DeleteTaskCommand, GetTasksCommand]]
 
-    return CommandObserver(commands = commands, fallbackCommand = FallbackCommand(sio)) 
+    return CommandObserver(commands = commands, fallbackCommand = FallbackCommand(sio), sio = sio) 
 
 
 def initializeObservers():

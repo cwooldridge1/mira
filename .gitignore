@@ -3,3 +3,4 @@
 .converage
 server/audio.mp3
 client/out/
+*.env*

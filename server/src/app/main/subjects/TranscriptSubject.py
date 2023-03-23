@@ -18,6 +18,7 @@ class TranscriptSubject:
             except Exception as e:
                 print(e)
 
+
     def onTranscriptReceived(self, transcript: str):
         self.notifyObservers(transcript, 'onTranscriptReceived') 
 

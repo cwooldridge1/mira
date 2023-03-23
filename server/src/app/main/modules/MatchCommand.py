@@ -2,7 +2,7 @@ from gensim.corpora import Dictionary
 from gensim.similarities import SparseMatrixSimilarity
 from nltk.stem import PorterStemmer
 from nltk import download
-# download('stopwords')
+download('stopwords')
 from nltk.corpus import stopwords
 from typing import List
 

@@ -1,7 +1,6 @@
 from abc import abstractmethod
 from ..MatchCommand import MatchCommand
 from ....types.responses import ContentResponse
-from multiprocessing import Queue
 from ...metaclasses import MethodExceptionHandler
 
 class Command(metaclass=MethodExceptionHandler):
@@ -18,7 +17,7 @@ class Command(metaclass=MethodExceptionHandler):
         '''
         pass
 
-    def output(self, resp: ContentResponse):
+    def output(self, resp: ContentResponse) -> ContentResponse:
         '''
         Adds a response to the message queue so that the socket can emit it
         '''
