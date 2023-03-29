@@ -18,7 +18,7 @@ const TradeNotification = ({ data, time, id, ...props }: NotificationProps) => {
       ? `Canceled ${side} order for ${qty}x of ${symbol}`
       : `${
           side === 'buy' ? 'Bought' : 'Sold'
-        } ${qty}x ${qty} of ${symbol} @ $${filled_avg_price}`;
+        } ${qty}x ${qty} of ${symbol} @ $${filled_avg_price.toFixed(2)}`;
   return (
     <NotificationTile
       {...props}

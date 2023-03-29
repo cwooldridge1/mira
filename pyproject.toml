@@ -4,5 +4,3 @@ sort_by_size = true
 make_whitelist = true
 ignore_decorators = ["*.route", "@validator", "@after_this_request", "@atexit.register", "@sio.*"]
 
-[tool.mypi]
-strict = true
