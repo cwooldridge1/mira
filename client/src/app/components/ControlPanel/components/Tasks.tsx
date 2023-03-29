@@ -1,6 +1,6 @@
 import React from 'react';
-import { RootState } from '../redux';
-import List from './ui/List';
+import { RootState } from '../../../redux';
+import { List } from '../../elements';
 import { useSelector } from 'react-redux';
 
 const Tasks = () => {

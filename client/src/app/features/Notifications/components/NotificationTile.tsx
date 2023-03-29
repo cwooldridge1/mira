@@ -1,8 +1,8 @@
 import React, { memo, useEffect, useState } from 'react';
-import Tile from './ui/Tile';
-import { NotificationTileProps } from '../types';
+import Tile from 'app/components/Tile';
+import { NotificationTileProps } from '../../../types';
 import { useDispatch } from 'react-redux';
-import { deleteNotificationById } from '../redux/slices/notificationSlice';
+import { deleteNotificationById } from '../../../redux/slices/notificationSlice';
 
 const NotificationTile = ({
   title,

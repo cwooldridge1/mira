@@ -1,12 +1,12 @@
 import React from 'react';
-import { ContentProps } from '../../types';
+import { ContentProps } from '../../../types';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '../../redux';
+import { RootState } from '../../../redux';
 import {
   deleteContent,
   setActiveContent,
-} from '../../redux/slices/contentSlice';
-import CircleXmarkIcon from '../ui/icons/CircleXmarkIcon';
+} from '../../../redux/slices/contentSlice';
+import { CircleXmarkIcon } from 'app/components/elements/icons';
 
 const withContent = (WrappedComonent: React.ComponentType<ContentProps>) => {
   return (props: ContentProps) => {

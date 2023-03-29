@@ -11,7 +11,7 @@ import {
 
 //@ts-ignore
 import notificationAudio from '../../../assets/sounds/notificationAudio.mp3';
-import { listener } from '../../../listener';
+import { stream } from '../../features/AudioStreamer/utils/stream';
 
 const SERVER_URL: string = process.env.REACT_APP_SERVER_URL;
 
@@ -49,7 +49,7 @@ export const socketioMiddleware: Middleware = (store) => {
     store.dispatch(setServerIsLoadingResponse(false));
   });
 
-  listener();
+  stream();
 
   return (next) => (action: any) => {
     if (action.type === 'AUDIO/addTranscript') {
