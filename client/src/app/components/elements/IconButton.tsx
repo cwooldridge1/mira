@@ -9,7 +9,7 @@ type Props = {
   onClick?: () => void;
 };
 
-const NotificationButton = ({
+export const IconButton = ({
   icon,
   iconSize,
   showBell,
@@ -38,10 +38,9 @@ const NotificationButton = ({
   );
 };
 
-NotificationButton.defaultProps = {
+IconButton.defaultProps = {
   iconSize: 'text-2xl',
   color: 'bg-info',
   showBell: false,
   active: false,
 };
-export default NotificationButton;

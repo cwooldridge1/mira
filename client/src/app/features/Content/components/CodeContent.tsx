@@ -1,6 +1,6 @@
 import React from 'react';
 import { CopyBlock, dracula } from 'react-code-blocks';
-import { ContentProps } from '../../types';
+import { ContentProps } from '../../../types';
 
 const CodeContent = ({ data: { text, language } }: ContentProps) => {
   return (

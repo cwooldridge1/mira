@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContentProps } from '../../types';
+import { ContentProps } from '../../../types';
 
 const TextContent = ({ data: { text } }: ContentProps) => {
   return (

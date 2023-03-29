@@ -1,4 +1,4 @@
-import { InteractiveContainerProps } from '../../types';
+import { InteractiveContainerProps } from '../types';
 import withHorizontalSwipe from '../hocs/withHorizontalSwipe';
 
 const Tile = (props: InteractiveContainerProps) => {

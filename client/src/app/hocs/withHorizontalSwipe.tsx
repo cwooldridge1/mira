@@ -1,5 +1,5 @@
 import React from 'react';
-import { InteractiveContainerProps } from '../../types';
+import { InteractiveContainerProps } from '../types';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { useMotionValueEvent } from 'framer-motion';
 

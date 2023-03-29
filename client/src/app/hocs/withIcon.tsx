@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconProps } from '../../types';
+import { IconProps } from '../types';
 
 const withIcon = (WrappedComponent: React.FC<IconProps>) => {
   return (props: IconProps) => {
