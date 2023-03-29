@@ -8,9 +8,16 @@ interface NotificationComponents {
 const notificationComponentsIndex: NotificationComponents =
   notificationComponents;
 
-export const renderNotification = (obj: NotificationProps, i: number) => {
+export const renderNotification = (obj: NotificationProps) => {
   const Component = withNotification(notificationComponentsIndex[obj.type]);
-  return <Component {...obj} key={i} />;
+  return <Component {...obj} />;
 };
 
-export default renderNotification;
+export const getTradeNotificationTitle = (obj: NotificationProps) => {
+  const { status } = obj.data;
+  return status === 'accepted' || status === 'pending_new'
+    ? 'Order Created!'
+    : status === 'canceled'
+    ? 'Order Canceled'
+    : 'Order Executed';
+};
