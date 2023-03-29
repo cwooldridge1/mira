@@ -1,9 +1,8 @@
-import React from 'react';
-import ContentManager from './ContentManager';
+import ContentManager from '../features/Content/Content';
+import ControlPanel from './ControlPanel/ControlPanel';
+import ToastManager from '../features/Notifications/ToastManager';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux';
-import Info from './Info';
-import ToastManager from './ToastManager';
 
 /**
  * The application has differnt layout states depending on the availible content
@@ -14,7 +13,7 @@ const Layout = () => {
   return (
     <div className="flex flex-row h-screen overflow-hidden">
       <ToastManager />
-      <Info />
+      <ControlPanel />
       {!!content.length && (
         <div className="basis-3/4 flex flex-col items-center justify-center">
           <ContentManager />

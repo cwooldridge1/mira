@@ -1,6 +1,5 @@
 import * as notificationComponents from '../components/notifications';
-import { NotificationProps } from '../types';
-import withNotification from '../components/hocs/withNotification';
+import { NotificationProps } from '../../../types';
 
 interface NotificationComponents {
   [key: string]: React.ComponentType<NotificationProps>;
@@ -9,7 +8,7 @@ const notificationComponentsIndex: NotificationComponents =
   notificationComponents;
 
 export const renderNotification = (obj: NotificationProps) => {
-  const Component = withNotification(notificationComponentsIndex[obj.type]);
+  const Component = notificationComponentsIndex[obj.type];
   return <Component {...obj} />;
 };
 

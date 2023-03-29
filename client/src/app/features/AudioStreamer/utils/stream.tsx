@@ -1,5 +1,5 @@
 import RecordRTC, { StereoAudioRecorder } from 'recordrtc';
-import store from './app/redux';
+import store from '../../../redux';
 
 const SERVER_URL: string = process.env.REACT_APP_SERVER_URL;
 
@@ -8,7 +8,7 @@ let socket: WebSocket | null;
 let recorder: RecordRTC | null;
 
 // runs real-time transcription
-const listener = async () => {
+const stream = async () => {
   if (socket) {
     socket.send(JSON.stringify({ terminate_session: true }));
     socket.close();
@@ -44,13 +44,13 @@ const listener = async () => {
   socket.onerror = (event: Event) => {
     console.error(event);
     socket!.close();
-    listener();
+    stream();
   };
 
   socket.onclose = (event: CloseEvent) => {
     console.log(event);
     socket = null;
-    listener();
+    stream();
   };
 
   socket.onopen = () => {
@@ -89,4 +89,4 @@ const listener = async () => {
   };
 };
 
-export { listener };
+export { stream };

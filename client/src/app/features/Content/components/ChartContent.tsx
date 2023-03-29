@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContentProps } from '../../types';
+import { ContentProps } from 'app/types';
 // @ts-ignore
 import TradingViewWidget from 'react-tradingview-widget';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from '../redux';
-import { renderNotification } from '../utils/notifications';
+import { RootState } from '../../redux';
+import { renderNotification } from './utils/notifications';
 import { motion, AnimatePresence } from 'framer-motion';
 import styled from 'styled-components';
 
@@ -52,7 +52,7 @@ const Container = styled(motion.aside)`
 
 const Content = styled(motion.section)``;
 const Item = styled(motion.article)``;
-const NotificationManager = () => {
+const Notification = () => {
   const { notifications } = useSelector(
     (state: RootState) => state.notifications
   );
@@ -101,4 +101,4 @@ const NotificationManager = () => {
   );
 };
 
-export default NotificationManager;
+export default Notification;

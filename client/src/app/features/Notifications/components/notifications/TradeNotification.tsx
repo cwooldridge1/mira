@@ -1,7 +1,7 @@
 import React from 'react';
-import { NotificationProps } from '../../types';
+import { NotificationProps } from '../../../../types';
 import NotificationTile from '../NotificationTile';
-import alpacaImage from '../../../assets/notification-icons/alpaca.png';
+import alpacaImage from 'assets/notification-icons/alpaca.png';
 
 const TradeNotification = ({ data, time, id, ...props }: NotificationProps) => {
   const { side, symbol, filled_avg_price, qty, status } = data;
