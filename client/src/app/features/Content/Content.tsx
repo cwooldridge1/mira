@@ -1,16 +1,16 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from '../redux';
-import { ContentProps } from '../types';
+import { RootState } from '../../redux';
+import { ContentProps } from '../../types';
 import withContent from './hocs/withContent';
-import * as components from './content';
+import * as components from './components';
 
 interface ContentComponents {
   [key: string]: React.ComponentType<ContentProps>;
 }
 const contentComponentsIndex: ContentComponents = components;
 
-const ContentManager = () => {
+const Content = () => {
   const { content, activeContent } = useSelector(
     (state: RootState) => state.content
   );
@@ -35,4 +35,4 @@ const ContentManager = () => {
   );
 };
 
-export default ContentManager;
+export default Content;

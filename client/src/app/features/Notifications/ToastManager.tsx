@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '../redux';
-import { deleteNotificationToastById } from '../redux/slices/notificationSlice';
-import { renderNotification } from '../utils/notifications';
+import { RootState } from '../../redux';
+import { deleteNotificationToastById } from '../../redux/slices/notificationSlice';
+import { renderNotification } from './utils/notifications';
 
 const ToastManager = () => {
   const dispatch = useDispatch();

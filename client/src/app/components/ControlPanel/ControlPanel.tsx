@@ -1,16 +1,16 @@
 import React, { useLayoutEffect, useState, useRef } from 'react';
-import Clock from './Clock';
-import NotificationManager from './NotificationManager';
-import Weather from './Weather';
+import Clock from './components/Clock';
+import NotificationManager from '../../features/Notifications/Notifications';
+import Weather from './components/Weather';
 import { useSelector } from 'react-redux';
-import { RootState } from '../redux';
-import NotificationButton from './ui/NotificationButton';
-import { setActiveContent } from '../redux/slices/contentSlice';
+import { RootState } from '../../redux';
+import { IconButton } from '../elements';
+import { setActiveContent } from '../../redux/slices/contentSlice';
 import { useDispatch } from 'react-redux';
 import { ThunkDispatch } from '@reduxjs/toolkit';
-import Tasks from './Tasks';
+import Tasks from './components/Tasks';
 
-const Info = () => {
+const ControlPanel = () => {
   const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
 
   const {
@@ -89,18 +89,18 @@ const Info = () => {
           }
         >
           <div className="w-100 flex justify-center">
-            <NotificationButton
+            <IconButton
               icon="fa-solid fa-border-all"
               color="bg-grey"
               onClick={toggleContent}
             />
-            <NotificationButton
+            <IconButton
               icon="fa-solid fa-bell"
               showBell={notifications.length > 0}
               onClick={toggleNotifications}
               active={activeInfo === 'notifications'}
             />
-            <NotificationButton
+            <IconButton
               color={'bg-success'}
               icon="fa-solid fa-list"
               onClick={toggleTasks}
@@ -120,4 +120,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export default ControlPanel;
