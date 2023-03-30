@@ -7,7 +7,9 @@ from alpaca_trade_api.entity import Order
 from typing import Dict
 from .types.encoders import JSONWrapper, CustomJSONEncoder
 from .main.observers.CommandObservers import CommandObserver
+from .main.modules.tasks import Tasks
 
+TASK_LIST = Tasks.getTaskList()
 orders: Dict[str, Order] = dict()
 
 sio = SocketIO(cors_allowed_origins='*', json=JSONWrapper)

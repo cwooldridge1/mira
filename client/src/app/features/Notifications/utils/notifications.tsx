@@ -9,7 +9,7 @@ const notificationComponentsIndex: NotificationComponents =
 
 export const renderNotification = (obj: NotificationProps) => {
   const Component = notificationComponentsIndex[obj.type];
-  return <Component {...obj} />;
+  return <Component {...obj} key={obj.id} />;
 };
 
 export const getTradeNotificationTitle = (obj: NotificationProps) => {

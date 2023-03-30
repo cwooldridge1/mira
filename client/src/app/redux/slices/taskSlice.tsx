@@ -3,8 +3,9 @@ import InitialState, {
 } from '../../types/redux/taskReduxTypes';
 import { TasksResponse } from '../../types';
 
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction, current } from '@reduxjs/toolkit';
 
+const SERVER_URL: string = process.env.REACT_APP_SERVER_URL;
 const initialState: InitialState = {
   tasks: [],
 };
@@ -16,7 +17,15 @@ export const taskSlice = createSlice({
     updateTasks: (state, action: PayloadAction<TasksResponse>) => {
       state.tasks = action.payload.data.tasks;
     },
+    deleteTaskById: (state, action: PayloadAction<string>) => {
+      const id = action.payload;
+      state.tasks = current(state.tasks).filter((t) => t.id !== id);
+
+      fetch(`${SERVER_URL}/tasks?id=${id}`, {
+        method: 'DELETE',
+      });
+    },
   },
 });
-export const { updateTasks } = taskSlice.actions;
+export const { updateTasks, deleteTaskById } = taskSlice.actions;
 export default taskSlice.reducer;
