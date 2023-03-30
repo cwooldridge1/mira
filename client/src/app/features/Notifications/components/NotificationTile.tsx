@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Tile from 'app/components/Tile';
 import { NotificationTileProps } from '../../../types';
 import { useDispatch } from 'react-redux';
@@ -87,4 +87,4 @@ const NotificationTile = ({
   );
 };
 
-export default memo(NotificationTile);
+export default NotificationTile;

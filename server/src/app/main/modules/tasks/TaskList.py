@@ -3,22 +3,21 @@ from pydantic import BaseModel
 from typing import Optional, List
 from .TaskService import TaskService
 
-class Task(BaseModel):
-  id: str
-  title: str
-  status: Optional[str] #"needsAction" or "completed"
-  due: str = None
 
+class Task(BaseModel):
+    id: str
+    title: str
+    status: Optional[str]  # "needsAction" or "completed"
+    due: str = None
 
 
 class TaskList:
     def __init__(self, id: str, title: str):
-        self.id =id
+        self.id = id
         self.title = title
 
-
-    def addTask(self, title:str, due=None) -> None:
-        #https://developers.google.com/tasks/reference/rest/v1/tasks
+    def addTask(self, title: str, due=None) -> None:
+        # https://developers.google.com/tasks/reference/rest/v1/tasks
         task = {
             'title': title
         }
@@ -27,23 +26,22 @@ class TaskList:
 
         TaskService.tasks().insert(tasklist=self.id, body=task).execute()
 
-
-    def markTaskComplete(self, title:str):
+    def markTaskComplete(self, title: str):
         task = self.getTask(title)
         task.status = 'completed'
         TaskService.tasks().update(tasklist=self.id, task=task.id, body=task.dict()).execute()
 
-
-    def deleteTask(self, title:str):
+    def deleteTask(self, title: str):
         task = self.getTask(title)
         TaskService.tasks().delete(tasklist=self.id, task=task.id).execute()
 
+    def deleteTaskById(self, id: str):
+        TaskService.tasks().delete(tasklist=self.id, task=id).execute()
 
-    def getTasks(self) -> List[Task]: 
+    def getTasks(self) -> List[Task]:
         return [Task.parse_obj(task) for task in TaskService.tasks().list(tasklist=self.id).execute()['items']]
 
-
-    def getTask(self, title:str) -> Task:
+    def getTask(self, title: str) -> Task:
         '''
         method is not case sensitive
         '''

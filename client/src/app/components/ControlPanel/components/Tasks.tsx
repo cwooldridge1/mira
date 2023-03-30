@@ -1,16 +1,25 @@
 import React from 'react';
 import { RootState } from '../../../redux';
-import { List } from '../../elements';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { AnimatedWrapper } from 'app/components/AnimatedWrapper';
+import { deleteTaskById } from 'app/redux/slices/taskSlice';
+import Tile from 'app/components/Tile';
 
 const Tasks = () => {
+  const dispatch = useDispatch();
   const { tasks } = useSelector((state: RootState) => state.tasks);
+
   return (
-    <List>
-      {tasks.map((task, i) => (
-        <List.Item key={i}>{task.title}</List.Item>
+    <AnimatedWrapper>
+      {tasks.map((task) => (
+        <Tile
+          key={task.id}
+          onLeftSwipe={() => dispatch(deleteTaskById(task.id))}
+        >
+          {task.title}
+        </Tile>
       ))}
-    </List>
+    </AnimatedWrapper>
   );
 };
 
