@@ -19,9 +19,9 @@ def getAssemblyToken():
         data = response.json()
         return jsonify(data)
     except requests.exceptions.HTTPError as err:
-        status_code = err.response.status_code
-        error_message = err.response.text
-        return jsonify(error=error_message), status_code
+        statusCode = err.response.status_code
+        errorMessage = err.response.text
+        return jsonify(error=errorMessage), statusCode
 
 
 @generalRoutes.route('/tasks', methods=['DELETE'])
