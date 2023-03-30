@@ -37,9 +37,9 @@ const ControlPanel = () => {
         container: 'flex flex-col w-full items-center justify-center',
         info: activeInfo
           ? bg +
-            ' h-72 w-full sm:w-3/4 relative flex justify-between rounded-md'
+            ' h-72 w-full sm:w-11/12 relative flex justify-between rounded-md'
           : bg +
-            ' flex flex-col justify-center items-center transition duration-500 ease-in-out translate-x-1 h-72 rounded-md w-full sm:w-3/4',
+            ' flex flex-col justify-center items-center transition duration-500 ease-in-out translate-x-1 h-72 rounded-md w-full sm:w-11/12',
       },
       vertical: {
         container: bg + ' basis-1/4 pt-10 flex-col justify-center h-screen',

@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export interface IconProps {
   onClick?: () => void;
   onMouseEnter?: () => void;
@@ -7,7 +9,7 @@ export interface IconProps {
 }
 
 export interface InteractiveContainerProps {
-  children: JSX.Element | JSX.Element[] | string;
+  children: JSX.Element | JSX.Element[] | string | ReactNode;
   onLeftSwipe?: () => void;
   onRightSwipe?: () => void;
   [key: string]: any;
