@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { InteractiveContainerProps } from '../types';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { useMotionValueEvent } from 'framer-motion';
@@ -11,6 +11,9 @@ const withHorizontalSwipe = (
 ) => {
   return (props: InteractiveContainerProps) => {
     const x = useMotionValue(0);
+    //because of how swipe is triggered the callback function can get called many times and the use case for this is the element gets deleted on swipe
+    //so this ref ensures the callback is only called once
+    const hasSwiped = useRef(false);
 
     //the color of the x
     const color = 'rgb(248 113 113)';
@@ -21,11 +24,13 @@ const withHorizontalSwipe = (
 
     useMotionValueEvent(x, 'change', (diff) => {
       //only trigger callback if diff is greater than 100 px
-      if (props.onLeftSwipe && diff < -100) {
+      if (!hasSwiped.current && props.onLeftSwipe && diff < -100) {
         props.onLeftSwipe();
+        hasSwiped.current = true;
       }
-      if (props.onRightSwipe && diff < 100) {
+      if (!hasSwiped.current && props.onRightSwipe && diff < 100) {
         props.onRightSwipe();
+        hasSwiped.current = true;
       }
     });
 
