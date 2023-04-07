@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { AnimatedWrapper } from 'app/components/AnimatedWrapper';
 import { deleteTaskById } from 'app/redux/slices/taskSlice';
 import Tile from 'app/components/Tile';
+import SwipeableWrapper from 'app/components/SwipeableWrapper';
 
 const Tasks = () => {
   const dispatch = useDispatch();
@@ -12,12 +13,12 @@ const Tasks = () => {
   return (
     <AnimatedWrapper>
       {tasks.map((task) => (
-        <Tile
+        <SwipeableWrapper
           key={task.id}
           onLeftSwipe={() => dispatch(deleteTaskById(task.id))}
         >
-          {task.title}
-        </Tile>
+          <Tile>{task.title}</Tile>
+        </SwipeableWrapper>
       ))}
     </AnimatedWrapper>
   );
