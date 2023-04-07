@@ -24,14 +24,6 @@ export const containerSlice = createSlice({
     },
     setActiveContent(state, action: PayloadAction<ContentProps | null>) {
       state.activeContent = action.payload;
-      //whenever we set an item as an active content we want it to be in the front of the array so the content view is always by last viewed and last added
-      if (action.payload) {
-        let content = [...current(state.content)].filter(
-          (obj) => obj.id !== action.payload!.id
-        );
-        content.unshift(action.payload);
-        state.content = content;
-      }
     },
     toggleContent(state) {
       if (current(state.activeContent) || current(state.content.length) === 0)
