@@ -13,7 +13,7 @@ COPY ./server/src .
 RUN pip3 install -r requirements.txt
 
 # Overwrite env file with production
-COPY ./production/serverConfig/.env.server.production .env.server.production
+COPY ./docker/server/.env.server.production .env.server.production
 RUN mv .env.server.production .env
 
 CMD ["python", "main.py"]
