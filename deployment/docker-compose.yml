@@ -1,0 +1,12 @@
+version: "3"
+services:
+  server:
+    container_name: server
+    image: 549896682433.dkr.ecr.us-west-2.amazonaws.com/mira/server:latest
+    restart: always
+    ports:
+      - "80:80"
+  client:
+    container_name: client
+    image: 549896682433.dkr.ecr.us-west-2.amazonaws.com/mira/client:latest
+    restart: always
