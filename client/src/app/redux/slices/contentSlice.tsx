@@ -6,7 +6,24 @@ import { ContentProps } from '../../types';
 import { createSlice, PayloadAction, current } from '@reduxjs/toolkit';
 
 const initialState: InitialState = {
-  content: [],
+  content: [
+    {
+      type: 'chart',
+      id: 'dhsfjk',
+      event: 'content',
+      status: 200,
+      time: 4758947853,
+      data: { ticker: 'SPY' },
+    },
+    {
+      type: 'chart',
+      id: '123dhsfjfjdhfk',
+      event: 'content',
+      status: 200,
+      time: 47587947853,
+      data: { ticker: 'QQQ' },
+    },
+  ],
   activeContent: null,
 };
 
