@@ -1,5 +1,4 @@
 import { InteractiveContainerProps } from '../types';
-import withHorizontalSwipe from '../hocs/withHorizontalSwipe';
 
 const Tile = (props: InteractiveContainerProps) => {
   return (
@@ -9,4 +8,4 @@ const Tile = (props: InteractiveContainerProps) => {
   );
 };
 
-export default withHorizontalSwipe(Tile);
+export default Tile;

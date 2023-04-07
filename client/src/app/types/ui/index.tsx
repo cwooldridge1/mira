@@ -12,5 +12,9 @@ export interface InteractiveContainerProps {
   children: JSX.Element | JSX.Element[] | string | ReactNode;
   onLeftSwipe?: () => void;
   onRightSwipe?: () => void;
+  onSwipeUp?: () => void;
+  onSwipeDown?: () => void;
+  onClick?: () => void;
+  className?: string;
   [key: string]: any;
 }

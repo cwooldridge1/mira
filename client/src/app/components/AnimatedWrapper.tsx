@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-type ListProps = {
+type Props = {
   children: React.ReactElement[] | React.ReactElement;
 };
 
@@ -43,7 +43,7 @@ const variants = {
   },
 };
 
-export const AnimatedWrapper = ({ children }: ListProps) => {
+export const AnimatedWrapper = ({ children }: Props) => {
   children = Array.isArray(children) ? children : children ? [children] : [];
 
   return (
