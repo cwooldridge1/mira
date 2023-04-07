@@ -35,7 +35,11 @@ const Content = () => {
 
   const renderActiveContent = (props: ContentProps) => {
     const Component = contentComponentsIndex[props.type];
-    return <Component {...props} />;
+    return (
+      <div className="flex h-full items-center">
+        <Component {...props} />
+      </div>
+    );
   };
 
   return (
@@ -44,7 +48,7 @@ const Content = () => {
         {activeContent && (
           <motion.div
             layoutId={activeContent.id}
-            className="absolute h-full w-3/4 z-20"
+            className="absolute h-full w-3/4 z-20 bg-inherit"
             style={{ left: '25vw' }}
           >
             {renderActiveContent(activeContent)}
@@ -52,7 +56,9 @@ const Content = () => {
         )}
       </AnimatePresence>
       <div className="grid grid-rows-1 grid-flow-col gap-4 overflow-auto items-center p-5 no-scrollbar">
-        <AnimatePresence>{content.map(renderContent)}</AnimatePresence>
+        {!activeContent && (
+          <AnimatePresence>{content.map(renderContent)}</AnimatePresence>
+        )}
       </div>
     </>
   );
