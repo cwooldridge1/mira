@@ -24,8 +24,9 @@ const Content = () => {
       <SwipeableWrapper
         onClick={() => dispatch(setActiveContent(props))}
         onSwipeUp={() => dispatch(deleteContent(props))}
-        className="h-3/4 w-96"
+        className="h-3/4 w-96 mx-5"
         layoutId={props.id}
+        key={props.id}
       >
         <div className="absolute w-full h-full bg-transparent z-10 shadow-lg"></div>
         <Component {...props} />
@@ -43,24 +44,24 @@ const Content = () => {
   };
 
   return (
-    <>
+    <div className="relative w-full h-full items-center">
       <AnimatePresence>
         {activeContent && (
           <motion.div
             layoutId={activeContent.id}
-            className="absolute h-full w-3/4 z-20 bg-inherit"
-            style={{ left: '25vw' }}
+            className="absolute h-full w-full z-20"
+            style={{ left: '0vw' }}
           >
             {renderActiveContent(activeContent)}
           </motion.div>
         )}
       </AnimatePresence>
-      <div className="grid grid-rows-1 grid-flow-col gap-4 overflow-auto items-center p-5 no-scrollbar">
+      <div className="h-full grid grid-rows-1 grid-flow-col gap-4 overflow-auto items-center no-scrollbar">
         {!activeContent && (
           <AnimatePresence>{content.map(renderContent)}</AnimatePresence>
         )}
       </div>
-    </>
+    </div>
   );
 };
 

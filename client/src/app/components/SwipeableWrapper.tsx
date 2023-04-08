@@ -77,7 +77,7 @@ const SwipeableWrapper = ({
             left: '105%',
           }}
         >
-          <svg viewBox="0 0 50 50">
+          <svg width="50" height="50" viewBox="0 0 50 50">
             <motion.path
               fill="none"
               strokeWidth="2"

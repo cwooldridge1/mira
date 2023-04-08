@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from '../../redux';
+import { RootState } from 'app/redux';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -33,7 +33,7 @@ const AudioStreamHeader = () => {
     <>
       {(serverIsListening || serverIsLoadingResponse) && (
         <div className="bg-white absolute top-0 right-0 flex justify-between rounded-full items-center m-3 z-50 mx-w-3/4 max-w-full max-h-20">
-          {serverIsListening && (
+          {serverIsListening && transcripts.at(-1) !== '' && (
             <div className="ml-5 mr-5 p-3">{transcripts.at(-1)}</div>
           )}
 
