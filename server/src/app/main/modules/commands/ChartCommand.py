@@ -1,18 +1,13 @@
 from .Command import Command
 from ....types.responses import ContentResponse
+
+
 class ChartCommand(Command):
-    commands = ['Display a graph', 'Present a plot', 'Show a chart', 'Display a table', 'Bring up a graph', 'Show a plot', 'Present a chart', 'Bring up a table', 'Display a graph', 'Present a plot', 'Show a chart', 'Bring up a graph', 'Show a plot', 'pull up chart']
-    def handle(self, text):
-        '''
-        Finds the ticker symbol in a text else asks the user for a ticker symbol and calls the output method with the ticker and the type being 'chart'
-        '''
-        text = text.split('of')
-        if len(text) == 1:
-            # Audio.output('What ticker do you want to display?')
-            # ticker = Audio.input().upper()
-            pass
-        else:
-            ticker = text[1].upper()
-        resp = ContentResponse(type='chart', data={'ticker': ticker})
-        super().output(resp)
-        # Audio.output(f'Sure ill pull up a chart of {ticker}')
+    def __init__(self, ticker) -> None:
+        self.ticker = ticker
+
+    def execute(self) -> None:
+        pass
+
+    def getSocketResponse(self) -> ContentResponse:
+        return ContentResponse(type='chart', data={'ticker': self.ticker})
