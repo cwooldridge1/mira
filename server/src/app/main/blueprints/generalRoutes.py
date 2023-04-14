@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
 import requests
 
-from ... import TASK_LIST
+from ..constants import TASK_LIST
 generalRoutes = Blueprint('generalRoutes',  __name__, url_prefix='/')
 
 

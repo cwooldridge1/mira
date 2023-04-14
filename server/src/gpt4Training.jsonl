@@ -1,0 +1,1091 @@
+{"prompt": "Write Python code to find the factorial of a number", "completion": "CodeCommand, Python, factorial"}
+{"prompt": "Generate JavaScript code to toggle a div visibility", "completion": "CodeCommand, JavaScript, toggle div visibility"}
+{"prompt": "Write a SQL query to fetch all records from the 'users' table", "completion": "CodeCommand, SQL, fetch records from users table"}
+{"prompt": "Create a Python script to calculate the Fibonacci sequence", "completion": "CodeCommand, Python, Fibonacci sequence"}
+{"prompt": "Write a JavaScript function to calculate the sum of an array", "completion": "CodeCommand, JavaScript, sum of array"}
+{"prompt": "Provide a SQL query to count the number of rows in a 'products' table", "completion": "CodeCommand, SQL, count rows in products table"}
+{"prompt": "Generate Python code to read a CSV file", "completion": "CodeCommand, Python, read CSV file"}
+{"prompt": "Write a JavaScript function to find the largest number in an array", "completion": "CodeCommand, JavaScript, largest number in array"}
+{"prompt": "Create a SQL query to delete all records with a NULL value in the 'email' column", "completion": "CodeCommand, SQL, delete records with NULL email"}
+{"prompt": "Provide Python code to reverse a string", "completion": "CodeCommand, Python, reverse string"}
+{"prompt": "Write a JavaScript function to check if a number is prime", "completion": "CodeCommand, JavaScript, check prime number"}
+{"prompt": "Generate a SQL query to update the 'price' column for all records in the 'products' table", "completion": "CodeCommand, SQL, update price column in products table"}
+{"prompt": "Create Python code to find the GCD of two numbers", "completion": "CodeCommand, Python, GCD of two numbers"}
+{"prompt": "Write a JavaScript function to filter even numbers from an array", "completion": "CodeCommand, JavaScript, filter even numbers"}
+{"prompt": "Provide a SQL query to select the top 10 highest 'salary' values from the 'employees' table", "completion": "CodeCommand, SQL, top 10 highest salaries in employees table"}
+{"prompt": "Generate Python code to merge two dictionaries", "completion": "CodeCommand, Python, merge dictionaries"}
+{"prompt": "Write a JavaScript function to calculate the factorial of a given number", "completion": "CodeCommand, JavaScript, factorial of a number"}
+{"prompt": "Create a SQL query to insert a new row into the 'customers' table", "completion": "CodeCommand, SQL, insert row into customers table"}
+{"prompt": "Provide Python code to convert a list to a tuple", "completion": "CodeCommand, Python, convert list to tuple"}
+{"prompt": "Write a JavaScript function to sort an array of numbers in ascending order", "completion": "CodeCommand, JavaScript, sort array in ascending order"}
+{"prompt": "Generate a SQL query to select all records from the 'orders' table where the 'status' is 'delivered'", "completion": "CodeCommand, SQL, select delivered orders"}
+{"prompt": "Create Python code to find the longest word in a text file", "completion": "CodeCommand, Python, longest word in text file"}
+{"prompt": "Write a JavaScript function to concatenate two strings", "completion": "CodeCommand, JavaScript, concatenate strings"}
+{"prompt": "Generate Python code to find the sum of all elements in a list", "completion": "CodeCommand, Python, sum of list elements"}
+{"prompt": "Write a JavaScript function to determine if a string is a palindrome", "completion": "CodeCommand, JavaScript, palindrome"}
+{"prompt": "Provide a SQL query to create a new table called 'contacts' with columns for name, email, and phone number", "completion": "CodeCommand, SQL, create contacts table"}
+{"prompt": "Create Python code to calculate the area of a circle", "completion": "CodeCommand, Python, area of circle"}
+{"prompt": "Write a JavaScript function to find the first duplicate element in an array", "completion": "CodeCommand, JavaScript, first duplicate element"}
+{"prompt": "Generate a SQL query to select the average 'rating' value for each 'category' in the 'products' table", "completion": "CodeCommand, SQL, average rating per category"}
+{"prompt": "Provide Python code to convert Celsius to Fahrenheit", "completion": "CodeCommand, Python, Celsius to Fahrenheit"}
+{"prompt": "Write a JavaScript function to find the index of the smallest number in an array", "completion": "CodeCommand, JavaScript, index of smallest number"}
+{"prompt": "Create a SQL query to join the 'orders' and 'order_items' tables on the 'order_id' column", "completion": "CodeCommand, SQL, join orders and order_items"}
+{"prompt": "Generate Python code to calculate the LCM of two numbers", "completion": "CodeCommand, Python, LCM of two numbers"}
+{"prompt": "Write a JavaScript function to remove a specific element from an array", "completion": "CodeCommand, JavaScript, remove element from array"}
+{"prompt": "Provide a SQL query to select all records from the 'employees' table with a 'salary' greater than 50000", "completion": "CodeCommand, SQL, select employees with salary greater than 50000"}
+{"prompt": "Create Python code to generate a random number between 1 and 100", "completion": "CodeCommand, Python, random number between 1 and 100"}
+{"prompt": "Write a JavaScript function to capitalize the first letter of each word in a string", "completion": "CodeCommand, JavaScript, capitalize first letter of each word"}
+{"prompt": "Generate a SQL query to find the total number of 'orders' per 'customer_id'", "completion": "CodeCommand, SQL, total orders per customer"}
+{"prompt": "Provide Python code to check if a given year is a leap year", "completion": "CodeCommand, Python, leap year check"}
+{"prompt": "Write a JavaScript function to convert a string to title case", "completion": "CodeCommand, JavaScript, string to title case"}
+{"prompt": "Create a SQL query to find the sum of the 'price' column for all records in the 'sales' table", "completion": "CodeCommand, SQL, sum of price column in sales table"}
+{"prompt": "Generate Python code to count the occurrences of a specific word in a text file", "completion": "CodeCommand, Python, count word occurrences in text file"}
+{"prompt": "Write a JavaScript function to calculate the distance between two points given their coordinates", "completion": "CodeCommand, JavaScript, distance between two points"}
+{"prompt": "How do I write Python code to find the factorial of a number?", "completion": "CodeCommand, Python, factorial"}
+{"prompt": "Can you show me JavaScript code to toggle a div visibility?", "completion": "CodeCommand, JavaScript, toggle div visibility"}
+{"prompt": "What would a SQL query look like to fetch all records from the 'users' table?", "completion": "CodeCommand, SQL, fetch records from users table"}
+{"prompt": "How can I create a Python script to calculate the Fibonacci sequence?", "completion": "CodeCommand, Python, Fibonacci sequence"}
+{"prompt": "What's the JavaScript code to calculate the sum of an array?", "completion": "CodeCommand, JavaScript, sum of array"}
+{"prompt": "How do I write a SQL query to count the number of rows in a 'products' table?", "completion": "CodeCommand, SQL, count rows in products table"}
+{"prompt": "Can you provide Python code to read a CSV file?", "completion": "CodeCommand, Python, read CSV file"}
+{"prompt": "How can I write a JavaScript function to find the largest number in an array?", "completion": "CodeCommand, JavaScript, largest number in array"}
+{"prompt": "What's the SQL query to delete all records with a NULL value in the 'email' column?", "completion": "CodeCommand, SQL, delete records with NULL email"}
+{"prompt": "How do I write Python code to reverse a string?", "completion": "CodeCommand, Python, reverse string"}
+{"prompt": "Can you show me a JavaScript function to check if a number is prime?", "completion": "CodeCommand, JavaScript, check prime number"}
+{"prompt": "What would a SQL query look like to update the 'price' column for all records in the 'products' table?", "completion": "CodeCommand, SQL, update price column in products table"}
+{"prompt": "How can I create Python code to find the GCD of two numbers?", "completion": "CodeCommand, Python, GCD of two numbers"}
+{"prompt": "What's the JavaScript code to filter even numbers from an array?", "completion": "CodeCommand, JavaScript, filter even numbers"}
+{"prompt": "How do I write a SQL query to select the top 10 highest 'salary' values from the 'employees' table?", "completion": "CodeCommand, SQL, top 10 highest salaries in employees table"}
+{"prompt": "Can you provide Python code to merge two dictionaries?", "completion": "CodeCommand, Python, merge dictionaries"}
+{"prompt": "How can I write a JavaScript function to calculate the factorial of a given number?", "completion": "CodeCommand, JavaScript, factorial of a number"}
+{"prompt": "What's the SQL query to insert a new row into the 'customers' table?", "completion": "CodeCommand, SQL, insert row into customers table"}
+{"prompt": "How do I write Python code to convert a list to a tuple?", "completion": "CodeCommand, Python, convert list to tuple"}
+{"prompt": "Can you show me a JavaScript function to sort an array of numbers in ascending order?", "completion": "CodeCommand, JavaScript, sort array in ascending order"}
+{"prompt": "What would a SQL query look like to select all records from the 'orders' table where the 'status' is 'delivered'?", "completion": "CodeCommand, SQL, select delivered orders"}
+{"prompt": "What's the JavaScript code to concatenate two strings?", "completion": "CodeCommand, JavaScript, concatenate strings"}
+{"prompt": "How do I write a SQL query to select all columns from the 'movies' table, ordered by 'release_date' descending?", "completion": "CodeCommand, SQL, order movies by release_date descending"}
+{"prompt": "Can you provide Python code to find the sum of all elements in a list?", "completion": "CodeCommand, Python, sum of list elements"}
+{"prompt": "How can I write a JavaScript function to determine if a string is a palindrome?", "completion": "CodeCommand, JavaScript, palindrome"}
+{"prompt": "What would a SQL query look like to create a new table called 'contacts' with columns for name, email, and phone number?", "completion": "CodeCommand, SQL, create contacts table"}
+{"prompt": "How do I create Python code to calculate the area of a circle?", "completion": "CodeCommand, Python, area of circle"}
+{"prompt": "Can you show me a JavaScript function to find the first duplicate element in an array?", "completion": "CodeCommand, JavaScript, first duplicate element"}
+{"prompt": "What's the SQL query to select the average 'rating' value for each 'category' in the 'products' table?", "completion": "CodeCommand, SQL, average rating per category"}
+{"prompt": "How do I write Python code to convert Celsius to Fahrenheit?", "completion": "CodeCommand, Python, Celsius to Fahrenheit"}
+{"prompt": "Can you provide a JavaScript function to find the index of the smallest number in an array?", "completion": "CodeCommand, JavaScript, index of smallest number"}
+{"prompt": "How can I create a SQL query to join the 'orders' and 'order_items' tables on the 'order_id' column?", "completion": "CodeCommand, SQL, join orders and order_items"}
+{"prompt": "What would Python code look like to calculate the LCM of two numbers?", "completion": "CodeCommand, Python, LCM of two numbers"}
+{"prompt": "How do I write a JavaScript function to remove a specific element from an array?", "completion": "CodeCommand, JavaScript, remove element from array"}
+{"prompt": "Can you show me a SQL query to select all records from the 'employees' table with a 'salary' greater than 50000?", "completion": "CodeCommand, SQL, select employees with salary greater than 50000"}
+{"prompt": "What's the Python code to generate a random number between 1 and 100?", "completion": "CodeCommand, Python, random number between 1 and 100"}
+{"prompt": "How can I write a JavaScript function to capitalize the first letter of each word in a string?", "completion": "CodeCommand, JavaScript, capitalize first letter of each word"}
+{"prompt": "Can you provide a SQL query to find the total number of 'orders' per 'customer_id'?", "completion": "CodeCommand, SQL, total orders per customer"}
+{"prompt": "How do I write Python code to check if a given year is a leap year?", "completion": "CodeCommand, Python, leap year check"}
+{"prompt": "What would a JavaScript function look like to convert a string to title case?", "completion": "CodeCommand, JavaScript, string to title case"}
+{"prompt": "How can I create a SQL query to find the sum of the 'price' column for all records in the 'sales' table?", "completion": "CodeCommand, SQL, sum of price column in sales table"}
+{"prompt": "How can I write a Dockerfile to create an image for a Node.js application?", "completion": "CodeCommand, Dockerfile, Node.js application"}
+{"prompt": "Show me a basic Jenkinsfile for a continuous integration pipeline", "completion": "CodeCommand, Jenkinsfile, CI pipeline"}
+{"prompt": "What's a simple shell script to automate backing up files to a remote server?", "completion": "CodeCommand, Shell, backup files to remote server"}
+{"prompt": "How do I write a C++ program to calculate the factorial of a number?", "completion": "CodeCommand, C++, factorial"}
+{"prompt": "Can you provide a MongoDB query to find all documents with a specific value in a collection?", "completion": "CodeCommand, MongoDB, find documents by value"}
+{"prompt": "How can I create a basic C program to find the largest element in an array?", "completion": "CodeCommand, C, largest element in array"}
+{"prompt": "Write a shell script to monitor CPU usage on a Linux server", "completion": "CodeCommand, Shell, monitor CPU usage"}
+{"prompt": "How do I use a Makefile to compile a C++ program?", "completion": "CodeCommand, Makefile, compile C++ program"}
+{"prompt": "Can you show me a MongoDB query to update a specific field in all documents of a collection?", "completion": "CodeCommand, MongoDB, update field in collection"}
+{"prompt": "What's a C++ program to find the length of a given string?", "completion": "CodeCommand, C++, string length"}
+{"prompt": "How can I write a shell script to delete files older than a certain number of days?", "completion": "CodeCommand, Shell, delete files older than specified days"}
+{"prompt": "Create a C program to reverse a given number", "completion": "CodeCommand, C, reverse number"}
+{"prompt": "What would a basic Kubernetes deployment YAML file look like?", "completion": "CodeCommand, Kubernetes, deployment YAML"}
+{"prompt": "How do I write a MongoDB query to remove a specific document from a collection?", "completion": "CodeCommand, MongoDB, remove document"}
+{"prompt": "Can you provide a C++ program to merge two sorted arrays?", "completion": "CodeCommand, C++, merge sorted arrays"}
+{"prompt": "Show me a shell script to automate the process of creating new users on a Linux server", "completion": "CodeCommand, Shell, create new users"}
+{"prompt": "What's a C program to count the number of vowels in a given string?", "completion": "CodeCommand, C, count vowels"}
+{"prompt": "How can I create an Ansible playbook to install and configure a web server?", "completion": "CodeCommand, Ansible, install and configure web server"}
+{"prompt": "Write a MongoDB query to count the number of documents in a collection", "completion": "CodeCommand, MongoDB, count documents"}
+{"prompt": "Can you show me a C++ program to implement a simple stack?", "completion": "CodeCommand, C++, implement stack"}
+{"prompt": "How do I write a shell script to check if a file exists and display a message?", "completion": "CodeCommand, Shell, check if file exists"}
+{"prompt": "Create a C program to find the sum of digits of a given number", "completion": "CodeCommand, C, sum of digits"}
+{"prompt": "What would a Terraform configuration file look like to create an AWS EC2 instance?", "completion": "CodeCommand, Terraform, AWS EC2 instance"}
+{"prompt": "How do I write a C++ program to implement a simple linked list?", "completion": "CodeCommand, C++, linked list"}
+{"prompt": "Can you provide a shell script to find and replace a string in a file?", "completion": "CodeCommand, Shell, find and replace string in file"}
+{"prompt": "Show me a MongoDB query to add a new field to all documents in a collection", "completion": "CodeCommand, MongoDB, add field to documents"}
+{"prompt": "How can I create a C program to check if a number is even or odd?", "completion": "CodeCommand, C, even or odd"}
+{"prompt": "Write a simple GitLab CI configuration file for a Node.js project", "completion": "CodeCommand, GitLab CI, Node.js project"}
+{"prompt": "How do I write a shell script to start and stop a service on a Linux server?", "completion": "CodeCommand, Shell, start and stop service"}
+{"prompt": "Can you provide a C++ program to find the power of a number using recursion?", "completion": "CodeCommand, C++, power using recursion"}
+{"prompt": "What's a MongoDB query to rename a field in all documents of a collection?", "completion": "CodeCommand, MongoDB, rename field"}
+{"prompt": "How can I create a C program to copy the contents of one file to another?", "completion": "CodeCommand, C, copy file contents"}
+{"prompt": "Write a shell script to monitor disk usage on a Linux server", "completion": "CodeCommand, Shell, monitor disk usage"}
+{"prompt": "What would a C++ program look like to implement a binary search algorithm?", "completion": "CodeCommand, C++, binary search"}
+{"prompt": "How do I write a MongoDB query to limit the number of documents returned from a collection?", "completion": "CodeCommand, MongoDB, limit documents"}
+{"prompt": "Can you provide a shell script to create a backup of a MySQL database?", "completion": "CodeCommand, Shell, backup MySQL database"}
+{"prompt": "Create a C program to concatenate two strings without using strcat()", "completion": "CodeCommand, C, concatenate strings"}
+{"prompt": "How can I write a Prometheus alerting rule for high CPU usage?", "completion": "CodeCommand, Prometheus, alerting rule, high CPU usage"}
+{"prompt": "What's a C++ program to find the smallest element in an array?", "completion": "CodeCommand, C++, smallest element in array"}
+{"prompt": "How do I write a shell script to change file permissions for all files in a directory?", "completion": "CodeCommand, Shell, change file permissions"}
+{"prompt": "Can you provide a MongoDB query to sort documents by a specific field in descending order?", "completion": "CodeCommand, MongoDB, sort documents descending"}
+{"prompt": "What would a C program look like to implement a bubble sort algorithm?", "completion": "CodeCommand, C, bubble sort"}
+{"prompt": "Write a shell script to monitor memory usage on a Linux server", "completion": "CodeCommand, Shell, monitor memory usage"}
+{"prompt": "How can I create a C++ program to find the factorial of a number using recursion?", "completion": "CodeCommand, C++, factorial using recursion"}
+{"prompt": "What's a MongoDB query to update a specific field only if a certain condition is met?", "completion": "CodeCommand, MongoDB, conditional field update"}
+{"prompt": "How can I create a basic Flask application with a single route?", "completion": "CodeCommand, Flask, basic application with single route"}
+{"prompt": "What's the code to set up a Django project with a new app called 'blog'?", "completion": "CodeCommand, Django, set up project with blog app"}
+{"prompt": "How do I write a simple React component to display a list of items?", "completion": "CodeCommand, React, display list of items"}
+{"prompt": "Can you provide a Vue.js component to display a form with input fields?", "completion": "CodeCommand, Vue.js, display form with input fields"}
+{"prompt": "What would an Express.js route look like to handle a GET request to '/users'?", "completion": "CodeCommand, Express.js, GET request to /users"}
+{"prompt": "How can I create a basic Angular component to display a welcome message?", "completion": "CodeCommand, Angular, display welcome message"}
+{"prompt": "Write a Flask route to handle a POST request with JSON data", "completion": "CodeCommand, Flask, handle POST request with JSON data"}
+{"prompt": "How do I set up a Django model for a 'Product' with fields like name, price, and description?", "completion": "CodeCommand, Django, set up Product model"}
+{"prompt": "What's the code to create a new React component with state and event handling?", "completion": "CodeCommand, React, component with state and event handling"}
+{"prompt": "Can you provide a Laravel controller to handle CRUD operations for a 'Task' model?", "completion": "CodeCommand, Laravel, CRUD operations for Task model"}
+{"prompt": "How can I create a simple Vue.js component to display a counter with increment and decrement buttons?", "completion": "CodeCommand, Vue.js, counter with increment and decrement"}
+{"prompt": "What would a Flask route look like to handle file uploads?", "completion": "CodeCommand, Flask, handle file uploads"}
+{"prompt": "How do I create a Django view to display a list of 'Articles' from the database?", "completion": "CodeCommand, Django, display list of Articles"}
+{"prompt": "What's the code to create a React component using hooks?", "completion": "CodeCommand, React, component using hooks"}
+{"prompt": "How can I create an Angular service to fetch data from an API?", "completion": "CodeCommand, Angular, fetch data from API"}
+{"prompt": "Write a Flask route to serve static files from a 'static' folder", "completion": "CodeCommand, Flask, serve static files"}
+{"prompt": "How do I create a Django form for a 'Comment' model with fields like author, email, and content?", "completion": "CodeCommand, Django, create Comment form"}
+{"prompt": "Can you provide a React component to handle form submission?", "completion": "CodeCommand, React, handle form submission"}
+{"prompt": "What would a Vue.js component look like to display a list of items with a search filter?", "completion": "CodeCommand, Vue.js, display list with search filter"}
+{"prompt": "How can I create an Express.js middleware to log request details?", "completion": "CodeCommand, Express.js, log request details"}
+{"prompt": "What's the code to set up a Django URL pattern to map a view to a specific path?", "completion": "CodeCommand, Django, set up URL pattern"}
+{"prompt": "How do I create a simple Angular component with input binding?", "completion": "CodeCommand, Angular, component with input binding"}
+{"prompt": "Can you provide a Flask route to handle user authentication using sessions?", "completion": "CodeCommand, Flask, user authentication with sessions"}
+{"prompt": "What would a Django view look like to handle user registration?", "completion": "CodeCommand, Django, user registration"}
+{"prompt": "How do I create a React component to display a table with data from an API?", "completion": "CodeCommand, React, display table with API data"}
+{"prompt": "What's the code to create a Vue.js component with two-way data binding?", "completion": "CodeCommand, Vue.js, two-way data binding"}
+{"prompt": "How can I create an Angular directive to add custom behavior to an HTML element?", "completion": "CodeCommand, Angular, custom directive"}
+{"prompt": "Write a Flask route to handle a DELETE request for removing an item", "completion": "CodeCommand, Flask, DELETE request"}
+{"prompt": "How do I create a Django template to display a list of 'Books' from the database?", "completion": "CodeCommand, Django, display list of Books"}
+{"prompt": "Can you provide a React component to display a modal dialog?", "completion": "CodeCommand, React, display modal dialog"}
+{"prompt": "What would an Express.js route look like to handle a POST request to '/products'?", "completion": "CodeCommand, Express.js, POST request to /products"}
+{"prompt": "How can I create a Vue.js component to fetch and display data from an API?", "completion": "CodeCommand, Vue.js, fetch and display API data"}
+{"prompt": "What's the code to create an Angular pipe to transform text to uppercase?", "completion": "CodeCommand, Angular, text to uppercase pipe"}
+{"prompt": "How do I create a Flask blueprint to modularize my application?", "completion": "CodeCommand, Flask, blueprint"}
+{"prompt": "Can you provide a Django view to handle user login with authentication?", "completion": "CodeCommand, Django, user login with authentication"}
+{"prompt": "What would a React component look like to handle drag-and-drop functionality?", "completion": "CodeCommand, React, drag-and-drop"}
+{"prompt": "How can I create a Laravel route to handle a PATCH request to update a 'Task' model?", "completion": "CodeCommand, Laravel, PATCH request to update Task"}
+{"prompt": "What's the code to set up a Vue.js component with custom events?", "completion": "CodeCommand, Vue.js, custom events"}
+{"prompt": "How do I create an Angular component with output binding?", "completion": "CodeCommand, Angular, component with output binding"}
+{"prompt": "Can you provide a Flask route to handle pagination for a list of items?", "completion": "CodeCommand, Flask, handle pagination"}
+{"prompt": "What would a Django view look like to handle password reset functionality?", "completion": "CodeCommand, Django, password reset"}
+{"prompt": "How can I create a React component to handle user input with validation?", "completion": "CodeCommand, React, user input with validation"}
+{"prompt": "What's the code to create an Express.js route to serve an HTML file?", "completion": "CodeCommand, Express.js, serve HTML file"}
+{"prompt": "How do I create a Vue.js component to handle routing with Vue Router?", "completion": "CodeCommand, Vue.js, routing with Vue Router"}
+{"prompt": "Can you provide an Angular component to display a loading spinner?", "completion": "CodeCommand, Angular, display loading spinner"}
+{"prompt": "How can I list all files in a directory using a Unix command?", "completion": "CodeCommand, Unix, list all files"}
+{"prompt": "What's the command to create a new directory in Unix?", "completion": "CodeCommand, Unix, create new directory"}
+{"prompt": "How do I copy a file from one directory to another using a Unix command?", "completion": "CodeCommand, Unix, copy file"}
+{"prompt": "Can you provide a Unix command to find a file by its name?", "completion": "CodeCommand, Unix, find file by name"}
+{"prompt": "What would the command be to remove a file in Unix?", "completion": "CodeCommand, Unix, remove file"}
+{"prompt": "How can I create a symbolic link between two files using a Unix command?", "completion": "CodeCommand, Unix, create symbolic link"}
+{"prompt": "What's the command to change file permissions in Unix?", "completion": "CodeCommand, Unix, change file permissions"}
+{"prompt": "How do I display the contents of a file using a Unix command?", "completion": "CodeCommand, Unix, display file contents"}
+{"prompt": "Can you provide a Unix command to search for a specific text within a file?", "completion": "CodeCommand, Unix, search text within file"}
+{"prompt": "What would the command be to compress a file using gzip in Unix?", "completion": "CodeCommand, Unix, compress file with gzip"}
+{"prompt": "How can I extract a tar archive using a Unix command?", "completion": "CodeCommand, Unix, extract tar archive"}
+{"prompt": "What's the command to display disk usage in Unix?", "completion": "CodeCommand, Unix, display disk usage"}
+{"prompt": "How do I display the current date and time using a Unix command?", "completion": "CodeCommand, Unix, display current date and time"}
+{"prompt": "Can you provide a Unix command to create a new user?", "completion": "CodeCommand, Unix, create new user"}
+{"prompt": "What would the command be to kill a process by its ID in Unix?", "completion": "CodeCommand, Unix, kill process by ID"}
+{"prompt": "How can I monitor the CPU usage on a Unix system?", "completion": "CodeCommand, Unix, monitor CPU usage"}
+{"prompt": "What's the command to change the owner of a file in Unix?", "completion": "CodeCommand, Unix, change file owner"}
+{"prompt": "How do I display the list of running processes in Unix?", "completion": "CodeCommand, Unix, display running processes"}
+{"prompt": "Can you provide a Unix command to display network information?", "completion": "CodeCommand, Unix, display network information"}
+{"prompt": "What would the command be to change the group of a file in Unix?", "completion": "CodeCommand, Unix, change file group"}
+{"prompt": "How can I display the system uptime using a Unix command?", "completion": "CodeCommand, Unix, display system uptime"}
+{"prompt": "What's the command to display the free and used memory in Unix?", "completion": "CodeCommand, Unix, display free and used memory"}
+{"prompt": "How do I create a new group using a Unix command?", "completion": "CodeCommand, Unix, create new group"}
+{"prompt": "Can you provide a Unix command to display the system hostname?", "completion": "CodeCommand, Unix, display system hostname"}
+{"prompt": "What would the command be to display the kernel version in Unix?", "completion": "CodeCommand, Unix, display kernel version"}
+{"prompt": "How can I read a CSV file using pandas in Python?", "completion": "CodeCommand, Python, pandas, read CSV file"}
+{"prompt": "What's the code to create a NumPy array?", "completion": "CodeCommand, Python, NumPy, create array"}
+{"prompt": "How do I perform linear regression using scikit-learn?", "completion": "CodeCommand, Python, scikit-learn, linear regression"}
+{"prompt": "Can you provide a Python code snippet to create a bar chart using Matplotlib?", "completion": "CodeCommand, Python, Matplotlib, bar chart"}
+{"prompt": "What would the code be to create a DataFrame in pandas?", "completion": "CodeCommand, Python, pandas, create DataFrame"}
+{"prompt": "How can I normalize data using scikit-learn's MinMaxScaler?", "completion": "CodeCommand, Python, scikit-learn, normalize data, MinMaxScaler"}
+{"prompt": "What's the code to perform a logistic regression using scikit-learn?", "completion": "CodeCommand, Python, scikit-learn, logistic regression"}
+{"prompt": "How do I calculate the mean, median, and mode using pandas?", "completion": "CodeCommand, Python, pandas, mean, median, mode"}
+{"prompt": "Can you provide a Python code snippet to create a line chart using Seaborn?", "completion": "CodeCommand, Python, Seaborn, line chart"}
+{"prompt": "What would the code be to train a decision tree classifier using scikit-learn?", "completion": "CodeCommand, Python, scikit-learn, decision tree classifier"}
+{"prompt": "How can I merge two DataFrames using pandas?", "completion": "CodeCommand, Python, pandas, merge DataFrames"}
+{"prompt": "What's the code to group a DataFrame by a specific column using pandas?", "completion": "CodeCommand, Python, pandas, group DataFrame by column"}
+{"prompt": "How do I perform principal component analysis (PCA) using scikit-learn?", "completion": "CodeCommand, Python, scikit-learn, PCA"}
+{"prompt": "Can you provide a Python code snippet to create a heatmap using Seaborn?", "completion": "CodeCommand, Python, Seaborn, heatmap"}
+{"prompt": "What would the code be to perform k-means clustering using scikit-learn?", "completion": "CodeCommand, Python, scikit-learn, k-means clustering"}
+{"prompt": "How can I create a pivot table using pandas?", "completion": "CodeCommand, Python, pandas, pivot table"}
+{"prompt": "What's the code to create a scatter plot using Matplotlib?", "completion": "CodeCommand, Python, Matplotlib, scatter plot"}
+{"prompt": "How do I train a support vector machine (SVM) using scikit-learn?", "completion": "CodeCommand, Python, scikit-learn, support vector machine"}
+{"prompt": "Can you provide a Python code snippet to calculate the correlation between columns in a DataFrame?", "completion": "CodeCommand, Python, pandas, correlation"}
+{"prompt": "What would the code be to train a neural network using TensorFlow?", "completion": "CodeCommand, Python, TensorFlow, neural network"}
+{"prompt": "How can I create a time series plot using pandas?", "completion": "CodeCommand, Python, pandas, time series plot"}
+{"prompt": "What's the code to perform a t-test using SciPy?", "completion": "CodeCommand, Python, SciPy, t-test"}
+
+
+
+{"prompt": "Show me a chart for AAPL stock", "completion": "ChartCommand, AAPL"}
+{"prompt": "Can you display a chart for Tesla?", "completion": "ChartCommand, TSLA"}
+{"prompt": "Plot a chart for Amazon, please", "completion": "ChartCommand, AMZN"}
+{"prompt": "I want to see a chart of Microsoft's stock", "completion": "ChartCommand, MSFT"}
+{"prompt": "Visualize Google's stock performance", "completion": "ChartCommand, GOOGL"}
+{"prompt": "Draw a chart for Facebook's stock", "completion": "ChartCommand, FB"}
+{"prompt": "Could you show a chart for Netflix?", "completion": "ChartCommand, NFLX"}
+{"prompt": "Create a chart for Nvidia", "completion": "ChartCommand, NVDA"}
+{"prompt": "Please display a chart for AMD", "completion": "ChartCommand, AMD"}
+{"prompt": "I'd like to see a chart for Intel", "completion": "ChartCommand, INTC"}
+{"prompt": "Plot a chart for Alibaba's stock", "completion": "ChartCommand, BABA"}
+{"prompt": "Can you generate a chart for Zoom?", "completion": "ChartCommand, ZM"}
+{"prompt": "Show me a chart for Shopify", "completion": "ChartCommand, SHOP"}
+{"prompt": "Let's see a chart for Salesforce", "completion": "ChartCommand, CRM"}
+{"prompt": "I want to check out a chart for Adobe", "completion": "ChartCommand, ADBE"}
+{"prompt": "Visualize a chart for Oracle", "completion": "ChartCommand, ORCL"}
+{"prompt": "Draw a chart for IBM", "completion": "ChartCommand, IBM"}
+{"prompt": "Could you present a chart for Boeing?", "completion": "ChartCommand, BA"}
+{"prompt": "Create a chart for General Electric", "completion": "ChartCommand, GE"}
+{"prompt": "Please plot a chart for Exxon Mobil", "completion": "ChartCommand, XOM"}
+{"prompt": "I'd like to see a chart for Coca-Cola", "completion": "ChartCommand, KO"}
+{"prompt": "Show me a chart for PepsiCo", "completion": "ChartCommand, PEP"}
+{"prompt": "Can you display a chart for Johnson & Johnson?", "completion": "ChartCommand, JNJ"}
+{"prompt": "Plot a chart for Procter & Gamble", "completion": "ChartCommand, PG"}
+{"prompt": "I want to see a chart of Visa's stock", "completion": "ChartCommand, V"}
+{"prompt": "Visualize a chart for Mastercard", "completion": "ChartCommand, MA"}
+{"prompt": "Draw a chart for American Express", "completion": "ChartCommand, AXP"}
+{"prompt": "Could you show a chart for Goldman Sachs?", "completion": "ChartCommand, GS"}
+{"prompt": "Create a chart for JPMorgan Chase", "completion": "ChartCommand, JPM"}
+{"prompt": "Please display a chart for Wells Fargo", "completion": "ChartCommand, WFC"}
+{"prompt": "I'd like to see a chart for AT&T", "completion": "ChartCommand, T"}
+{"prompt": "Plot a chart for Verizon", "completion": "ChartCommand, VZ"}
+{"prompt": "Can you generate a chart for T-Mobile?", "completion": "ChartCommand, TMUS"}
+{"prompt": "Show me a chart for Comcast", "completion": "ChartCommand, CMCSA"}
+{"prompt": "Let's see a chart for Disney", "completion": "ChartCommand, DIS"}
+{"prompt": "I want to check out a chart for Netflix", "completion": "ChartCommand, NFLX"}
+{"prompt": "Visualize a chart for McDonald's", "completion": "ChartCommand, MCD"}
+{"prompt": "Draw a chart for Walmart", "completion": "ChartCommand, WMT"}
+{"prompt": "Could you present a chart for Home Depot?", "completion": "ChartCommand, HD"}
+{"prompt": "Create a chart for Caterpillar", "completion": "ChartCommand, CAT"}
+{"prompt": "Please plot a chart for 3M", "completion": "ChartCommand, MMM"}
+{"prompt": "I'd like to see a chart for UnitedHealth Group", "completion": "ChartCommand, UNH"}
+{"prompt": "Show me a chart for CVS Health", "completion": "ChartCommand, CVS"}
+{"prompt": "Can you display a chart for Merck?", "completion": "ChartCommand, MRK"}
+{"prompt": "Plot a chart for Pfizer", "completion": "ChartCommand, PFE"}
+{"prompt": "I want to see a chart of the S&P 500 Index", "completion": "ChartCommand, SPX"}
+{"prompt": "Visualize the Nasdaq Composite Index chart", "completion": "ChartCommand, IXIC"}
+{"prompt": "Draw a chart for the Dow Jones Industrial Average", "completion": "ChartCommand, DJIA"}
+{"prompt": "Could you show a chart for the Russell 2000 Index?", "completion": "ChartCommand, RUT"}
+{"prompt": "Create a chart for the FTSE 100 Index", "completion": "ChartCommand, UKX"}
+{"prompt": "Please display a chart for the Nikkei 225 Index", "completion": "ChartCommand, N225"}
+{"prompt": "I'd like to see a chart for the Hang Seng Index", "completion": "ChartCommand, HSI"}
+{"prompt": "Show me a chart for the CAC 40 Index", "completion": "ChartCommand, PX1"}
+{"prompt": "Can you display a chart for the DAX Index?", "completion": "ChartCommand, DAX"}
+{"prompt": "Plot a chart for the ASX 200 Index", "completion": "ChartCommand, AXJO"}
+{"prompt": "I want to see a chart of the S&P/TSX Composite Index", "completion": "ChartCommand, GSPTSE"}
+{"prompt": "Visualize a chart for the Bovespa Index", "completion": "ChartCommand, BVSP"}
+{"prompt": "Draw a chart for the Swiss Market Index", "completion": "ChartCommand, SSMI"}
+{"prompt": "Could you show a chart for the OMX Stockholm 30 Index?", "completion": "ChartCommand, OMXS30"}
+{"prompt": "Create a chart for the Euronext 100 Index", "completion": "ChartCommand, N100"}
+{"prompt": "Please plot a chart for the MSCI World Index", "completion": "ChartCommand, MSCI"}
+{"prompt": "I'd like to see a chart for the MSCI Emerging Markets Index", "completion": "ChartCommand, EEM"}
+{"prompt": "Show me a chart for the Global X SuperDividend ETF", "completion": "ChartCommand, SDIV"}
+{"prompt": "Can you display a chart for the SPDR Gold Trust ETF?", "completion": "ChartCommand, GLD"}
+{"prompt": "Let's see a chart for DIS", "completion": "ChartCommand, DIS"}
+{"prompt": "I want to check out a chart for NFLX", "completion": "ChartCommand, NFLX"}
+{"prompt": "Visualize a chart for MCD", "completion": "ChartCommand, MCD"}
+{"prompt": "Draw a chart for WMT", "completion": "ChartCommand, WMT"}
+{"prompt": "Could you present a chart for HD?", "completion": "ChartCommand, HD"}
+{"prompt": "Create a chart for CAT", "completion": "ChartCommand, CAT"}
+{"prompt": "Please plot a chart for MMM", "completion": "ChartCommand, MMM"}
+{"prompt": "I'd like to see a chart for UNH", "completion": "ChartCommand, UNH"}
+{"prompt": "Show me a chart for CVS", "completion": "ChartCommand, CVS"}
+{"prompt": "Can you display a chart for MRK?", "completion": "ChartCommand, MRK"}
+{"prompt": "Plot a chart for PFE", "completion": "ChartCommand, PFE"}
+{"prompt": "I want to see a chart of SPX", "completion": "ChartCommand, SPX"}
+{"prompt": "Visualize the IXIC chart", "completion": "ChartCommand, IXIC"}
+{"prompt": "Draw a chart for DJIA", "completion": "ChartCommand, DJIA"}
+{"prompt": "Could you show a chart for RUT?", "completion": "ChartCommand, RUT"}
+{"prompt": "Create a chart for UKX", "completion": "ChartCommand, UKX"}
+{"prompt": "Please display a chart for N225", "completion": "ChartCommand, N225"}
+{"prompt": "I'd like to see a chart for HSI", "completion": "ChartCommand, HSI"}
+{"prompt": "Show me a chart for PX1", "completion": "ChartCommand, PX1"}
+{"prompt": "Can you display a chart for DAX?", "completion": "ChartCommand, DAX"}
+{"prompt": "Plot a chart for AXJO", "completion": "ChartCommand, AXJO"}
+{"prompt": "I want to see a chart of GSPTSE", "completion": "ChartCommand, GSPTSE"}
+{"prompt": "Visualize a chart for BVSP", "completion": "ChartCommand, BVSP"}
+{"prompt": "Draw a chart for SSMI", "completion": "ChartCommand, SSMI"}
+{"prompt": "Could you show a chart for OMXS30?", "completion": "ChartCommand, OMXS30"}
+{"prompt": "Create a chart for N100", "completion": "ChartCommand, N100"}
+{"prompt": "Please plot a chart for MSCI", "completion": "ChartCommand, MSCI"}
+{"prompt": "I'd like to see a chart for EEM", "completion": "ChartCommand, EEM"}
+{"prompt": "Show me a chart for SDIV", "completion": "ChartCommand, SDIV"}
+{"prompt": "Can you display a chart for GLD?", "completion": "ChartCommand, GLD"}
+{"prompt": "Show me a chart for F", "completion": "ChartCommand, F"}
+{"prompt": "Can you display a chart for GM?", "completion": "ChartCommand, GM"}
+{"prompt": "Plot a chart for TSLA", "completion": "ChartCommand, TSLA"}
+{"prompt": "I want to see a chart of AAPL", "completion": "ChartCommand, AAPL"}
+{"prompt": "Visualize GOOGL's chart", "completion": "ChartCommand, GOOGL"}
+{"prompt": "Draw a chart for AMZN", "completion": "ChartCommand, AMZN"}
+{"prompt": "Could you show a chart for MSFT?", "completion": "ChartCommand, MSFT"}
+{"prompt": "Create a chart for FB", "completion": "ChartCommand, FB"}
+{"prompt": "Please display a chart for BA", "completion": "ChartCommand, BA"}
+{"prompt": "I'd like to see a chart for GE", "completion": "ChartCommand, GE"}
+{"prompt": "Show me a chart for XOM", "completion": "ChartCommand, XOM"}
+{"prompt": "Can you display a chart for CVX?", "completion": "ChartCommand, CVX"}
+{"prompt": "Plot a chart for KO", "completion": "ChartCommand, KO"}
+{"prompt": "I want to see a chart of PEP", "completion": "ChartCommand, PEP"}
+{"prompt": "Visualize JNJ's chart", "completion": "ChartCommand, JNJ"}
+{"prompt": "Draw a chart for PG", "completion": "ChartCommand, PG"}
+{"prompt": "Could you show a chart for V?", "completion": "ChartCommand, V"}
+{"prompt": "Create a chart for MA", "completion": "ChartCommand, MA"}
+{"prompt": "Please display a chart for AXP", "completion": "ChartCommand, AXP"}
+{"prompt": "I'd like to see a chart for GS", "completion": "ChartCommand, GS"}
+{"prompt": "Show me a chart for JPM", "completion": "ChartCommand, JPM"}
+{"prompt": "Can you display a chart for WFC?", "completion": "ChartCommand, WFC"}
+{"prompt": "Plot a chart for T", "completion": "ChartCommand, T"}
+{"prompt": "I want to see a chart of VZ", "completion": "ChartCommand, VZ"}
+{"prompt": "Visualize TMUS's chart", "completion": "ChartCommand, TMUS"}
+{"prompt": "Draw a chart for CMCSA", "completion": "ChartCommand, CMCSA"}
+{"prompt": "Could you show a chart for DIS?", "completion": "ChartCommand, DIS"}
+{"prompt": "Create a chart for NFLX", "completion": "ChartCommand, NFLX"}
+{"prompt": "Please display a chart for NVDA", "completion": "ChartCommand, NVDA"}
+{"prompt": "I'd like to see a chart for AMD", "completion": "ChartCommand, AMD"}
+{"prompt": "Show me a chart for INTC", "completion": "ChartCommand, INTC"}
+{"prompt": "Can you display a chart for BABA?", "completion": "ChartCommand, BABA"}
+{"prompt": "Plot a chart for ZM", "completion": "ChartCommand, ZM"}
+{"prompt": "I want to see a chart of SHOP", "completion": "ChartCommand, SHOP"}
+{"prompt": "Visualize CRM's chart", "completion": "ChartCommand, CRM"}
+{"prompt": "Let's see a chart for Activision Blizzard", "completion": "ChartCommand, ATVI"}
+{"prompt": "I want to check out a chart for Adobe", "completion": "ChartCommand, ADBE"}
+{"prompt": "Visualize a chart for Advanced Micro Devices", "completion": "ChartCommand, AMD"}
+{"prompt": "Draw a chart for Alexion Pharmaceuticals", "completion": "ChartCommand, ALXN"}
+{"prompt": "Could you present a chart for Align Technology?", "completion": "ChartCommand, ALGN"}
+{"prompt": "Create a chart for Alphabet", "completion": "ChartCommand, GOOGL"}
+{"prompt": "Please plot a chart for Amazon", "completion": "ChartCommand, AMZN"}
+{"prompt": "I'd like to see a chart for Amgen", "completion": "ChartCommand, AMGN"}
+{"prompt": "Show me a chart for Analog Devices", "completion": "ChartCommand, ADI"}
+{"prompt": "Can you display a chart for Ansys?", "completion": "ChartCommand, ANSS"}
+{"prompt": "Plot a chart for Apple", "completion": "ChartCommand, AAPL"}
+{"prompt": "I want to see a chart of Applied Materials", "completion": "ChartCommand, AMAT"}
+{"prompt": "Visualize ASML's chart", "completion": "ChartCommand, ASML"}
+{"prompt": "Draw a chart for Autodesk", "completion": "ChartCommand, ADSK"}
+{"prompt": "Could you show a chart for Automatic Data Processing?", "completion": "ChartCommand, ADP"}
+{"prompt": "Create a chart for Baidu", "completion": "ChartCommand, BIDU"}
+{"prompt": "Please display a chart for Biogen", "completion": "ChartCommand, BIIB"}
+{"prompt": "I'd like to see a chart for BioMarin Pharmaceutical", "completion": "ChartCommand, BMRN"}
+{"prompt": "Show me a chart for Booking Holdings", "completion": "ChartCommand, BKNG"}
+{"prompt": "Can you display a chart for Broadcom?", "completion": "ChartCommand, AVGO"}
+{"prompt": "Plot a chart for Cadence Design Systems", "completion": "ChartCommand, CDNS"}
+{"prompt": "I want to see a chart of Cerner", "completion": "ChartCommand, CERN"}
+{"prompt": "Visualize Charter Communications' chart", "completion": "ChartCommand, CHTR"}
+{"prompt": "Draw a chart for Check Point Software Technologies", "completion": "ChartCommand, CHKP"}
+{"prompt": "Could you show a chart for Cintas?", "completion": "ChartCommand, CTAS"}
+{"prompt": "Create a chart for Cisco Systems", "completion": "ChartCommand, CSCO"}
+{"prompt": "Please plot a chart for Citrix Systems", "completion": "ChartCommand, CTXS"}
+{"prompt": "I'd like to see a chart for Cognizant Technology Solutions", "completion": "ChartCommand, CTSH"}
+{"prompt": "Show me a chart for Copart", "completion": "ChartCommand, CPRT"}
+{"prompt": "Can you display a chart for Costco Wholesale?", "completion": "ChartCommand, COST"}
+{"prompt": "Plot a chart for CSX", "completion": "ChartCommand, CSX"}
+{"prompt": "I want to see a chart of Ctrip.com International", "completion": "ChartCommand, CTRP"}
+{"prompt": "Draw a chart for eBay", "completion": "ChartCommand, EBAY"}
+{"prompt": "Could you show a chart for Electronic Arts?", "completion": "ChartCommand, EA"}
+{"prompt": "Create a chart for Expedia Group", "completion": "ChartCommand, EXPE"}
+{"prompt": "Please plot a chart for Fastenal", "completion": "ChartCommand, FAST"}
+{"prompt": "I'd like to see a chart for Fiserv", "completion": "ChartCommand, FISV"}
+{"prompt": "Show me a chart for Gilead Sciences", "completion": "ChartCommand, GILD"}
+{"prompt": "Can you display a chart for IDEXX Laboratories?", "completion": "ChartCommand, IDXX"}
+{"prompt": "Plot a chart for Illumina", "completion": "ChartCommand, ILMN"}
+{"prompt": "I want to see a chart of Incyte", "completion": "ChartCommand, INCY"}
+{"prompt": "Visualize Intel's chart", "completion": "ChartCommand, INTC"}
+{"prompt": "Draw a chart for Intuit", "completion": "ChartCommand, INTU"}
+{"prompt": "Could you show a chart for Intuitive Surgical?", "completion": "ChartCommand, ISRG"}
+{"prompt": "Create a chart for JD.com", "completion": "ChartCommand, JD"}
+{"prompt": "Please display a chart for KLA", "completion": "ChartCommand, KLAC"}
+{"prompt": "I'd like to see a chart for Lam Research", "completion": "ChartCommand, LRCX"}
+{"prompt": "Show me a chart for Liberty Global", "completion": "ChartCommand, LBTYA"}
+{"prompt": "Can you display a chart for Marvell Technology?", "completion": "ChartCommand, MRVL"}
+{"prompt": "Plot a chart for MercadoLibre", "completion": "ChartCommand, MELI"}
+{"prompt": "I want to see a chart of Microchip Technology", "completion": "ChartCommand, MCHP"}
+{"prompt": "Visualize Micron Technology's chart", "completion": "ChartCommand, MU"}
+{"prompt": "Draw a chart for Microsoft", "completion": "ChartCommand, MSFT"}
+{"prompt": "Could you show a chart for Moderna?", "completion": "ChartCommand, MRNA"}
+{"prompt": "Create a chart for Mondelez International", "completion": "ChartCommand, MDLZ"}
+{"prompt": "Please plot a chart for Monster Beverage", "completion": "ChartCommand, MNST"}
+{"prompt": "I'd like to see a chart for Mylan", "completion": "ChartCommand, MYL"}
+{"prompt": "Show me a chart for NetApp", "completion": "ChartCommand, NTAP"}
+{"prompt": "Can you display a chart for Netflix?", "completion": "ChartCommand, NFLX"}
+{"prompt": "Plot a chart for NXP Semiconductors", "completion": "ChartCommand, NXPI"}
+{"prompt": "I want to see a chart of Nvidia", "completion": "ChartCommand, NVDA"}
+{"prompt": "Visualize O'Reilly Automotive's chart", "completion": "ChartCommand, ORLY"}
+{"prompt": "Draw a chart for PACCAR", "completion": "ChartCommand, PCAR"}
+{"prompt": "Could you show a chart for Paychex?", "completion": "ChartCommand, PAYX"}
+{"prompt": "Create a chart for PayPal Holdings", "completion": "ChartCommand, PYPL"}
+
+
+{"prompt": "Add a task to buy groceries", "completion": "AddTaskCommand, buy groceries"}
+{"prompt": "Please create a task to pick up the kids from school", "completion": "AddTaskCommand, pick up the kids from school"}
+{"prompt": "Can you add a task for me to call the dentist?", "completion": "AddTaskCommand, call the dentist"}
+{"prompt": "Create a task to pay the electricity bill", "completion": "AddTaskCommand, pay the electricity bill"}
+{"prompt": "Set up a task for a meeting with my team", "completion": "AddTaskCommand, meeting with my team"}
+{"prompt": "Add task to book a doctor's appointment", "completion": "AddTaskCommand, book a doctor's appointment"}
+{"prompt": "Insert a task for finishing the report", "completion": "AddTaskCommand, finishing the report"}
+{"prompt": "Make a task to go for a run", "completion": "AddTaskCommand, go for a run"}
+{"prompt": "Could you create a task to call my mom?", "completion": "AddTaskCommand, call my mom"}
+{"prompt": "Add task to clean the house", "completion": "AddTaskCommand, clean the house"}
+{"prompt": "Please add a task to take out the trash", "completion": "AddTaskCommand, take out the trash"}
+{"prompt": "Can you create a task for me to buy a birthday gift?", "completion": "AddTaskCommand, buy a birthday gift"}
+{"prompt": "Create a task to do laundry", "completion": "AddTaskCommand, do laundry"}
+{"prompt": "Set up a task for a lunch date with friends", "completion": "AddTaskCommand, lunch date with friends"}
+{"prompt": "Add task to study for the exam", "completion": "AddTaskCommand, study for the exam"}
+{"prompt": "Insert a task for grocery shopping", "completion": "AddTaskCommand, grocery shopping"}
+{"prompt": "Make a task to walk the dog", "completion": "AddTaskCommand, walk the dog"}
+{"prompt": "Could you create a task to send a follow-up email?", "completion": "AddTaskCommand, send a follow-up email"}
+{"prompt": "Add task to prepare dinner", "completion": "AddTaskCommand, prepare dinner"}
+{"prompt": "Please add a task to submit the project", "completion": "AddTaskCommand, submit the project"}
+{"prompt": "Can you create a task for me to water the plants?", "completion": "AddTaskCommand, water the plants"}
+{"prompt": "Create a task to renew my driver's license", "completion": "AddTaskCommand, renew my driver's license"}
+{"prompt": "Set up a task for a yoga class", "completion": "AddTaskCommand, yoga class"}
+{"prompt": "Add task to catch up with a friend", "completion": "AddTaskCommand, catch up with a friend"}
+{"prompt": "Insert a task for a haircut", "completion": "AddTaskCommand, haircut"}
+{"prompt": "Make a task to book a vacation", "completion": "AddTaskCommand, book a vacation"}
+{"prompt": "Could you create a task to order food?", "completion": "AddTaskCommand, order food"}
+{"prompt": "Add task to reply to emails", "completion": "AddTaskCommand, reply to emails"}
+{"prompt": "Please add a task to plan a party", "completion": "AddTaskCommand, plan a party"}
+{"prompt": "Add a task to study Spanish", "completion": "AddTaskCommand, study Spanish"}
+{"prompt": "Please create a task to send a birthday card", "completion": "AddTaskCommand, send a birthday card"}
+{"prompt": "Can you add a task for me to renew my passport?", "completion": "AddTaskCommand, renew my passport"}
+{"prompt": "Create a task to declutter my closet", "completion": "AddTaskCommand, declutter my closet"}
+{"prompt": "Set up a task for a dentist appointment", "completion": "AddTaskCommand, dentist appointment"}
+{"prompt": "Add task to organize the pantry", "completion": "AddTaskCommand, organize the pantry"}
+{"prompt": "Insert a task for painting the living room", "completion": "AddTaskCommand, painting the living room"}
+{"prompt": "Make a task to read a book", "completion": "AddTaskCommand, read a book"}
+{"prompt": "Could you create a task to buy a new phone?", "completion": "AddTaskCommand, buy a new phone"}
+{"prompt": "Add task to bake a cake", "completion": "AddTaskCommand, bake a cake"}
+{"prompt": "Please add a task to pay the rent", "completion": "AddTaskCommand, pay the rent"}
+{"prompt": "Can you create a task for me to fix the leaky faucet?", "completion": "AddTaskCommand, fix the leaky faucet"}
+{"prompt": "Create a task to write a blog post", "completion": "AddTaskCommand, write a blog post"}
+{"prompt": "Set up a task for a phone call with a friend", "completion": "AddTaskCommand, phone call with a friend"}
+{"prompt": "Add task to organize the desk", "completion": "AddTaskCommand, organize the desk"}
+{"prompt": "Insert a task for buying a gift for my partner", "completion": "AddTaskCommand, buying a gift for my partner"}
+{"prompt": "Make a task to clean the car", "completion": "AddTaskCommand, clean the car"}
+{"prompt": "Could you create a task to order groceries?", "completion": "AddTaskCommand, order groceries"}
+{"prompt": "Add task to buy a new laptop", "completion": "AddTaskCommand, buy a new laptop"}
+{"prompt": "Please add a task to fix the bike", "completion": "AddTaskCommand, fix the bike"}
+{"prompt": "Can you create a task for me to renew my library books?", "completion": "AddTaskCommand, renew my library books"}
+{"prompt": "Create a task to schedule a doctor's appointment", "completion": "AddTaskCommand, schedule a doctor's appointment"}
+{"prompt": "Set up a task for a picnic in the park", "completion": "AddTaskCommand, picnic in the park"}
+{"prompt": "Add task to organize the garage", "completion": "AddTaskCommand, organize the garage"}
+{"prompt": "Insert a task for buying new shoes", "completion": "AddTaskCommand, buying new shoes"}
+{"prompt": "Make a task to research a new hobby", "completion": "AddTaskCommand, research a new hobby"}
+{"prompt": "Could you create a task to update my resume?", "completion": "AddTaskCommand, update my resume"}
+{"prompt": "Add task to schedule a hair appointment", "completion": "AddTaskCommand, schedule a hair appointment"}
+{"prompt": "Can you add a task for me to plant some flowers?", "completion": "AddTaskCommand, plant some flowers"}
+{"prompt": "Create a task to go for a hike", "completion": "AddTaskCommand, go for a hike"}
+{"prompt": "Set up a task for a job interview", "completion": "AddTaskCommand, job interview"}
+{"prompt": "Add task to practice yoga", "completion": "AddTaskCommand, practice yoga"}
+{"prompt": "Insert a task for buying a new camera", "completion": "AddTaskCommand, buying a new camera"}
+{"prompt": "Make a task to call the insurance company", "completion": "AddTaskCommand, call the insurance company"}
+{"prompt": "Could you create a task to buy a gift for my sister's wedding?", "completion": "AddTaskCommand, buy a gift for my sister's wedding"}
+{"prompt": "Add task to learn a new recipe", "completion": "AddTaskCommand, learn a new recipe"}
+{"prompt": "Please add a task to fix the broken fence", "completion": "AddTaskCommand, fix the broken fence"}
+{"prompt": "Can you create a task for me to declutter my email inbox?", "completion": "AddTaskCommand, declutter my email inbox"}
+{"prompt": "Create a task to donate clothes to a charity", "completion": "AddTaskCommand, donate clothes to a charity"}
+{"prompt": "Set up a task for a haircut appointment", "completion": "AddTaskCommand, haircut appointment"}
+{"prompt": "Add task to write a thank-you note", "completion": "AddTaskCommand, write a thank-you note"}
+{"prompt": "Insert a task for grocery shopping for a party", "completion": "AddTaskCommand, grocery shopping for a party"}
+{"prompt": "Make a task to clean the windows", "completion": "AddTaskCommand, clean the windows"}
+{"prompt": "Could you create a task to practice meditation?", "completion": "AddTaskCommand, practice meditation"}
+{"prompt": "Add task to research a new phone plan", "completion": "AddTaskCommand, research a new phone plan"}
+{"prompt": "Please add a task to fix the leaky roof", "completion": "AddTaskCommand, fix the leaky roof"}
+{"prompt": "Can you create a task for me to buy a new printer?", "completion": "AddTaskCommand, buy a new printer"}
+{"prompt": "Create a task to clean the gutters", "completion": "AddTaskCommand, clean the gutters"}
+{"prompt": "Set up a task for a dinner party with friends", "completion": "AddTaskCommand, dinner party with friends"}
+{"prompt": "Add task to learn a new language", "completion": "AddTaskCommand, learn a new language"}
+{"prompt": "Insert a task for renewing the gym membership", "completion": "AddTaskCommand, renewing the gym membership"}
+{"prompt": "Make a task to research a new laptop", "completion": "AddTaskCommand, research a new laptop"}
+{"prompt": "Could you create a task to create a budget?", "completion": "AddTaskCommand, create a budget"}
+{"prompt": "Add task to organize the bookshelf", "completion": "AddTaskCommand, organize the bookshelf"}
+{"prompt": "Please add a task to buy a new bicycle", "completion": "AddTaskCommand, buy a new bicycle"}
+{"prompt": "Can you create a task for me to plan a road trip?", "completion": "AddTaskCommand, plan a road trip"}
+{"prompt": "Create a task to go to the gym", "completion": "AddTaskCommand, go to the gym"}
+{"prompt": "Set up a task for a job application", "completion": "AddTaskCommand, job application"}
+{"prompt": "Add task to write a blog article", "completion": "AddTaskCommand, write a blog article"}
+{"prompt": "Insert a task for organizing the closet", "completion": "AddTaskCommand, organizing the closet"}
+{"prompt": "Make a task to practice playing the guitar", "completion": "AddTaskCommand, practice playing the guitar"}
+{"prompt": "Could you create a task to buy a new pair of shoes?", "completion": "AddTaskCommand, buy a new pair of shoes"}
+{"prompt": "Add task to update the website", "completion": "AddTaskCommand, update the website"}
+{"prompt": "Please add a task to fix the broken dishwasher", "completion": "AddTaskCommand, fix the broken dishwasher"}
+{"prompt": "Can you create a task for me to clean the refrigerator?", "completion": "AddTaskCommand, clean the refrigerator"}
+{"prompt": "Create a task to practice mindfulness", "completion": "AddTaskCommand, practice mindfulness"}
+{"prompt": "Set up a task for a charity event", "completion": "AddTaskCommand, charity event"}
+{"prompt": "Add task to create a meal plan", "completion": "AddTaskCommand, create a meal plan"}
+{"prompt": "Insert a task for buying new curtains", "completion": "AddTaskCommand, buying new curtains"}
+{"prompt": "Make a task to declutter the garage", "completion": "AddTaskCommand, declutter the garage"}
+{"prompt": "Could you create a task to buy a new pair of headphones?", "completion": "AddTaskCommand, buy a new pair of headphones"}
+{"prompt": "Add task to clean the oven", "completion": "AddTaskCommand, clean the oven"}
+{"prompt": "Please add a task to fix the squeaky door", "completion": "AddTaskCommand, fix the squeaky door"}
+{"prompt": "Can you create a task for me to write a book?", "completion": "AddTaskCommand, write a book"}
+{"prompt": "Create a task to plan a surprise party", "completion": "AddTaskCommand, plan a surprise party"}
+{"prompt": "Set up a task for a home renovation project", "completion": "AddTaskCommand, home renovation project"}
+{"prompt": "Add task to research a new investment opportunity", "completion": "AddTaskCommand, research a new investment opportunity"}
+{"prompt": "Insert a task for buying new socks", "completion": "AddTaskCommand, buying new socks"}
+{"prompt": "Make a task to practice drawing", "completion": "AddTaskCommand, practice drawing"}
+{"prompt": "Could you create a task to buy a new winter coat?", "completion": "AddTaskCommand, buy a new winter coat"}
+{"prompt": "Add task to learn how to code", "completion": "AddTaskCommand, learn how to code"}
+{"prompt": "Please add a task to plant a vegetable garden", "completion": "AddTaskCommand, plant a vegetable garden"}
+{"prompt": "Can you create a task for me to organize the pantry?", "completion": "AddTaskCommand, organize the pantry"}
+{"prompt": "Create a task to plan a trip to the beach", "completion": "AddTaskCommand, plan a trip to the beach"}
+{"prompt": "Add a task to work on my computer science project", "completion": "AddTaskCommand, work on my computer science project"}
+{"prompt": "Can you set up a task for me to study for my algorithms exam?", "completion": "AddTaskCommand, study for my algorithms exam"}
+{"prompt": "Please create a task to apply for a part-time job", "completion": "AddTaskCommand, apply for a part-time job"}
+{"prompt": "Add task to do laundry and clean my room", "completion": "AddTaskCommand, do laundry and clean my room"}
+{"prompt": "Insert a task for practicing coding problems", "completion": "AddTaskCommand, practicing coding problems"}
+{"prompt": "Make a task to update my resume and LinkedIn profile", "completion": "AddTaskCommand, update my resume and LinkedIn profile"}
+{"prompt": "Could you add a task to learn a new programming language?", "completion": "AddTaskCommand, learn a new programming language"}
+{"prompt": "Add task to organize my computer files and folders", "completion": "AddTaskCommand, organize my computer files and folders"}
+{"prompt": "Please set up a task to research internships", "completion": "AddTaskCommand, research internships"}
+{"prompt": "Create a task to prepare for the next semester", "completion": "AddTaskCommand, prepare for the next semester"}
+{"prompt": "Set up a task for a meeting with my academic advisor", "completion": "AddTaskCommand, meeting with my academic advisor"}
+{"prompt": "Add task to study for my database systems exam", "completion": "AddTaskCommand, study for my database systems exam"}
+{"prompt": "Insert a task for building a personal website", "completion": "AddTaskCommand, building a personal website"}
+{"prompt": "Make a task to read a computer science book", "completion": "AddTaskCommand, read a computer science book"}
+{"prompt": "Could you add a task to contribute to an open-source project?", "completion": "AddTaskCommand, contribute to an open-source project"}
+{"prompt": "Add task to practice coding challenges on LeetCode", "completion": "AddTaskCommand, practice coding challenges on LeetCode"}
+{"prompt": "Please set up a task to apply for scholarships", "completion": "AddTaskCommand, apply for scholarships"}
+{"prompt": "Create a task to attend a virtual tech conference", "completion": "AddTaskCommand, attend a virtual tech conference"}
+{"prompt": "Set up a task for a phone call with my mentor", "completion": "AddTaskCommand, phone call with my mentor"}
+{"prompt": "Add task to research computer science master's programs", "completion": "AddTaskCommand, research computer science master's programs"}
+{"prompt": "Insert a task for practicing coding interviews", "completion": "AddTaskCommand, practicing coding interviews"}
+{"prompt": "Make a task to start a coding project", "completion": "AddTaskCommand, start a coding project"}
+{"prompt": "Could you add a task to study for the GRE exam?", "completion": "AddTaskCommand, study for the GRE exam"}
+{"prompt": "Add task to participate in a hackathon", "completion": "AddTaskCommand, participate in a hackathon"}
+{"prompt": "Please set up a task to build a portfolio of coding projects", "completion": "AddTaskCommand, build a portfolio of coding projects"}
+{"prompt": "Add a task to work on my coding portfolio website", "completion": "AddTaskCommand, work on my coding portfolio website"}
+{"prompt": "Can you set up a task for me to research coding bootcamps?", "completion": "AddTaskCommand, research coding bootcamps"}
+{"prompt": "Please create a task to complete my online coding course", "completion": "AddTaskCommand, complete my online coding course"}
+{"prompt": "Add task to study for my operating systems exam", "completion": "AddTaskCommand, study for my operating systems exam"}
+{"prompt": "Insert a task for creating a coding blog", "completion": "AddTaskCommand, creating a coding blog"}
+{"prompt": "Make a task to learn how to use Git and GitHub", "completion": "AddTaskCommand, learn how to use Git and GitHub"}
+{"prompt": "Could you add a task to develop a mobile app?", "completion": "AddTaskCommand, develop a mobile app"}
+{"prompt": "Add task to build a Raspberry Pi project", "completion": "AddTaskCommand, build a Raspberry Pi project"}
+{"prompt": "Please set up a task to practice public speaking", "completion": "AddTaskCommand, practice public speaking"}
+{"prompt": "Create a task to participate in a coding challenge", "completion": "AddTaskCommand, participate in a coding challenge"}
+{"prompt": "Set up a task for a phone call with a recruiter", "completion": "AddTaskCommand, phone call with a recruiter"}
+{"prompt": "Add task to learn web development", "completion": "AddTaskCommand, learn web development"}
+{"prompt": "Insert a task for attending a coding meetup", "completion": "AddTaskCommand, attending a coding meetup"}
+{"prompt": "Make a task to create a coding tutorial video", "completion": "AddTaskCommand, create a coding tutorial video"}
+{"prompt": "Could you add a task to participate in a coding conference?", "completion": "AddTaskCommand, participate in a coding conference"}
+{"prompt": "Add task to study for my computer architecture exam", "completion": "AddTaskCommand, study for my computer architecture exam"}
+{"prompt": "Please set up a task to prepare for a coding interview", "completion": "AddTaskCommand, prepare for a coding interview"}
+{"prompt": "Create a task to learn a new coding language", "completion": "AddTaskCommand, learn a new coding language"}
+{"prompt": "Set up a task for a code review with a mentor", "completion": "AddTaskCommand, code review with a mentor"}
+{"prompt": "Add task to build a chatbot", "completion": "AddTaskCommand, build a chatbot"}
+{"prompt": "Insert a task for building a computer from scratch", "completion": "AddTaskCommand, building a computer from scratch"}
+{"prompt": "Make a task to study for my discrete mathematics exam", "completion": "AddTaskCommand, study for my discrete mathematics exam"}
+{"prompt": "Could you add a task to participate in a coding hackathon?", "completion": "AddTaskCommand, participate in a coding hackathon"}
+{"prompt": "Add task to learn artificial intelligence", "completion": "AddTaskCommand, learn artificial intelligence"}
+{"prompt": "Please set up a task to work on a group coding project", "completion": "AddTaskCommand, work on a group coding project"}
+{"prompt": "Add a task to practice playing the guitar", "completion": "AddTaskCommand, practice playing the guitar"}
+{"prompt": "Can you set up a task for me to start a meditation practice?", "completion": "AddTaskCommand, start a meditation practice"}
+{"prompt": "Please create a task to clean the car", "completion": "AddTaskCommand, clean the car"}
+{"prompt": "Add task to read a book on personal finance", "completion": "AddTaskCommand, read a book on personal finance"}
+{"prompt": "Insert a task for buying groceries", "completion": "AddTaskCommand, buying groceries"}
+{"prompt": "Make a task to declutter the closet", "completion": "AddTaskCommand, declutter the closet"}
+{"prompt": "Could you add a task to go for a morning run?", "completion": "AddTaskCommand, go for a morning run"}
+{"prompt": "Add task to plan a weekend trip", "completion": "AddTaskCommand, plan a weekend trip"}
+{"prompt": "Please set up a task to organize the pantry", "completion": "AddTaskCommand, organize the pantry"}
+{"prompt": "Create a task to learn a new language", "completion": "AddTaskCommand, learn a new language"}
+{"prompt": "Set up a task for a date night with my significant other", "completion": "AddTaskCommand, date night with my significant other"}
+{"prompt": "Add task to do yoga for 20 minutes every day", "completion": "AddTaskCommand, do yoga for 20 minutes every day"}
+{"prompt": "Insert a task for watering the plants", "completion": "AddTaskCommand, watering the plants"}
+{"prompt": "Make a task to volunteer at a local charity", "completion": "AddTaskCommand, volunteer at a local charity"}
+{"prompt": "Could you add a task to learn how to cook a new recipe?", "completion": "AddTaskCommand, learn how to cook a new recipe"}
+{"prompt": "Add task to visit the art museum", "completion": "AddTaskCommand, visit the art museum"}
+{"prompt": "Please set up a task to call a friend or family member", "completion": "AddTaskCommand, call a friend or family member"}
+{"prompt": "Create a task to take a photography class", "completion": "AddTaskCommand, take a photography class"}
+{"prompt": "Set up a task for a movie night at home", "completion": "AddTaskCommand, movie night at home"}
+{"prompt": "Add task to go on a hike this weekend", "completion": "AddTaskCommand, go on a hike this weekend"}
+{"prompt": "Insert a task for scheduling a dentist appointment", "completion": "AddTaskCommand, scheduling a dentist appointment"}
+{"prompt": "Make a task to take a dance class", "completion": "AddTaskCommand, take a dance class"}
+{"prompt": "Could you add a task to write in my journal every day?", "completion": "AddTaskCommand, write in my journal every day"}
+{"prompt": "Add task to practice playing the piano", "completion": "AddTaskCommand, practice playing the piano"}
+{"prompt": "Please set up a task to learn how to knit", "completion": "AddTaskCommand, learn how to knit"}
+{"prompt": "Create a task to plan a family vacation", "completion": "AddTaskCommand, plan a family vacation"}
+{"prompt": "Add a task to try a new restaurant in town", "completion": "AddTaskCommand, try a new restaurant in town"}
+{"prompt": "Can you set up a task for me to go to the gym three times a week?", "completion": "AddTaskCommand, go to the gym three times a week"}
+{"prompt": "Please create a task to go to the library", "completion": "AddTaskCommand, go to the library"}
+{"prompt": "Add task to take the dog for a walk every day", "completion": "AddTaskCommand, take the dog for a walk every day"}
+{"prompt": "Insert a task for attending a live music performance", "completion": "AddTaskCommand, attending a live music performance"}
+{"prompt": "Make a task to start a book club with friends", "completion": "AddTaskCommand, start a book club with friends"}
+{"prompt": "Could you add a task to learn how to draw?", "completion": "AddTaskCommand, learn how to draw"}
+{"prompt": "Add task to try a new recipe every week", "completion": "AddTaskCommand, try a new recipe every week"}
+{"prompt": "Please set up a task to go to the farmer's market on Saturday", "completion": "AddTaskCommand, go to the farmer's market on Saturday"}
+{"prompt": "Create a task to take a pottery class", "completion": "AddTaskCommand, take a pottery class"}
+{"prompt": "Set up a task for a weekend trip to the beach", "completion": "AddTaskCommand, weekend trip to the beach"}
+{"prompt": "Add task to go to a local art show", "completion": "AddTaskCommand, go to a local art show"}
+{"prompt": "Insert a task for trying a new type of tea", "completion": "AddTaskCommand, trying a new type of tea"}
+{"prompt": "Make a task to volunteer at a food bank", "completion": "AddTaskCommand, volunteer at a food bank"}
+{"prompt": "Could you add a task to learn how to play chess?", "completion": "AddTaskCommand, learn how to play chess"}
+{"prompt": "Add task to take a bike ride on a nearby trail", "completion": "AddTaskCommand, take a bike ride on a nearby trail"}
+{"prompt": "Please set up a task to go to a comedy show", "completion": "AddTaskCommand, go to a comedy show"}
+{"prompt": "Create a task to plant a vegetable garden", "completion": "AddTaskCommand, plant a vegetable garden"}
+{"prompt": "Set up a task for a picnic in the park", "completion": "AddTaskCommand, picnic in the park"}
+{"prompt": "Add task to go on a weekend camping trip", "completion": "AddTaskCommand, go on a weekend camping trip"}
+{"prompt": "Insert a task for trying a new type of cuisine", "completion": "AddTaskCommand, trying a new type of cuisine"}
+{"prompt": "Make a task to take a calligraphy class", "completion": "AddTaskCommand, take a calligraphy class"}
+{"prompt": "Could you add a task to visit a nearby winery?", "completion": "AddTaskCommand, visit a nearby winery"}
+{"prompt": "Add task to take a dance class", "completion": "AddTaskCommand, take a dance class"}
+{"prompt": "Please set up a task to take a cooking class", "completion": "AddTaskCommand, take a cooking class"}
+
+{"prompt": "Remove the task to practice playing the guitar", "completion": "DeleteTaskCommand, practice playing the guitar"}
+{"prompt": "Can you delete the task to start a meditation practice?", "completion": "DeleteTaskCommand, start a meditation practice"}
+{"prompt": "Please remove the task to clean the car", "completion": "DeleteTaskCommand, clean the car"}
+{"prompt": "Delete the task to read a book on personal finance", "completion": "DeleteTaskCommand, read a book on personal finance"}
+{"prompt": "Remove the task for buying groceries", "completion": "DeleteTaskCommand, buying groceries"}
+{"prompt": "Delete the task to declutter the closet", "completion": "DeleteTaskCommand, declutter the closet"}
+{"prompt": "Could you remove the task to go for a morning run?", "completion": "DeleteTaskCommand, go for a morning run"}
+{"prompt": "Please delete the task to plan a weekend trip", "completion": "DeleteTaskCommand, plan a weekend trip"}
+{"prompt": "Remove the task to organize the pantry", "completion": "DeleteTaskCommand, organize the pantry"}
+{"prompt": "Delete the task to learn a new language", "completion": "DeleteTaskCommand, learn a new language"}
+{"prompt": "Remove the task for a date night with my significant other", "completion": "DeleteTaskCommand, date night with my significant other"}
+{"prompt": "Delete the task to do yoga for 20 minutes every day", "completion": "DeleteTaskCommand, do yoga for 20 minutes every day"}
+{"prompt": "Please remove the task to watering the plants", "completion": "DeleteTaskCommand, watering the plants"}
+{"prompt": "Delete the task to volunteer at a local charity", "completion": "DeleteTaskCommand, volunteer at a local charity"}
+{"prompt": "Remove the task to learn how to cook a new recipe?", "completion": "DeleteTaskCommand, learn how to cook a new recipe"}
+{"prompt": "Delete the task to visit the art museum", "completion": "DeleteTaskCommand, visit the art museum"}
+{"prompt": "Please remove the task to call a friend or family member", "completion": "DeleteTaskCommand, call a friend or family member"}
+{"prompt": "Delete the task to take a photography class", "completion": "DeleteTaskCommand, take a photography class"}
+{"prompt": "Remove the task for a movie night at home", "completion": "DeleteTaskCommand, movie night at home"}
+{"prompt": "Delete the task to go on a hike this weekend", "completion": "DeleteTaskCommand, go on a hike this weekend"}
+{"prompt": "Please remove the task to scheduling a dentist appointment", "completion": "DeleteTaskCommand, scheduling a dentist appointment"}
+{"prompt": "Delete the task to take a dance class", "completion": "DeleteTaskCommand, take a dance class"}
+{"prompt": "Remove the task to write in my journal every day?", "completion": "DeleteTaskCommand, write in my journal every day"}
+{"prompt": "Delete the task to practice playing the piano", "completion": "DeleteTaskCommand, practice playing the piano"}
+{"prompt": "Please remove the task to learn how to knit", "completion": "DeleteTaskCommand, learn how to knit"}
+{"prompt": "Delete the task to plan a family vacation", "completion": "DeleteTaskCommand, plan a family vacation"}
+{"prompt": "Remove the task for a game night with friends", "completion": "DeleteTaskCommand, game night with friends"}
+{"prompt": "Cross off the task to go to the gym", "completion": "DeleteTaskCommand, go to the gym"}
+{"prompt": "Could you scratch the task to call my grandmother?", "completion": "DeleteTaskCommand, call my grandmother"}
+{"prompt": "Erase the task to organize the closet", "completion": "DeleteTaskCommand, organize the closet"}
+{"prompt": "Cancel the task to take the dog for a walk", "completion": "DeleteTaskCommand, take the dog for a walk"}
+{"prompt": "Strike out the task to try a new recipe", "completion": "DeleteTaskCommand, try a new recipe"}
+{"prompt": "Remove or scratch the task to read a book on personal growth", "completion": "DeleteTaskCommand, read a book on personal growth"}
+{"prompt": "Please eliminate the task to practice mindfulness", "completion": "DeleteTaskCommand, practice mindfulness"}
+{"prompt": "Erase or cancel the task to take a yoga class", "completion": "DeleteTaskCommand, take a yoga class"}
+{"prompt": "Scratch off the task to visit a new coffee shop", "completion": "DeleteTaskCommand, visit a new coffee shop"}
+{"prompt": "Remove or cross out the task to go to the art museum", "completion": "DeleteTaskCommand, go to the art museum"}
+{"prompt": "Cancel the task to meditate for 10 minutes", "completion": "DeleteTaskCommand, meditate for 10 minutes"}
+{"prompt": "Please scratch out the task to learn how to salsa dance", "completion": "DeleteTaskCommand, learn how to salsa dance"}
+{"prompt": "Eliminate or erase the task to take a creative writing class", "completion": "DeleteTaskCommand, take a creative writing class"}
+{"prompt": "Delete or cross off the task to bake a cake", "completion": "DeleteTaskCommand, bake a cake"}
+{"prompt": "Please cancel the task to take a photography course", "completion": "DeleteTaskCommand, take a photography course"}
+{"prompt": "Scratch off the task to go on a hike this weekend", "completion": "DeleteTaskCommand, go on a hike this weekend"}
+{"prompt": "Remove or erase the task to declutter the garage", "completion": "DeleteTaskCommand, declutter the garage"}
+{"prompt": "Strike out the task to take a dance lesson", "completion": "DeleteTaskCommand, take a dance lesson"}
+{"prompt": "Please eliminate the task to try a new restaurant", "completion": "DeleteTaskCommand, try a new restaurant"}
+{"prompt": "Erase the task to read a classic novel", "completion": "DeleteTaskCommand, read a classic novel"}
+{"prompt": "Cancel or cross off the task to attend a concert", "completion": "DeleteTaskCommand, attend a concert"}
+{"prompt": "Please strike out the task to learn how to make sushi", "completion": "DeleteTaskCommand, learn how to make sushi"}
+{"prompt": "Eliminate the task to visit a national park", "completion": "DeleteTaskCommand, visit a national park"}
+{"prompt": "Remove the task to take a pottery class", "completion": "DeleteTaskCommand, take a pottery class"}
+{"prompt": "Scratch out the task to go on a road trip", "completion": "DeleteTaskCommand, go on a road trip"}
+{"prompt": "Delete the task to take a calligraphy lesson", "completion": "DeleteTaskCommand, take a calligraphy lesson"}
+{"prompt": "Please remove the task to plant a herb garden", "completion": "DeleteTaskCommand, plant a herb garden"}
+{"prompt": "Eliminate the task to plan a surprise party for a friend", "completion": "DeleteTaskCommand, plan a surprise party for a friend"}
+{"prompt": "Cancel or scratch out the task to go to the beach this weekend", "completion": "DeleteTaskCommand, go to the beach this weekend"}
+{"prompt": "Please erase the task to learn how to make macarons", "completion": "DeleteTaskCommand, learn how to make macarons"}
+{"prompt": "Strike out or remove the task to plan a day trip", "completion": "DeleteTaskCommand, plan a day trip"}
+{"prompt": "Delete the task to take a coding bootcamp", "completion": "DeleteTaskCommand, take a coding bootcamp"}
+{"prompt": "Please eliminate the task to start a book club", "completion": "DeleteTaskCommand, start a book club"}
+{"prompt": "Erase or remove the task to join a local sports team", "completion": "DeleteTaskCommand, join a local sports team"}
+{"prompt": "Cancel the task to learn how to knit a sweater", "completion": "DeleteTaskCommand, learn how to knit a sweater"}
+{"prompt": "Scratch out the task to attend a wine and painting event", "completion": "DeleteTaskCommand, attend a wine and painting event"}
+{"prompt": "Remove or eliminate the task to go kayaking", "completion": "DeleteTaskCommand, go kayaking"}
+{"prompt": "Cancel the task to try a new hair style", "completion": "DeleteTaskCommand, try a new hair style"}
+{"prompt": "Please strike out the task to learn how to make soap", "completion": "DeleteTaskCommand, learn how to make soap"}
+{"prompt": "Eliminate the task to practice meditation every morning", "completion": "DeleteTaskCommand, practice meditation every morning"}
+{"prompt": "Erase or remove the task to try stand-up paddleboarding", "completion": "DeleteTaskCommand, try stand-up paddleboarding"}
+{"prompt": "Scratch out the task to read a biography", "completion": "DeleteTaskCommand, read a biography"}
+{"prompt": "Please eliminate the task to go on a weekend trip to the mountains", "completion": "DeleteTaskCommand, go on a weekend trip to the mountains"}
+{"prompt": "Delete the task to attend a dance performance", "completion": "DeleteTaskCommand, attend a dance performance"}
+{"prompt": "Please erase the task to take a barista class", "completion": "DeleteTaskCommand, take a barista class"}
+{"prompt": "Strike out or remove the task to go to a pottery exhibition", "completion": "DeleteTaskCommand, go to a pottery exhibition"}
+{"prompt": "Cancel the task to try a new makeup look", "completion": "DeleteTaskCommand, try a new makeup look"}
+{"prompt": "Please eliminate the task to learn how to code in Python", "completion": "DeleteTaskCommand, learn how to code in Python"}
+{"prompt": "Erase the task to take a language class", "completion": "DeleteTaskCommand, take a language class"}
+{"prompt": "Remove or scratch out the task to try a new cocktail recipe", "completion": "DeleteTaskCommand, try a new cocktail recipe"}
+{"prompt": "Cancel the task to attend a cooking class", "completion": "DeleteTaskCommand, attend a cooking class"}
+{"prompt": "Eliminate the task to learn how to play chess", "completion": "DeleteTaskCommand, learn how to play chess"}
+{"prompt": "Remove the task to attend a charity event", "completion": "DeleteTaskCommand, attend a charity event"}
+{"prompt": "Please cancel the task to take a DJ class", "completion": "DeleteTaskCommand, take a DJ class"}
+{"prompt": "Erase or scratch out the task to go rock climbing", "completion": "DeleteTaskCommand, go rock climbing"}
+{"prompt": "Delete the task to start a side hustle", "completion": "DeleteTaskCommand, start a side hustle"}
+{"prompt": "Please eliminate the task to try a new yoga studio", "completion": "DeleteTaskCommand, try a new yoga studio"}
+{"prompt": "Erase the task to join a writing group", "completion": "DeleteTaskCommand, join a writing group"}
+{"prompt": "Remove or cancel the task to go on a bike ride", "completion": "DeleteTaskCommand, go on a bike ride"}
+{"prompt": "Strike out the task to learn how to bake bread", "completion": "DeleteTaskCommand, learn how to bake bread"}
+{"prompt": "Please eliminate the task to take a social media marketing course", "completion": "DeleteTaskCommand, take a social media marketing course"}
+{"prompt": "Eliminate or scratch out the task to join a hiking club", "completion": "DeleteTaskCommand, join a hiking club"}
+{"prompt": "Remove the task to go on a solo trip", "completion": "DeleteTaskCommand, go on a solo trip"}
+{"prompt": "Please cancel the task to learn how to sew", "completion": "DeleteTaskCommand, learn how to sew"}
+{"prompt": "Erase the task to take a cooking class abroad", "completion": "DeleteTaskCommand, take a cooking class abroad"}
+{"prompt": "Scratch out the task to go to a museum exhibit", "completion": "DeleteTaskCommand, go to a museum exhibit"}
+{"prompt": "Please eliminate the task to try a new form of exercise", "completion": "DeleteTaskCommand, try a new form of exercise"}
+{"prompt": "Eliminate or remove the task to go to a wine bar", "completion": "DeleteTaskCommand, go to a wine bar"}
+{"prompt": "Strike out the task to learn how to juggle", "completion": "DeleteTaskCommand, learn how to juggle"}
+{"prompt": "Please erase the task to take a fencing class", "completion": "DeleteTaskCommand, take a fencing class"}
+{"prompt": "Cancel or remove the task to try a new sushi place", "completion": "DeleteTaskCommand, try a new sushi place"}
+{"prompt": "Erase the task to attend a TED talk", "completion": "DeleteTaskCommand, attend a TED talk"}
+{"prompt": "Please eliminate the task to learn how to make candles", "completion": "DeleteTaskCommand, learn how to make candles"}
+{"prompt": "Eliminate or remove the task to go on a camping trip", "completion": "DeleteTaskCommand, go on a camping trip"}
+{"prompt": "Cancel the task to take a baking class", "completion": "DeleteTaskCommand, take a baking class"}
+{"prompt": "Scratch out the task to learn how to paint with watercolors", "completion": "DeleteTaskCommand, learn how to paint with watercolors"}
+{"prompt": "Please eliminate the task to take a voice acting class", "completion": "DeleteTaskCommand, take a voice acting class"}
+{"prompt": "Erase or cancel the task to try a new ice cream flavor", "completion": "DeleteTaskCommand, try a new ice cream flavor"}
+{"prompt": "Please strike out the task to take a pottery class", "completion": "DeleteTaskCommand, take a pottery class"}
+{"prompt": "Remove the task to go to a baseball game", "completion": "DeleteTaskCommand, go to a baseball game"}
+{"prompt": "Eliminate or cancel the task to go on a hot air balloon ride", "completion": "DeleteTaskCommand, go on a hot air balloon ride"}
+{"prompt": "Scratch out the task to start a photography project", "completion": "DeleteTaskCommand, start a photography project"}
+{"prompt": "Please remove the task to attend a dance class", "completion": "DeleteTaskCommand, attend a dance class"}
+{"prompt": "Cancel the task to learn how to play the piano", "completion": "DeleteTaskCommand, learn how to play the piano"}
+{"prompt": "Eliminate or erase the task to try a new restaurant in town", "completion": "DeleteTaskCommand, try a new restaurant in town"}
+{"prompt": "Remove or scratch out the task to join a book club", "completion": "DeleteTaskCommand, join a book club"}
+{"prompt": "Please cancel the task to take a wine tasting class", "completion": "DeleteTaskCommand, take a wine tasting class"}
+{"prompt": "Erase the task to attend a live theater performance", "completion": "DeleteTaskCommand, attend a live theater performance"}
+{"prompt": "Eliminate or remove the task to go to a trivia night at a bar", "completion": "DeleteTaskCommand, go to a trivia night at a bar"}
+{"prompt": "Scratch out the task to learn how to make pizza dough from scratch", "completion": "DeleteTaskCommand, learn how to make pizza dough from scratch"}
+{"prompt": "Please eliminate the task to take a knitting class", "completion": "DeleteTaskCommand, take a knitting class"}
+{"prompt": "Remove or cancel the task to go to a comedy club", "completion": "DeleteTaskCommand, go to a comedy club"}
+{"prompt": "Erase the task to try a new type of tea", "completion": "DeleteTaskCommand, try a new type of tea"}
+{"prompt": "Eliminate or scratch out the task to join a kickboxing class", "completion": "DeleteTaskCommand, join a kickboxing class"}
+{"prompt": "Please cancel the task to go on a brewery tour", "completion": "DeleteTaskCommand, go on a brewery tour"}
+{"prompt": "Remove or eliminate the task to learn how to code in Java", "completion": "DeleteTaskCommand, learn how to code in Java"}
+{"prompt": "Scratch out the task to take a ballroom dance class", "completion": "DeleteTaskCommand, take a ballroom dance class"}
+{"prompt": "Please erase the task to attend a beer festival", "completion": "DeleteTaskCommand, attend a beer festival"}
+{"prompt": "Cancel the task to try a new hair color", "completion": "DeleteTaskCommand, try a new hair color"}
+{"prompt": "Eliminate or remove the task to go to a pottery painting session", "completion": "DeleteTaskCommand, go to a pottery painting session"}
+{"prompt": "Remove the task to take a hiking trip", "completion": "DeleteTaskCommand, take a hiking trip"}
+{"prompt": "Eliminate or cancel the task to go on a whale watching tour", "completion": "DeleteTaskCommand, go on a whale watching tour"}
+{"prompt": "Please remove the task to take a Zumba class", "completion": "DeleteTaskCommand, take a Zumba class"}
+{"prompt": "Erase the task to attend a jazz concert", "completion": "DeleteTaskCommand, attend a jazz concert"}
+{"prompt": "Remove or cancel the task to go on a road trip", "completion": "DeleteTaskCommand, go on a road trip"}
+{"prompt": "Eliminate the task to try a new perfume", "completion": "DeleteTaskCommand, try a new perfume"}
+{"prompt": "Please strike out the task to take a soap making class", "completion": "DeleteTaskCommand, take a soap making class"}
+{"prompt": "Scratch out the task to learn how to DJ", "completion": "DeleteTaskCommand, learn how to DJ"}
+{"prompt": "Remove or cancel the task to go to a hockey game", "completion": "DeleteTaskCommand, go to a hockey game"}
+{"prompt": "Erase the task to try a new bubble tea flavor", "completion": "DeleteTaskCommand, try a new bubble tea flavor"}
+{"prompt": "Eliminate or remove the task to attend a musical festival", "completion": "DeleteTaskCommand, attend a musical festival"}
+{"prompt": "Please cancel the task to learn how to do calligraphy", "completion": "DeleteTaskCommand, learn how to do calligraphy"}
+{"prompt": "Eliminate or scratch out the task to take a flower arranging class", "completion": "DeleteTaskCommand, take a flower arranging class"}
+{"prompt": "Remove the task to go on a fishing trip", "completion": "DeleteTaskCommand, go on a fishing trip"}
+{"prompt": "Cancel or erase the task to try a new bubble bath", "completion": "DeleteTaskCommand, try a new bubble bath"}
+{"prompt": "Strike out the task to attend a painting and wine night", "completion": "DeleteTaskCommand, attend a painting and wine night"}
+{"prompt": "Please eliminate the task to join a yoga retreat", "completion": "DeleteTaskCommand, join a yoga retreat"}
+{"prompt": "Eliminate or remove the task to go to a poetry reading", "completion": "DeleteTaskCommand, go to a poetry reading"}
+{"prompt": "Please cancel the task to try a new facial cleanser", "completion": "DeleteTaskCommand, try a new facial cleanser"}
+{"prompt": "Erase the task to take a Spanish language class", "completion": "DeleteTaskCommand, take a Spanish language class"}
+{"prompt": "Remove or eliminate the task to go on a horseback riding adventure", "completion": "DeleteTaskCommand, go on a horseback riding adventure"}
+{"prompt": "Scratch out the task to learn how to knit a sweater", "completion": "DeleteTaskCommand, learn how to knit a sweater"}
+{"prompt": "Please erase the task to attend a photography workshop", "completion": "DeleteTaskCommand, attend a photography workshop"}
+{"prompt": "Eliminate or remove the task to go to a yoga class", "completion": "DeleteTaskCommand, go to a yoga class"}
+{"prompt": "Cancel the task to try a new type of coffee", "completion": "DeleteTaskCommand, try a new type of coffee"}
+{"prompt": "Remove or scratch out the task to take a self-defense class", "completion": "DeleteTaskCommand, take a self-defense class"}
+{"prompt": "Erase or cancel the task to go on a camping trip", "completion": "DeleteTaskCommand, go on a camping trip"}
+{"prompt": "Please remove the task to learn how to make sushi", "completion": "DeleteTaskCommand, learn how to make sushi"}
+{"prompt": "Eliminate the task to attend a wine and cheese tasting event", "completion": "DeleteTaskCommand, attend a wine and cheese tasting event"}
+{"prompt": "Remove or cancel the task to go on a ski trip", "completion": "DeleteTaskCommand, go on a ski trip"}
+{"prompt": "Scratch out the task to try a new scented candle", "completion": "DeleteTaskCommand, try a new scented candle"}
+{"prompt": "Please eliminate the task to take a martial arts class", "completion": "DeleteTaskCommand, take a martial arts class"}
+{"prompt": "Eliminate or erase the task to learn how to play the guitar", "completion": "DeleteTaskCommand, learn how to play the guitar"}
+{"prompt": "Remove or cancel the task to go to a football game", "completion": "DeleteTaskCommand, go to a football game"}
+{"prompt": "Erase the task to try a new face mask", "completion": "DeleteTaskCommand, try a new face mask"}
+{"prompt": "Eliminate or remove the task to attend a beer tasting event", "completion": "DeleteTaskCommand, attend a beer tasting event"}
+{"prompt": "Please cancel the task to learn how to make candles", "completion": "DeleteTaskCommand, learn how to make candles"}
+{"prompt": "Eliminate or scratch out the task to take a cooking class", "completion": "DeleteTaskCommand, take a cooking class"}
+{"prompt": "Remove the task to go on a kayaking adventure", "completion": "DeleteTaskCommand, go on a kayaking adventure"}
+{"prompt": "Cancel or erase the task to try a new skincare routine", "completion": "DeleteTaskCommand, try a new skincare routine"}
+{"prompt": "Strike out the task to attend a live music show", "completion": "DeleteTaskCommand, attend a live music show"}
+{"prompt": "Please eliminate the task to join a meditation group", "completion": "DeleteTaskCommand, join a meditation group"}
+{"prompt": "Eliminate or remove the task to go to a karaoke night", "completion": "DeleteTaskCommand, go to a karaoke night"}
+{"prompt": "Please cancel the task to try a new smoothie recipe", "completion": "DeleteTaskCommand, try a new smoothie recipe"}
+{"prompt": "Erase the task to take a French language class", "completion": "DeleteTaskCommand, take a French language class"}
+{"prompt": "Remove or eliminate the task to go on a hiking trip", "completion": "DeleteTaskCommand, go on a hiking trip"}
+{"prompt": "Scratch out the task to learn how to make pasta from scratch", "completion": "DeleteTaskCommand, learn how to make pasta from scratch"}
+{"prompt": "Please erase the task to attend a stand-up comedy show", "completion": "DeleteTaskCommand, attend a stand-up comedy show"}
+{"prompt": "Eliminate or remove the task to go to a spin class", "completion": "DeleteTaskCommand, go to a spin class"}
+{"prompt": "Cancel the task to try a new type of tea", "completion": "DeleteTaskCommand, try a new type of tea"}
+{"prompt": "Erase or cancel the task to go on a beach vacation", "completion": "DeleteTaskCommand, go on a beach vacation"}
+{"prompt": "Please remove the task to learn how to play chess", "completion": "DeleteTaskCommand, learn how to play chess"}
+{"prompt": "Eliminate the task to attend a food festival", "completion": "DeleteTaskCommand, attend a food festival"}
+{"prompt": "Remove or cancel the task to go on a road trip", "completion": "DeleteTaskCommand, go on a road trip"}
+{"prompt": "Scratch out the task to try a new skincare product", "completion": "DeleteTaskCommand, try a new skincare product"}
+{"prompt": "Please eliminate the task to take a photography class", "completion": "DeleteTaskCommand, take a photography class"}
+{"prompt": "Eliminate or erase the task to learn how to code in Python", "completion": "DeleteTaskCommand, learn how to code in Python"}
+{"prompt": "Remove or cancel the task to go to a baseball game", "completion": "DeleteTaskCommand, go to a baseball game"}
+{"prompt": "Erase the task to try a new type of sushi", "completion": "DeleteTaskCommand, try a new type of sushi"}
+{"prompt": "Eliminate or remove the task to attend a street fair", "completion": "DeleteTaskCommand, attend a street fair"}
+{"prompt": "Please cancel the task to learn how to make macarons", "completion": "DeleteTaskCommand, learn how to make macarons"}
+{"prompt": "Eliminate or scratch out the task to take a painting class", "completion": "DeleteTaskCommand, take a painting class"}
+{"prompt": "Remove the task to go on a hiking trip", "completion": "DeleteTaskCommand, go on a hiking trip"}
+{"prompt": "Cancel or erase the task to try a new hair care product", "completion": "DeleteTaskCommand, try a new hair care product"}
+{"prompt": "Strike out the task to attend a theater show", "completion": "DeleteTaskCommand, attend a theater show"}
+{"prompt": "Please eliminate the task to join a book club", "completion": "DeleteTaskCommand, join a book club"}
+{"prompt": "Eliminate or remove the task to go to a basketball game", "completion": "DeleteTaskCommand, go to a basketball game"}
+{"prompt": "Please cancel the task to try a new type of seafood", "completion": "DeleteTaskCommand, try a new type of seafood"}
+{"prompt": "Erase the task to take a German language class", "completion": "DeleteTaskCommand, take a German language class"}
+{"prompt": "Remove or eliminate the task to go on a camping trip", "completion": "DeleteTaskCommand, go on a camping trip"}
+{"prompt": "Scratch out the task to learn how to make bread from scratch", "completion": "DeleteTaskCommand, learn how to make bread from scratch"}
+{"prompt": "Please erase the task to attend a concert", "completion": "DeleteTaskCommand, attend a concert"}
+{"prompt": "Eliminate or remove the task to go to a pilates class", "completion": "DeleteTaskCommand, go to a pilates class"}
+{"prompt": "Cancel the task to try a new type of juice", "completion": "DeleteTaskCommand, try a new type of juice"}
+{"prompt": "Remove or scratch out the task to take a pottery class", "completion": "DeleteTaskCommand, take a pottery class"}
+
+
+{"prompt": "I need some help, what can you do?", "completion": "FallbackCommand"}
+{"prompt": "What other commands do you know?", "completion": "FallbackCommand"}
+{"prompt": "I'm not sure what to ask for, can you give me some options?", "completion": "FallbackCommand"}
+{"prompt": "What can I do with this software?", "completion": "FallbackCommand"}
+{"prompt": "I'm lost, what should I do next?", "completion": "FallbackCommand"}
+{"prompt": "What are my options?", "completion": "FallbackCommand"}
+{"prompt": "I don't understand, can you explain further?", "completion": "FallbackCommand"}
+{"prompt": "Can you help me with something?", "completion": "FallbackCommand"}
+{"prompt": "What else can you do?", "completion": "FallbackCommand"}
+{"prompt": "I'm stuck, what can I do?", "completion": "FallbackCommand"}
+{"prompt": "What are some other things I can ask?", "completion": "FallbackCommand"}
+{"prompt": "What other features do you have?", "completion": "FallbackCommand"}
+{"prompt": "I need some assistance, what should I do?", "completion": "FallbackCommand"}
+{"prompt": "What other functionalities do you possess?", "completion": "FallbackCommand"}
+{"prompt": "I'm not sure what I'm looking for, can you give me some guidance?", "completion": "FallbackCommand"}
+{"prompt": "What other things can you do besides the ones I know?", "completion": "FallbackCommand"}
+{"prompt": "I'm not sure what to do next, what do you suggest?", "completion": "FallbackCommand"}
+{"prompt": "What other capabilities do you have?", "completion": "FallbackCommand"}
+{"prompt": "I'm stuck, what other options do I have?", "completion": "FallbackCommand"}
+{"prompt": "What other features are there in this software?", "completion": "FallbackCommand"}
+{"prompt": "I'm confused, what other things can you help me with?", "completion": "FallbackCommand"}
+{"prompt": "What are my choices?", "completion": "FallbackCommand"}
+{"prompt": "What other things are you capable of?", "completion": "FallbackCommand"}
+{"prompt": "I need some direction, what do you suggest?", "completion": "FallbackCommand"}
+{"prompt": "What other things can I ask you to do?", "completion": "FallbackCommand"}
+{"prompt": "I'm not sure what I need, what other options are there?", "completion": "FallbackCommand"}
+{"prompt": "What other functions do you have?", "completion": "FallbackCommand"}
+{"prompt": "I'm lost, what other things can you assist me with?", "completion": "FallbackCommand"}
+{"prompt": "What other commands do you have besides the ones I've used?", "completion": "FallbackCommand"}
+{"prompt": "I need some help, what other options do I have?", "completion": "FallbackCommand"}
+{"prompt": "What other things can you do for me?", "completion": "FallbackCommand"}
+{"prompt": "I'm not sure what to do next, what are my other options?", "completion": "FallbackCommand"}
+{"prompt": "What other capabilities are there?", "completion": "FallbackCommand"}
+{"prompt": "I'm confused, what other commands do you know?", "completion": "FallbackCommand"}
+{"prompt": "What other things can I ask you for?", "completion": "FallbackCommand"}
+{"prompt": "I'm stuck, what other functionalities are there?", "completion": "FallbackCommand"}
+{"prompt": "What else can you do besides the commands I've used?", "completion": "FallbackCommand"}
+{"prompt": "I'm not sure what I'm doing, what other options do I have?", "completion": "FallbackCommand"}
+{"prompt": "What else can you assist me with?", "completion": "FallbackCommand"}
+{"prompt": "I need some assistance, what other functions do you have?", "completion": "FallbackCommand"}
+{"prompt": "What else can you do?", "completion": "FallbackCommand"}
+{"prompt": "I'm not sure what to do next, what other features are there?", "completion": "FallbackCommand"}
+{"prompt": "What other things can you do besides the ones you've mentioned?", "completion": "FallbackCommand"}
+{"prompt": "I'm lost, what other functionalities do you have?", "completion": "FallbackCommand"}
+{"prompt": "What other options are available?", "completion": "FallbackCommand"}
+{"prompt": "I'm confused, what other things can you do?", "completion": "FallbackCommand"}
+{"prompt": "What other things are possible?", "completion": "FallbackCommand"}
+{"prompt": "I need some help, what other features are there?", "completion": "FallbackCommand"}
+{"prompt": "What other capabilities do you possess?", "completion": "FallbackCommand"}
+{"prompt": "I'm not sure what to do next, what else can you suggest?", "completion": "FallbackCommand"}
+{"prompt": "What else can I ask you for?", "completion": "FallbackCommand"}
+{"prompt": "I'm stuck, what other things can you do to help me?", "completion": "FallbackCommand"}
+{"prompt": "What other things are you capable of doing?", "completion": "FallbackCommand"}
+{"prompt": "I'm confused, what other functionalities do you have?", "completion": "FallbackCommand"}
+{"prompt": "What else can you help me with?", "completion": "FallbackCommand"}
+{"prompt": "I'm lost, what other commands can you do?", "completion": "FallbackCommand"}
+{"prompt": "What other things can you do besides the ones I've requested?", "completion": "FallbackCommand"}
+{"prompt": "I need some assistance, what else can you do?", "completion": "FallbackCommand"}
+{"prompt": "What else can I do with this software?", "completion": "FallbackCommand"}
+{"prompt": "I'm not sure what to do next, what other capabilities do you have?", "completion": "FallbackCommand"}
+{"prompt": "What other options do I have?", "completion": "FallbackCommand"}
+{"prompt": "I'm stuck, what other things can you suggest?", "completion": "FallbackCommand"}
+{"prompt": "What other features can you provide?", "completion": "FallbackCommand"}
+{"prompt": "I'm confused, what other things can you suggest?", "completion": "FallbackCommand"}
+{"prompt": "What else can you offer?", "completion": "FallbackCommand"}
+{"prompt": "I need some help, what other functionalities do you have?", "completion": "FallbackCommand"}
+{"prompt": "What else can you do to assist me?", "completion": "FallbackCommand"}
+{"prompt": "I'm not sure what to do next, what else can you do?", "completion": "FallbackCommand"}
+{"prompt": "What else can I ask you?", "completion": "FallbackCommand"}
+{"prompt": "I'm lost, what other things can you provide?", "completion": "FallbackCommand"}
+{"prompt": "What else is possible?", "completion": "FallbackCommand"}
+{"prompt": "What's the meaning of life?", "completion": "FallbackCommand"}
+{"prompt": "Can you tell me a joke?", "completion": "FallbackCommand"}
+{"prompt": "What's the best movie of all time?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite food?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to relax?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite hobby?", "completion": "FallbackCommand"}
+{"prompt": "What's the most interesting fact you know?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing in life?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite book?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite TV show?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to exercise?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite music genre?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite animal?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to make friends?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important lesson you've learned?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to learn new things?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing to do in your free time?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to stay healthy?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be successful?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite place to visit?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to stay motivated?", "completion": "FallbackCommand"}
+{"prompt": "What's the most inspiring quote you know?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about technology?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to stay organized?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about nature?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be creative?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing to do outdoors?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing in a friendship?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to learn a new language?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite type of weather?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to overcome challenges?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite color?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be kind to others?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about your hometown?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to look for in a partner?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to stay positive?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about yourself?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be productive?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good listener?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about traveling?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to teach children?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to stay focused?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about the internet?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to look for in a job?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to stay motivated when things get tough?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about the holiday season?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to teach young adults?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good team player?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about your job?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when making a decision?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good leader?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about sports?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when starting a new project?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good communicator?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about social media?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when dealing with conflict?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good problem solver?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about the arts?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when giving a presentation?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good listener?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about exercise?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when dealing with stress?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good time manager?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about reading?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when setting goals?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good listener?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about the environment?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when dealing with change?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good problem solver?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about pets?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when trying to learn something new?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good decision maker?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about the beach?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when trying to stay organized?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good public speaker?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about history?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when trying to save money?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good collaborator?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about cooking?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when trying to be more productive?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good problem solver?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about the mountains?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when trying to stay focused?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good listener?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about fashion?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when trying to achieve a goal?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good problem solver?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about animals?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when trying to be more efficient?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good collaborator?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about art?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when trying to make a good first impression?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good team player?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about literature?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when trying to be more creative?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good problem solver?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about music?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when trying to be more organized?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good leader?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about science?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when trying to make a difficult decision?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good collaborator?", "completion": "FallbackCommand"}
+{"prompt": "What's your favorite thing about gardening?", "completion": "FallbackCommand"}
+{"prompt": "What's the most important thing to remember when trying to be more confident?", "completion": "FallbackCommand"}
+{"prompt": "What's the best way to be a good problem solver?", "completion": "FallbackCommand"}
+{"prompt": "Describe your favorite activity to do in your free time", "completion": "FallbackCommand"}
+{"prompt": "Explain how to make a perfect cup of coffee", "completion": "FallbackCommand"}
+{"prompt": "List the most important qualities of a good friend", "completion": "FallbackCommand"}
+{"prompt": "Tell me about a time when you overcame a challenge", "completion": "FallbackCommand"}
+{"prompt": "Discuss the best way to learn a new skill", "completion": "FallbackCommand"}
+{"prompt": "Share your thoughts on the importance of self-care", "completion": "FallbackCommand"}
+{"prompt": "Describe a place you've always wanted to visit", "completion": "FallbackCommand"}
+{"prompt": "Explain your favorite recipe to cook", "completion": "FallbackCommand"}
+{"prompt": "List your favorite books of all time", "completion": "FallbackCommand"}
+{"prompt": "Tell me about a time when you had to make a tough decision", "completion": "FallbackCommand"}
+{"prompt": "Discuss the best way to handle stress", "completion": "FallbackCommand"}
+{"prompt": "Share your thoughts on the importance of education", "completion": "FallbackCommand"}
+{"prompt": "Describe your favorite childhood memory", "completion": "FallbackCommand"}
+{"prompt": "Explain your favorite exercise routine", "completion": "FallbackCommand"}
+{"prompt": "List the most important skills for a successful career", "completion": "FallbackCommand"}
+{"prompt": "Tell me about a time when you had to think creatively", "completion": "FallbackCommand"}
+{"prompt": "Discuss the best way to deal with difficult people", "completion": "FallbackCommand"}
+{"prompt": "Share your thoughts on the importance of travel", "completion": "FallbackCommand"}
+{"prompt": "Describe your dream job", "completion": "FallbackCommand"}
+{"prompt": "Explain your favorite hobby", "completion": "FallbackCommand"}
+{"prompt": "List the most important qualities of a good teacher", "completion": "FallbackCommand"}
+{"prompt": "Tell me about a time when you had to overcome a fear", "completion": "FallbackCommand"}
+{"prompt": "Discuss the best way to handle rejection", "completion": "FallbackCommand"}
+{"prompt": "Share your thoughts on the importance of family", "completion": "FallbackCommand"}
+{"prompt": "Describe your favorite type of music", "completion": "FallbackCommand"}
+{"prompt": "Explain your favorite type of cuisine", "completion": "FallbackCommand"}
+{"prompt": "List the most important qualities of a good leader", "completion": "FallbackCommand"}
+{"prompt": "Tell me about a time when you had to persevere through a difficult task", "completion": "FallbackCommand"}
+{"prompt": "Discuss the best way to deal with failure", "completion": "FallbackCommand"}
+{"prompt": "Share your thoughts on the importance of mindfulness", "completion": "FallbackCommand"}
+{"prompt": "Describe your favorite outdoor activity", "completion": "FallbackCommand"}
+{"prompt": "Explain your favorite method of relaxation", "completion": "FallbackCommand"}
+{"prompt": "List the most important qualities of a good listener", "completion": "FallbackCommand"}
+{"prompt": "Tell me about a time when you had to learn a new skill quickly", "completion": "FallbackCommand"}
+{"prompt": "Discuss the best way to handle criticism", "completion": "FallbackCommand"}
+{"prompt": "Share your thoughts on the importance of volunteering", "completion": "FallbackCommand"}
+
+
+{"prompt": "Could you say that again?", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat that?", "completion": "RepeatCommand"}
+{"prompt": "Please say that again.", "completion": "RepeatCommand"}
+{"prompt": "I didn't catch that, can you repeat it?", "completion": "RepeatCommand"}
+{"prompt": "Say that again, please.", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat yourself?", "completion": "RepeatCommand"}
+{"prompt": "One more time?", "completion": "RepeatCommand"}
+{"prompt": "Can you say that once more?", "completion": "RepeatCommand"}
+{"prompt": "I didn't understand that, can you repeat it?", "completion": "RepeatCommand"}
+{"prompt": "Can you say that again for me?", "completion": "RepeatCommand"}
+{"prompt": "Please repeat that last part.", "completion": "RepeatCommand"}
+{"prompt": "Can you say that again, but clearer?", "completion": "RepeatCommand"}
+{"prompt": "Can you say that again, but louder?", "completion": "RepeatCommand"}
+{"prompt": "Can you say that again, but slower?", "completion": "RepeatCommand"}
+{"prompt": "Can you say that again, but faster?", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat that last bit?", "completion": "RepeatCommand"}
+{"prompt": "Say that again, but in a different way?", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat that more slowly?", "completion": "RepeatCommand"}
+{"prompt": "Can you say that again, but in a more upbeat tone?", "completion": "RepeatCommand"}
+{"prompt": "Can you say that again, but with more emphasis?", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat that once more?", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat that again, please?", "completion": "RepeatCommand"}
+{"prompt": "Can you say that again, but with a different inflection?", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat that phrase?", "completion": "RepeatCommand"}
+{"prompt": "Could you repeat that last part?", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat that, but with more detail?", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat that in a different way?", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat that more clearly?", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat that, but with more feeling?", "completion": "RepeatCommand"}
+{"prompt": "Can you say that one more time, but in a different tone?", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat that, but with more context?", "completion": "RepeatCommand"}
+{"prompt": "Can you say that again, but more precisely?", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat that in simpler terms?", "completion": "RepeatCommand"}
+{"prompt": "Can you say that again, but with more animation?", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat that, but in a more formal way?", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat that, but in a more casual way?", "completion": "RepeatCommand"}
+{"prompt": "Can you say that again, but with more detail?", "completion": "RepeatCommand"}
+{"prompt": "Can you repeat that, but more loudly?", "completion": "RepeatCommand"}

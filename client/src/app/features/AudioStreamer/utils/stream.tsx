@@ -36,7 +36,6 @@ const stream = async () => {
 
   // handle incoming messages to display transcription to the DOM
   socket.onmessage = (message: MessageEvent) => {
-    console.log(store.getState());
     const res = JSON.parse(message.data);
     res.text !== undefined &&
       store.dispatch({ type: 'AUDIO/addTranscript', payload: res.text });
