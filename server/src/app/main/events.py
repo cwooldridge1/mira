@@ -1,4 +1,5 @@
-from .. import sio, TASK_LIST
+from .. import sio
+from .constants import TASK_LIST
 from .subjects import transcriptSubject
 from .modules.tasks import Tasks
 from ..types.responses import TasksResponse
