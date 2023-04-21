@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../redux';
 import { PopupProps } from '../../types';
@@ -17,11 +17,15 @@ const Content = () => {
   const renderContent = (props: PopupProps) => {
     const Component = popupComponentsIndex[props.type];
     return (
-      <Component {...props} onClose={() => dispatch(deletePopup(props))} />
+      <Component
+        key={props.id}
+        {...props}
+        onClose={() => dispatch(deletePopup(props))}
+      />
     );
   };
-  const length = popups.length;
-  return length ? renderContent(popups[length - 1]) : <></>;
+
+  return <>{popups.map(renderContent)} </>;
 };
 
 export default Content;
