@@ -33,7 +33,7 @@ class GPTCommander():
         response = response.split('\n')[0].split(',')
 
         command: Command = self.commands.get(response[0])
-        if command is None:
+        if command is None or response[0] == 'FallbackCommand':
             return self.commands['FallbackCommand'](prompt)
 
         args = tuple(arg.strip() for arg in response[1:])
