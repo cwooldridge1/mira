@@ -39,3 +39,8 @@ class TradeNotificationResponse(SocketResponse):
     type: str = 'trade'
     status: int = 200
     event: str = 'notification'
+
+
+class PopupResponse(SocketResponse):
+    event: str = 'popup'
+    status: int = 200

@@ -9,29 +9,29 @@ x-server:
   container_name: server
   platform: "linux/amd64"
 
-x-client:
-  &default-client
-  image: 549896682433.dkr.ecr.us-west-2.amazonaws.com/mira/client:latest
-  build: 
-    context: ../
-    dockerfile: ./docker/client/Dockerfile
-  container_name: client
-  platform: "linux/amd64"
+# x-client:
+#   &default-client
+#   image: 549896682433.dkr.ecr.us-west-2.amazonaws.com/mira/client:latest
+#   build: 
+#     context: ../
+#     dockerfile: ./docker/client/Dockerfile
+#   container_name: client
+#   platform: "linux/amd64"
 
 services:
   server:
     *default-server
 
-  client:
-    *default-client 
+  # client:
+  #   *default-client 
 
   server-version:
     << : *default-server
     image: 549896682433.dkr.ecr.us-west-2.amazonaws.com/mira/server:${VERSION}
 
-  client-version:
-    << : *default-client
-    image: 549896682433.dkr.ecr.us-west-2.amazonaws.com/mira/client:${VERSION}
+  # client-version:
+  #   << : *default-client
+  #   image: 549896682433.dkr.ecr.us-west-2.amazonaws.com/mira/client:${VERSION}
 
     
 

@@ -4,6 +4,7 @@ import contentReducer from './slices/contentSlice';
 import notificationReducer from './slices/notificationSlice';
 import taskReducer from './slices/taskSlice';
 import audioSlice from './slices/audioSlice';
+import popupSlice from './slices/popupSlice';
 import { socketioMiddleware } from './middleware/socketioMiddleware';
 const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ const store = configureStore({
     notifications: notificationReducer,
     tasks: taskReducer,
     audio: audioSlice,
+    popups: popupSlice,
   },
   middleware: [socketioMiddleware],
 });
