@@ -11,6 +11,7 @@ const TradeConfirmationPopup = ({ data, onClose }: PopupProps) => {
   const [loading, setLoading] = useState(false);
   const [showError, setShowError] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [show, setShow] = useState(true);
   const order = data as Order;
 
   const handleConfirm = () => {
@@ -29,10 +30,12 @@ const TradeConfirmationPopup = ({ data, onClose }: PopupProps) => {
       });
   };
   const handleCancel = () => {
-    onClose && onClose();
+    //we set show to false and then call the onClose call back which will delete the modal but we add a time out so the close animation shows
+    setShow(false);
+    setTimeout(() => onClose && onClose(), 1000);
   };
   return (
-    <Modal show={true}>
+    <Modal show={show}>
       <Modal.Header>
         {showError && <Alert>Trade execution failed</Alert>}
       </Modal.Header>
