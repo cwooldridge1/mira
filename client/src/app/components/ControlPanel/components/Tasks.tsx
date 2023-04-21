@@ -16,6 +16,7 @@ const Tasks = () => {
         <SwipeableWrapper
           key={task.id}
           onLeftSwipe={() => dispatch(deleteTaskById(task.id))}
+          className="overflow-x-hidden"
         >
           <Tile>{task.title}</Tile>
         </SwipeableWrapper>
