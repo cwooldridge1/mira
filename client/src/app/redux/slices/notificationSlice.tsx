@@ -22,8 +22,8 @@ export const notificationSlice = createSlice({
       ];
     },
     deleteNotificationToastById: (state, action: PayloadAction<string>) => {
-      let content = [...current(state.notificationToasts)];
-      state.notificationToasts = content.filter(
+      let toasts = [...current(state.notificationToasts)];
+      state.notificationToasts = toasts.filter(
         (obj) => obj.id !== action.payload
       );
     },

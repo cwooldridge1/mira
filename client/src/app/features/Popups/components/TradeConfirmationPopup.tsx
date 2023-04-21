@@ -61,7 +61,7 @@ const TradeConfirmationPopup = ({ data, onClose }: PopupProps) => {
             </div>
 
             <span className="text-muted text-center mb-5 font-semibold">
-              Succefully placed order to {order.side} x {order.qty} of{' '}
+              Successfully placed order to {order.side} x {order.qty} of{' '}
               {order.symbol} {order.limit_price ? '@ ' + order.limit_price : ''}
             </span>
             <Button variants="btn-outline-info" onClick={handleCancel}>
