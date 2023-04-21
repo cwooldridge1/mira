@@ -5,6 +5,7 @@ from app.main.modules.tasks import Tasks
 TASK_LIST_TITLE = 'test'
 TASK_NAME = 'Test'
 
+
 class TaskTests(TestCase):
 
     run_tests = True
@@ -25,24 +26,20 @@ class TaskTests(TestCase):
     def tearDown(self):
         self.run_tests = True
 
-
     def test_1_add_task_list(self):
         Tasks.addTaskList(TASK_LIST_TITLE)
 
-        #will raise value error if not found 
+        # will raise value error if not found
         Tasks.getTaskList(TASK_LIST_TITLE)
-
 
     def test_2_add_task(self):
         taskList = Tasks.getTaskList(TASK_LIST_TITLE)
         taskList.addTask(TASK_NAME)
 
-        #will raise value error if no found
+        # will raise value error if no found
         taskList.getTask(TASK_NAME)
-        
 
         self.assertEqual(1, len(taskList.getTasks()))
-
 
     def test_3_delete_task(self):
         taskList = Tasks.getTaskList(TASK_LIST_TITLE)
@@ -51,7 +48,6 @@ class TaskTests(TestCase):
         self.assertRaises(ValueError, taskList.getTask, TASK_NAME)
 
         self.assertEqual(0, len(taskList.getTasks()))
-
 
     def test_4_delete_task_llst(self):
         Tasks.deleteTaskList(TASK_LIST_TITLE)

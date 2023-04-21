@@ -10,8 +10,6 @@ pydantic
 python-dotenv
 python-socketio
 requests
-gensim
-nltk
 openai
 google-auth
 google-auth-oauthlib
