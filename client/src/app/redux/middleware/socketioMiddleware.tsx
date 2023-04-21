@@ -12,6 +12,7 @@ import {
 //@ts-ignore
 import notificationAudio from '../../../assets/sounds/notificationAudio.mp3';
 import { stream } from '../../features/AudioStreamer/utils/stream';
+import { addPopup } from '../slices/popupSlice';
 
 const SERVER_URL: string = process.env.REACT_APP_SERVER_URL;
 
@@ -42,6 +43,10 @@ export const socketioMiddleware: Middleware = (store) => {
   socket.on('content', (data) => {
     store.dispatch(addContent(data));
     store.dispatch(setServerIsLoadingResponse(false));
+  });
+  socket.on('popup', (data) => {
+    store.dispatch(setServerIsLoadingResponse(false));
+    store.dispatch(addPopup(data));
   });
 
   socket.on('tasks', (data) => {

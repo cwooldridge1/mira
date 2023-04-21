@@ -1,7 +1,7 @@
 import openai
 from .commands import *
 from os import environ
-from typing import Dict, Union
+from typing import Dict
 
 
 openai.api_key = environ.get('OPENAI_KEY')
@@ -17,7 +17,8 @@ class GPTCommander():
             'CodeCommand': CodeCommand,
             'AddTaskCommand': AddTaskCommand,
             'DeleteTaskCommand': DeleteTaskCommand,
-            'FallbackCommand': FallbackCommand
+            'FallbackCommand': FallbackCommand,
+            'PlaceMarketOrderCommand': PlaceMarketOrderCommand
         }
 
     def getCommand(self, prompt: str) -> Command:
@@ -30,11 +31,12 @@ class GPTCommander():
         )['choices'][0]['text']
 
         response = response.split('\n')[0].split(',')
-        print(response)
 
         command: Command = self.commands.get(response[0])
         if command is None:
             return self.commands['FallbackCommand'](prompt)
 
         args = tuple(arg.strip() for arg in response[1:])
+        print(response[0], args)
+
         return command(*args)
