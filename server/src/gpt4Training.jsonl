@@ -1089,3 +1089,308 @@
 {"prompt": "Can you repeat that, but in a more casual way?", "completion": "RepeatCommand"}
 {"prompt": "Can you say that again, but with more detail?", "completion": "RepeatCommand"}
 {"prompt": "Can you repeat that, but more loudly?", "completion": "RepeatCommand"}
+
+
+{"prompt": "Place a market order to buy 500 shares of MSFT.", "completion": "PlaceMarketOrderCommand, MSFT, buy, 500"}
+{"prompt": "Sell 1000 shares of IBM at the current market price.", "completion": "PlaceMarketOrderCommand, IBM, sell, 1000"}
+{"prompt": "Buy 50 shares of NFLX at the current market price.", "completion": "PlaceMarketOrderCommand, NFLX, buy, 50"}
+{"prompt": "Sell 200 shares of BAC at market price.", "completion": "PlaceMarketOrderCommand, BAC, sell, 200"}
+{"prompt": "Place a market order to buy 300 shares of NVDA.", "completion": "PlaceMarketOrderCommand, NVDA, buy, 300"}
+{"prompt": "Buy 20 shares of JPM at market price.", "completion": "PlaceMarketOrderCommand, JPM, buy, 20"}
+{"prompt": "Sell 50 shares of AAPL at the current market price.", "completion": "PlaceMarketOrderCommand, AAPL, sell, 50"}
+{"prompt": "Buy 100 shares of AMZN at market price.", "completion": "PlaceMarketOrderCommand, AMZN, buy, 100"}
+{"prompt": "Place a market order to sell 150 shares of MSFT.", "completion": "PlaceMarketOrderCommand, MSFT, sell, 150"}
+{"prompt": "Sell 25 shares of GOOGL at the current market price.", "completion": "PlaceMarketOrderCommand, GOOGL, sell, 25"}
+{"prompt": "Buy 50 shares of TSLA at market price.", "completion": "PlaceMarketOrderCommand, TSLA, buy, 50"}
+{"prompt": "Place a market order to buy 200 shares of BABA.", "completion": "PlaceMarketOrderCommand, BABA, buy, 200"}
+{"prompt": "Sell 75 shares of FB at the current market price.", "completion": "PlaceMarketOrderCommand, FB, sell, 75"}
+{"prompt": "Buy 500 shares of NVDA at market price.", "completion": "PlaceMarketOrderCommand, NVDA, buy, 500"}
+{"prompt": "Place a market order to sell 50 shares of NFLX.", "completion": "PlaceMarketOrderCommand, NFLX, sell, 50"}
+{"prompt": "Sell 100 shares of BAC at the current market price.", "completion": "PlaceMarketOrderCommand, BAC, sell, 100"}
+{"prompt": "Buy 200 shares of AAPL at market price.", "completion": "PlaceMarketOrderCommand, AAPL, buy, 200"}
+{"prompt": "Place a market order to sell 300 shares of GOOGL.", "completion": "PlaceMarketOrderCommand, GOOGL, sell, 300"}
+{"prompt": "Sell 20 shares of IBM at the current market price.", "completion": "PlaceMarketOrderCommand, IBM, sell, 20"}
+{"prompt": "Buy 50 shares of MSFT at market price.", "completion": "PlaceMarketOrderCommand, MSFT, buy, 50"}
+{"prompt": "Place a market order to buy 1000 shares of TSLA.", "completion": "PlaceMarketOrderCommand, TSLA, buy, 1000"}
+{"prompt": "Sell 150 shares of BABA at the current market price.", "completion": "PlaceMarketOrderCommand, BABA, sell, 150"}
+{"prompt": "Sell 200 shares of ADBE at the current market price.", "completion": "PlaceMarketOrderCommand, ADBE, sell, 200"}
+{"prompt": "Buy 300 shares of BIDU at market price.", "completion": "PlaceMarketOrderCommand, BIDU, buy, 300"}
+{"prompt": "Place a market order to sell 500 shares of CELG.", "completion": "PlaceMarketOrderCommand, CELG, sell, 500"}
+{"prompt": "Buy 150 shares of CHTR at the current market price.", "completion": "PlaceMarketOrderCommand, CHTR, buy, 150"}
+{"prompt": "Sell 100 shares of CMCSA at market price.", "completion": "PlaceMarketOrderCommand, CMCSA, sell, 100"}
+{"prompt": "Place a market order to buy 400 shares of CTAS.", "completion": "PlaceMarketOrderCommand, CTAS, buy, 400"}
+{"prompt": "Buy 50 shares of CTSH at the current market price.", "completion": "PlaceMarketOrderCommand, CTSH, buy, 50"}
+{"prompt": "Place a market order to sell 150 shares of DLTR.", "completion": "PlaceMarketOrderCommand, DLTR, sell, 150"}
+{"prompt": "Sell 200 shares of EA at market price.", "completion": "PlaceMarketOrderCommand, EA, sell, 200"}
+{"prompt": "Buy 300 shares of EBAY at the current market price.", "completion": "PlaceMarketOrderCommand, EBAY, buy, 300"}
+{"prompt": "Place a market order to buy 250 shares of EQIX.", "completion": "PlaceMarketOrderCommand, EQIX, buy, 250"}
+{"prompt": "Sell 50 shares of EXC at market price.", "completion": "PlaceMarketOrderCommand, EXC, sell, 50"}
+{"prompt": "Buy 1000 shares of FAST at the current market price.", "completion": "PlaceMarketOrderCommand, FAST, buy, 1000"}
+{"prompt": "Place a market order to sell 500 shares of GILD.", "completion": "PlaceMarketOrderCommand, GILD, sell, 500"}
+{"prompt": "Buy 150 shares of HAS at market price.", "completion": "PlaceMarketOrderCommand, HAS, buy, 150"}
+{"prompt": "Sell 300 shares of HON at the current market price.", "completion": "PlaceMarketOrderCommand, HON, sell, 300"}
+{"prompt": "Place a market order to buy 200 shares of INTU.", "completion": "PlaceMarketOrderCommand, INTU, buy, 200"}
+{"prompt": "Buy 50 shares of ISRG at market price.", "completion": "PlaceMarketOrderCommand, ISRG, buy, 50"}
+{"prompt": "Place a market order to sell 150 shares of LBTYA.", "completion": "PlaceMarketOrderCommand, LBTYA, sell, 150"}
+{"prompt": "Sell 500 shares of LRCX at the current market price.", "completion": "PlaceMarketOrderCommand, LRCX, sell, 500"}
+{"prompt": "Buy 300 shares of MAR at market price.", "completion": "PlaceMarketOrderCommand, MAR, buy, 300"}
+{"prompt": "Place a market order to buy 100 shares of MNST.", "completion": "PlaceMarketOrderCommand, MNST, buy, 100"}
+{"prompt": "Place a market order to sell 25 shares of ADBE.", "completion": "PlaceMarketOrderCommand, ADBE, sell, 25"}
+{"prompt": "Buy 50 shares of BIDU at the current market price.", "completion": "PlaceMarketOrderCommand, BIDU, buy, 50"}
+{"prompt": "Sell 10 shares of CELG at market price.", "completion": "PlaceMarketOrderCommand, CELG, sell, 10"}
+{"prompt": "Place a market order to buy 20 shares of CHTR.", "completion": "PlaceMarketOrderCommand, CHTR, buy, 20"}
+{"prompt": "Buy 30 shares of CMCSA at the current market price.", "completion": "PlaceMarketOrderCommand, CMCSA, buy, 30"}
+{"prompt": "Sell 15 shares of CTAS at market price.", "completion": "PlaceMarketOrderCommand, CTAS, sell, 15"}
+{"prompt": "Place a market order to buy 10 shares of CTSH.", "completion": "PlaceMarketOrderCommand, CTSH, buy, 10"}
+{"prompt": "Buy 25 shares of DLTR at the current market price.", "completion": "PlaceMarketOrderCommand, DLTR, buy, 25"}
+{"prompt": "Sell 30 shares of EA at market price.", "completion": "PlaceMarketOrderCommand, EA, sell, 30"}
+{"prompt": "Place a market order to buy 40 shares of EBAY.", "completion": "PlaceMarketOrderCommand, EBAY, buy, 40"}
+{"prompt": "Buy 15 shares of EQIX at the current market price.", "completion": "PlaceMarketOrderCommand, EQIX, buy, 15"}
+{"prompt": "Sell 20 shares of EXC at market price.", "completion": "PlaceMarketOrderCommand, EXC, sell, 20"}
+{"prompt": "Place a market order to sell 25 shares of FAST.", "completion": "PlaceMarketOrderCommand, FAST, sell, 25"}
+{"prompt": "Buy 10 shares of GILD at the current market price.", "completion": "PlaceMarketOrderCommand, GILD, buy, 10"}
+{"prompt": "Sell 35 shares of HAS at market price.", "completion": "PlaceMarketOrderCommand, HAS, sell, 35"}
+{"prompt": "Place a market order to buy 20 shares of HON.", "completion": "PlaceMarketOrderCommand, HON, buy, 20"}
+{"prompt": "Buy 5 shares of INTU at the current market price.", "completion": "PlaceMarketOrderCommand, INTU, buy, 5"}
+{"prompt": "Sell 10 shares of ISRG at market price.", "completion": "PlaceMarketOrderCommand, ISRG, sell, 10"}
+{"prompt": "Place a market order to buy 15 shares of LBTYA.", "completion": "PlaceMarketOrderCommand, LBTYA, buy, 15"}
+{"prompt": "Buy 20 shares of LRCX at the current market price.", "completion": "PlaceMarketOrderCommand, LRCX, buy, 20"}
+{"prompt": "Sell 25 shares of MAR at market price.", "completion": "PlaceMarketOrderCommand, MAR, sell, 25"}
+{"prompt": "Place a market order to sell 10 shares of MNST.", "completion": "PlaceMarketOrderCommand, MNST, sell, 10"}
+{"prompt": "Place a market order to buy 30 shares of AAPL.", "completion": "PlaceMarketOrderCommand, AAPL, buy, 30"}
+{"prompt": "Sell 20 shares of AEP at market price.", "completion": "PlaceMarketOrderCommand, AEP, sell, 20"}
+{"prompt": "Buy 25 shares of AMGN at the current market price.", "completion": "PlaceMarketOrderCommand, AMGN, buy, 25"}
+{"prompt": "Place a market order to sell 15 shares of AMZN.", "completion": "PlaceMarketOrderCommand, AMZN, sell, 15"}
+{"prompt": "Buy 10 shares of AXP at market price.", "completion": "PlaceMarketOrderCommand, AXP, buy, 10"}
+{"prompt": "Sell 30 shares of BA at the current market price.", "completion": "PlaceMarketOrderCommand, BA, sell, 30"}
+{"prompt": "Place a market order to buy 5 shares of BAC.", "completion": "PlaceMarketOrderCommand, BAC, buy, 5"}
+{"prompt": "Buy 20 shares of BKNG at market price.", "completion": "PlaceMarketOrderCommand, BKNG, buy, 20"}
+{"prompt": "Sell 15 shares of BLK at the current market price.", "completion": "PlaceMarketOrderCommand, BLK, sell, 15"}
+{"prompt": "Place a market order to buy 10 shares of BMY.", "completion": "PlaceMarketOrderCommand, BMY, buy, 10"}
+{"prompt": "Buy 30 shares of CAT at market price.", "completion": "PlaceMarketOrderCommand, CAT, buy, 30"}
+{"prompt": "Sell 25 shares of CHD at the current market price.", "completion": "PlaceMarketOrderCommand, CHD, sell, 25"}
+{"prompt": "Place a market order to buy 20 shares of CL.", "completion": "PlaceMarketOrderCommand, CL, buy, 20"}
+{"prompt": "Buy 15 shares of CME at market price.", "completion": "PlaceMarketOrderCommand, CME, buy, 15"}
+{"prompt": "Sell 5 shares of COF at the current market price.", "completion": "PlaceMarketOrderCommand, COF, sell, 5"}
+{"prompt": "Place a market order to buy 10 shares of COST.", "completion": "PlaceMarketOrderCommand, COST, buy, 10"}
+{"prompt": "Buy 25 shares of CRM at market price.", "completion": "PlaceMarketOrderCommand, CRM, buy, 25"}
+{"prompt": "Sell 20 shares of CSCO at the current market price.", "completion": "PlaceMarketOrderCommand, CSCO, sell, 20"}
+{"prompt": "Place a market order to buy 5 shares of CVX.", "completion": "PlaceMarketOrderCommand, CVX, buy, 5"}
+{"prompt": "Buy 10 shares of DHR at market price.", "completion": "PlaceMarketOrderCommand, DHR, buy, 10"}
+{"prompt": "Sell 15 shares of DOW at the current market price.", "completion": "PlaceMarketOrderCommand, DOW, sell, 15"}
+{"prompt": "Place a market order to buy 30 shares of DUK.", "completion": "PlaceMarketOrderCommand, DUK, buy, 30"}
+{"prompt": "Place a market order to sell 5 shares of AAPL.", "completion": "PlaceMarketOrderCommand, AAPL, sell, 5"}
+{"prompt": "Buy 10 shares of AEP at the current market price.", "completion": "PlaceMarketOrderCommand, AEP, buy, 10"}
+{"prompt": "Sell 15 shares of AMGN at market price.", "completion": "PlaceMarketOrderCommand, AMGN, sell, 15"}
+{"prompt": "Place a market order to buy 5 shares of AMZN.", "completion": "PlaceMarketOrderCommand, AMZN, buy, 5"}
+{"prompt": "Buy 8 shares of AXP at the current market price.", "completion": "PlaceMarketOrderCommand, AXP, buy, 8"}
+{"prompt": "Sell 10 shares of BA at market price.", "completion": "PlaceMarketOrderCommand, BA, sell, 10"}
+{"prompt": "Place a market order to buy 5 shares of BAC.", "completion": "PlaceMarketOrderCommand, BAC, buy, 5"}
+{"prompt": "Buy 12 shares of BKNG at the current market price.", "completion": "PlaceMarketOrderCommand, BKNG, buy, 12"}
+{"prompt": "Sell 5 shares of BLK at market price.", "completion": "PlaceMarketOrderCommand, BLK, sell, 5"}
+{"prompt": "Place a market order to buy 5 shares of BMY.", "completion": "PlaceMarketOrderCommand, BMY, buy, 5"}
+{"prompt": "Buy 8 shares of CAT at the current market price.", "completion": "PlaceMarketOrderCommand, CAT, buy, 8"}
+{"prompt": "Sell 10 shares of CHD at market price.", "completion": "PlaceMarketOrderCommand, CHD, sell, 10"}
+{"prompt": "Place a market order to buy 5 shares of CL.", "completion": "PlaceMarketOrderCommand, CL, buy, 5"}
+{"prompt": "Buy 7 shares of CME at the current market price.", "completion": "PlaceMarketOrderCommand, CME, buy, 7"}
+{"prompt": "Sell 5 shares of COF at market price.", "completion": "PlaceMarketOrderCommand, COF, sell, 5"}
+{"prompt": "Place a market order to buy 5 shares of COST.", "completion": "PlaceMarketOrderCommand, COST, buy, 5"}
+{"prompt": "Buy 10 shares of CRM at the current market price.", "completion": "PlaceMarketOrderCommand, CRM, buy, 10"}
+{"prompt": "Sell 8 shares of CSCO at market price.", "completion": "PlaceMarketOrderCommand, CSCO, sell, 8"}
+{"prompt": "Place a market order to buy 5 shares of CVX.", "completion": "PlaceMarketOrderCommand, CVX, buy, 5"}
+{"prompt": "Buy 6 shares of DHR at the current market price.", "completion": "PlaceMarketOrderCommand, DHR, buy, 6"}
+{"prompt": "Sell 10 shares of DOW at market price.", "completion": "PlaceMarketOrderCommand, DOW, sell, 10"}
+{"prompt": "Place a market order to buy 8 shares of DUK.", "completion": "PlaceMarketOrderCommand, DUK, buy, 8"}
+{"prompt": "Place a market order to sell 2 shares of AAPL.", "completion": "PlaceMarketOrderCommand, AAPL, sell, 2"}
+{"prompt": "Buy 3 shares of AEP at the current market price.", "completion": "PlaceMarketOrderCommand, AEP, buy, 3"}
+{"prompt": "Sell 4 shares of AMGN at market price.", "completion": "PlaceMarketOrderCommand, AMGN, sell, 4"}
+{"prompt": "Place a market order to buy 2 shares of AMZN.", "completion": "PlaceMarketOrderCommand, AMZN, buy, 2"}
+{"prompt": "Buy 2 shares of AXP at the current market price.", "completion": "PlaceMarketOrderCommand, AXP, buy, 2"}
+{"prompt": "Sell 3 shares of BA at market price.", "completion": "PlaceMarketOrderCommand, BA, sell, 3"}
+{"prompt": "Place a market order to buy 1 share of BAC.", "completion": "PlaceMarketOrderCommand, BAC, buy, 1"}
+{"prompt": "Buy 4 shares of BKNG at the current market price.", "completion": "PlaceMarketOrderCommand, BKNG, buy, 4"}
+{"prompt": "Sell 2 shares of BLK at market price.", "completion": "PlaceMarketOrderCommand, BLK, sell, 2"}
+{"prompt": "Place a market order to buy 1 share of BMY.", "completion": "PlaceMarketOrderCommand, BMY, buy, 1"}
+{"prompt": "Buy 2 shares of CAT at the current market price.", "completion": "PlaceMarketOrderCommand, CAT, buy, 2"}
+{"prompt": "Sell 3 shares of CHD at market price.", "completion": "PlaceMarketOrderCommand, CHD, sell, 3"}
+{"prompt": "Place a market order to buy 1 share of CL.", "completion": "PlaceMarketOrderCommand, CL, buy, 1"}
+{"prompt": "Buy 1 share of CME at the current market price.", "completion": "PlaceMarketOrderCommand, CME, buy, 1"}
+{"prompt": "Sell 2 shares of COF at market price.", "completion": "PlaceMarketOrderCommand, COF, sell, 2"}
+{"prompt": "Place a market order to buy 1 share of COST.", "completion": "PlaceMarketOrderCommand, COST, buy, 1"}
+{"prompt": "Buy 2 shares of CRM at the current market price.", "completion": "PlaceMarketOrderCommand, CRM, buy, 2"}
+{"prompt": "Sell 1 share of CSCO at market price.", "completion": "PlaceMarketOrderCommand, CSCO, sell, 1"}
+{"prompt": "Place a market order to buy 1 share of CVX.", "completion": "PlaceMarketOrderCommand, CVX, buy, 1"}
+{"prompt": "Buy 1 share of DHR at the current market price.", "completion": "PlaceMarketOrderCommand, DHR, buy, 1"}
+{"prompt": "Sell 1 share of DOW at market price.", "completion": "PlaceMarketOrderCommand, DOW, sell, 1"}
+{"prompt": "Place a market order to buy 2 shares of DUK.", "completion": "PlaceMarketOrderCommand, DUK, buy, 2"}
+
+{"prompt": "Place a market order to sell 10 shares of Apple.", "completion": "PlaceMarketOrderCommand, AAPL, sell, 10"}
+{"prompt": "Buy 15 shares of American Electric Power at the current market price.", "completion": "PlaceMarketOrderCommand, AEP, buy, 15"}
+{"prompt": "Sell 20 shares of Amgen at market price.", "completion": "PlaceMarketOrderCommand, AMGN, sell, 20"}
+{"prompt": "Place a market order to buy 10 shares of Amazon.", "completion": "PlaceMarketOrderCommand, AMZN, buy, 10"}
+{"prompt": "Buy 12 shares of American Express at the current market price.", "completion": "PlaceMarketOrderCommand, AXP, buy, 12"}
+{"prompt": "Sell 15 shares of Boeing at market price.", "completion": "PlaceMarketOrderCommand, BA, sell, 15"}
+{"prompt": "Place a market order to buy 10 shares of Bank of America.", "completion": "PlaceMarketOrderCommand, BAC, buy, 10"}
+{"prompt": "Buy 20 shares of Booking Holdings at the current market price.", "completion": "PlaceMarketOrderCommand, BKNG, buy, 20"}
+{"prompt": "Sell 10 shares of BlackRock at market price.", "completion": "PlaceMarketOrderCommand, BLK, sell, 10"}
+{"prompt": "Place a market order to buy 10 shares of Bristol-Myers Squibb.", "completion": "PlaceMarketOrderCommand, BMY, buy, 10"}
+{"prompt": "Buy 15 shares of Caterpillar at the current market price.", "completion": "PlaceMarketOrderCommand, CAT, buy, 15"}
+{"prompt": "Sell 20 shares of Church & Dwight at market price.", "completion": "PlaceMarketOrderCommand, CHD, sell, 20"}
+{"prompt": "Place a market order to buy 10 shares of Colgate-Palmolive.", "completion": "PlaceMarketOrderCommand, CL, buy, 10"}
+{"prompt": "Buy 10 shares of CME Group at the current market price.", "completion": "PlaceMarketOrderCommand, CME, buy, 10"}
+{"prompt": "Sell 5 shares of Capital One Financial at market price.", "completion": "PlaceMarketOrderCommand, COF, sell, 5"}
+{"prompt": "Place a market order to buy 10 shares of Costco Wholesale.", "completion": "PlaceMarketOrderCommand, COST, buy, 10"}
+{"prompt": "Buy 20 shares of Salesforce.com at the current market price.", "completion": "PlaceMarketOrderCommand, CRM, buy, 20"}
+{"prompt": "Sell 15 shares of Cisco Systems at market price.", "completion": "PlaceMarketOrderCommand, CSCO, sell, 15"}
+{"prompt": "Place a market order to buy 10 shares of Chevron.", "completion": "PlaceMarketOrderCommand, CVX, buy, 10"}
+{"prompt": "Buy 12 shares of Danaher at the current market price.", "completion": "PlaceMarketOrderCommand, DHR, buy, 12"}
+{"prompt": "Sell 8 shares of Dow Inc. at market price.", "completion": "PlaceMarketOrderCommand, DOW, sell, 8"}
+{"prompt": "Place a market order to buy 10 shares of Duke Energy.", "completion": "PlaceMarketOrderCommand, DUK, buy, 10"}
+{"prompt": "Place a market order to sell 10 shares of Adobe.", "completion": "PlaceMarketOrderCommand, ADBE, sell, 10"}
+{"prompt": "Buy 15 shares of Advanced Micro Devices at the current market price.", "completion": "PlaceMarketOrderCommand, AMD, buy, 15"}
+{"prompt": "Sell 20 shares of Align Technology at market price.", "completion": "PlaceMarketOrderCommand, ALGN, sell, 20"}
+{"prompt": "Place a market order to buy 10 shares of Amazon.", "completion": "PlaceMarketOrderCommand, AMZN, buy, 10"}
+{"prompt": "Buy 12 shares of American Airlines Group at the current market price.", "completion": "PlaceMarketOrderCommand, AAL, buy, 12"}
+{"prompt": "Sell 15 shares of Applied Materials at market price.", "completion": "PlaceMarketOrderCommand, AMAT, sell, 15"}
+{"prompt": "Place a market order to buy 10 shares of Apple.", "completion": "PlaceMarketOrderCommand, AAPL, buy, 10"}
+{"prompt": "Buy 20 shares of ASML Holding at the current market price.", "completion": "PlaceMarketOrderCommand, ASML, buy, 20"}
+{"prompt": "Sell 10 shares of Autodesk at market price.", "completion": "PlaceMarketOrderCommand, ADSK, sell, 10"}
+{"prompt": "Place a market order to buy 10 shares of Baidu.", "completion": "PlaceMarketOrderCommand, BIDU, buy, 10"}
+{"prompt": "Buy 15 shares of Biogen at the current market price.", "completion": "PlaceMarketOrderCommand, BIIB, buy, 15"}
+{"prompt": "Sell 20 shares of Booking Holdings at market price.", "completion": "PlaceMarketOrderCommand, BKNG, sell, 20"}
+{"prompt": "Place a market order to buy 10 shares of Cadence Design Systems.", "completion": "PlaceMarketOrderCommand, CDNS, buy, 10"}
+{"prompt": "Buy 10 shares of Cerner at the current market price.", "completion": "PlaceMarketOrderCommand, CERN, buy, 10"}
+{"prompt": "Sell 5 shares of Charter Communications at market price.", "completion": "PlaceMarketOrderCommand, CHTR, sell, 5"}
+{"prompt": "Place a market order to buy 10 shares of Comcast.", "completion": "PlaceMarketOrderCommand, CMCSA, buy, 10"}
+{"prompt": "Buy 20 shares of Costco Wholesale at the current market price.", "completion": "PlaceMarketOrderCommand, COST, buy, 20"}
+{"prompt": "Sell 15 shares of Cisco Systems at market price.", "completion": "PlaceMarketOrderCommand, CSCO, sell, 15"}
+{"prompt": "Place a market order to buy 10 shares of DocuSign.", "completion": "PlaceMarketOrderCommand, DOCU, buy, 10"}
+{"prompt": "Buy 12 shares of eBay at the current market price.", "completion": "PlaceMarketOrderCommand, EBAY, buy, 12"}
+{"prompt": "Sell 8 shares of Electronic Arts at market price.", "completion": "PlaceMarketOrderCommand, EA, sell, 8"}
+{"prompt": "Buy 10 shares of Facebook at the current market price.", "completion": "PlaceMarketOrderCommand, FB, buy, 10"}
+{"prompt": "Sell 15 shares of Fastenal at market price.", "completion": "PlaceMarketOrderCommand, FAST, sell, 15"}
+{"prompt": "Place a market order to buy 10 shares of Gilead Sciences.", "completion": "PlaceMarketOrderCommand, GILD, buy, 10"}
+{"prompt": "Buy 12 shares of Hasbro at the current market price.", "completion": "PlaceMarketOrderCommand, HAS, buy, 12"}
+{"prompt": "Sell 8 shares of Henry Schein at market price.", "completion": "PlaceMarketOrderCommand, HSIC, sell, 8"}
+{"prompt": "Place a market order to buy 10 shares of Intel.", "completion": "PlaceMarketOrderCommand, INTC, buy, 10"}
+{"prompt": "Buy 15 shares of Intuit at the current market price.", "completion": "PlaceMarketOrderCommand, INTU, buy, 15"}
+{"prompt": "Sell 20 shares of JD.com at market price.", "completion": "PlaceMarketOrderCommand, JD, sell, 20"}
+{"prompt": "Place a market order to buy 10 shares of KLA Corporation.", "completion": "PlaceMarketOrderCommand, KLAC, buy, 10"}
+{"prompt": "Buy 20 shares of Lam Research at the current market price.", "completion": "PlaceMarketOrderCommand, LRCX, buy, 20"}
+{"prompt": "Sell 15 shares of Liberty Global at market price.", "completion": "PlaceMarketOrderCommand, LBTYA, sell, 15"}
+{"prompt": "Place a market order to buy 10 shares of Marvell Technology Group.", "completion": "PlaceMarketOrderCommand, MRVL, buy, 10"}
+{"prompt": "Buy 12 shares of MercadoLibre at the current market price.", "completion": "PlaceMarketOrderCommand, MELI, buy, 12"}
+{"prompt": "Sell 10 shares of Moderna at market price.", "completion": "PlaceMarketOrderCommand, MRNA, sell, 10"}
+{"prompt": "Place a market order to buy 10 shares of Micron Technology.", "completion": "PlaceMarketOrderCommand, MU, buy, 10"}
+{"prompt": "Buy 15 shares of Microsoft at the current market price.", "completion": "PlaceMarketOrderCommand, MSFT, buy, 15"}
+{"prompt": "Sell 20 shares of Mondelez International at market price.", "completion": "PlaceMarketOrderCommand, MDLZ, sell, 20"}
+{"prompt": "Place a market order to buy 10 shares of Netflix.", "completion": "PlaceMarketOrderCommand, NFLX, buy, 10"}
+{"prompt": "Buy 12 shares of NVIDIA at the current market price.", "completion": "PlaceMarketOrderCommand, NVDA, buy, 12"}
+{"prompt": "Sell 8 shares of NXP Semiconductors at market price.", "completion": "PlaceMarketOrderCommand, NXPI, sell, 8"}
+{"prompt": "Place a market order to buy 10 shares of PayPal.", "completion": "PlaceMarketOrderCommand, PYPL, buy, 10"}
+{"prompt": "Sell 15 shares of Pinduoduo at market price.", "completion": "PlaceMarketOrderCommand, PDD, sell, 15"}
+{"prompt": "Place a market order to buy 10 shares of Qualcomm.", "completion": "PlaceMarketOrderCommand, QCOM, buy, 10"}
+{"prompt": "Buy 12 shares of Regeneron Pharmaceuticals at the current market price.", "completion": "PlaceMarketOrderCommand, REGN, buy, 12"}
+{"prompt": "Sell 20 shares of Ross Stores at market price.", "completion": "PlaceMarketOrderCommand, ROST, sell, 20"}
+{"prompt": "Place a market order to buy 10 shares of Skyworks Solutions.", "completion": "PlaceMarketOrderCommand, SWKS, buy, 10"}
+{"prompt": "Buy 15 shares of Starbucks at the current market price.", "completion": "PlaceMarketOrderCommand, SBUX, buy, 15"}
+{"prompt": "Sell 8 shares of Seagen at market price.", "completion": "PlaceMarketOrderCommand, SGEN, sell, 8"}
+{"prompt": "Place a market order to buy 10 shares of Splunk.", "completion": "PlaceMarketOrderCommand, SPLK, buy, 10"}
+{"prompt": "Buy 12 shares of Synopsys at the current market price.", "completion": "PlaceMarketOrderCommand, SNPS, buy, 12"}
+{"prompt": "Sell 15 shares of T-Mobile US at market price.", "completion": "PlaceMarketOrderCommand, TMUS, sell, 15"}
+{"prompt": "Place a market order to buy 10 shares of Take-Two Interactive.", "completion": "PlaceMarketOrderCommand, TTWO, buy, 10"}
+{"prompt": "Buy 15 shares of Tesla at the current market price.", "completion": "PlaceMarketOrderCommand, TSLA, buy, 15"}
+{"prompt": "Sell 20 shares of Texas Instruments at market price.", "completion": "PlaceMarketOrderCommand, TXN, sell, 20"}
+{"prompt": "Place a market order to buy 10 shares of Ulta Beauty.", "completion": "PlaceMarketOrderCommand, ULTA, buy, 10"}
+{"prompt": "Buy 12 shares of Vertex Pharmaceuticals at the current market price.", "completion": "PlaceMarketOrderCommand, VRTX, buy, 12"}
+{"prompt": "Sell 8 shares of Vodafone Group at market price.", "completion": "PlaceMarketOrderCommand, VOD, sell, 8"}
+{"prompt": "Place a market order to buy 10 shares of Walgreens Boots Alliance.", "completion": "PlaceMarketOrderCommand, WBA, buy, 10"}
+{"prompt": "Buy 15 shares of Western Digital at the current market price.", "completion": "PlaceMarketOrderCommand, WDC, buy, 15"}
+{"prompt": "Sell 15 shares of Workday at market price.", "completion": "PlaceMarketOrderCommand, WDAY, sell, 15"}
+{"prompt": "Place a market order to buy 10 shares of Xcel Energy.", "completion": "PlaceMarketOrderCommand, XEL, buy, 10"}
+{"prompt": "Buy 12 shares of Xilinx at the current market price.", "completion": "PlaceMarketOrderCommand, XLNX, buy, 12"}
+{"prompt": "Place a market order to buy 10 shares of Alphabet Inc.", "completion": "PlaceMarketOrderCommand, GOOGL, buy, 10"}
+{"prompt": "Buy 15 shares of Facebook at the current market price.", "completion": "PlaceMarketOrderCommand, FB, buy, 15"}
+{"prompt": "Sell 8 shares of Intel Corp. at market price.", "completion": "PlaceMarketOrderCommand, INTC, sell, 8"}
+{"prompt": "Place a market order to buy 10 shares of J.B. Hunt Transport Services.", "completion": "PlaceMarketOrderCommand, JBHT, buy, 10"}
+{"prompt": "Buy 12 shares of JD.com at the current market price.", "completion": "PlaceMarketOrderCommand, JD, buy, 12"}
+{"prompt": "Sell 15 shares of Kraft Heinz Company at market price.", "completion": "PlaceMarketOrderCommand, KHC, sell, 15"}
+{"prompt": "Place a market order to buy 10 shares of Lam Research.", "completion": "PlaceMarketOrderCommand, LRCX, buy, 10"}
+{"prompt": "Buy 15 shares of Marriott International at the current market price.", "completion": "PlaceMarketOrderCommand, MAR, buy, 15"}
+{"prompt": "Sell 20 shares of MercadoLibre at market price.", "completion": "PlaceMarketOrderCommand, MELI, sell, 20"}
+{"prompt": "Place a market order to buy 10 shares of Moderna.", "completion": "PlaceMarketOrderCommand, MRNA, buy, 10"}
+{"prompt": "Buy 12 shares of NVIDIA at the current market price.", "completion": "PlaceMarketOrderCommand, NVDA, buy, 12"}
+{"prompt": "Sell 8 shares of Netflix at market price.", "completion": "PlaceMarketOrderCommand, NFLX, sell, 8"}
+{"prompt": "Place a market order to buy 10 shares of PACCAR.", "completion": "PlaceMarketOrderCommand, PCAR, buy, 10"}
+{"prompt": "Buy 15 shares of PayPal Holdings at the current market price.", "completion": "PlaceMarketOrderCommand, PYPL, buy, 15"}
+{"prompt": "Sell 15 shares of Pinduoduo at market price.", "completion": "PlaceMarketOrderCommand, PDD, sell, 15"}
+{"prompt": "Place a market order to buy 10 shares of Peloton Interactive.", "completion": "PlaceMarketOrderCommand, PTON, buy, 10"}
+{"prompt": "Buy 12 shares of Qualcomm at the current market price.", "completion": "PlaceMarketOrderCommand, QCOM, buy, 12"}
+{"prompt": "Sell 20 shares of Ross Stores at market price.", "completion": "PlaceMarketOrderCommand, ROST, sell, 20"}
+{"prompt": "Place a market order to buy 10 shares of Sirius XM Holdings.", "completion": "PlaceMarketOrderCommand, SIRI, buy, 10"}
+{"prompt": "Buy 15 shares of Skyworks Solutions at the current market price.", "completion": "PlaceMarketOrderCommand, SWKS, buy, 15"}
+{"prompt": "Sell 8 shares of Tesla at market price.", "completion": "PlaceMarketOrderCommand, TSLA, sell, 8"}
+
+{"prompt": "Place an order for 10 shares of Amazon.", "completion": "PlaceMarketOrderCommand, AMZN, buy, 10"}
+{"prompt": "I want to purchase 15 shares of Zoom Video Communications.", "completion": "PlaceMarketOrderCommand, ZM, buy, 15"}
+{"prompt": "Get me 8 shares of Applied Materials.", "completion": "PlaceMarketOrderCommand, AMAT, buy, 8"}
+{"prompt": "I need 10 shares of DocuSign, can you buy it for me?", "completion": "PlaceMarketOrderCommand, DOCU, buy, 10"}
+{"prompt": "Add 12 shares of Baidu to my portfolio.", "completion": "PlaceMarketOrderCommand, BIDU, buy, 12"}
+{"prompt": "Can you place an order for me to sell 15 shares of Comcast?", "completion": "PlaceMarketOrderCommand, CMCSA, sell, 15"}
+{"prompt": "I want to get rid of 10 shares of Cintas, place a market order for me.", "completion": "PlaceMarketOrderCommand, CTAS, sell, 10"}
+{"prompt": "Sell 8 shares of Dollar Tree for me at the current market price.", "completion": "PlaceMarketOrderCommand, DLTR, sell, 8"}
+{"prompt": "Place an order for 10 shares of eBay.", "completion": "PlaceMarketOrderCommand, EBAY, buy, 10"}
+{"prompt": "Can you purchase 15 shares of Fastenal for me?", "completion": "PlaceMarketOrderCommand, FAST, buy, 15"}
+{"prompt": "Add 8 shares of Hasbro to my holdings.", "completion": "PlaceMarketOrderCommand, HAS, buy, 8"}
+{"prompt": "I need to get 10 shares of Intel, can you help me buy it?", "completion": "PlaceMarketOrderCommand, INTC, buy, 10"}
+{"prompt": "Place an order for 12 shares of Lam Research at the current market price.", "completion": "PlaceMarketOrderCommand, LRCX, buy, 12"}
+{"prompt": "I want to add 15 shares of Monster Beverage to my portfolio.", "completion": "PlaceMarketOrderCommand, MNST, buy, 15"}
+{"prompt": "Can you sell 20 shares of Moderna for me?", "completion": "PlaceMarketOrderCommand, MRNA, sell, 20"}
+{"prompt": "Place an order for 10 shares of NetEase for me.", "completion": "PlaceMarketOrderCommand, NTES, buy, 10"}
+{"prompt": "I would like to purchase 15 shares of Nvidia, can you help me?", "completion": "PlaceMarketOrderCommand, NVDA, buy, 15"}
+{"prompt": "I want to get rid of 8 shares of Peloton, place a market order for me.", "completion": "PlaceMarketOrderCommand, PTON, sell, 8"}
+{"prompt": "Can you add 10 shares of Regeneron Pharmaceuticals to my holdings?", "completion": "PlaceMarketOrderCommand, REGN, buy, 10"}
+{"prompt": "Place an order for 12 shares of Sirius XM Holdings at the current market price.", "completion": "PlaceMarketOrderCommand, SIRI, buy, 12"}
+{"prompt": "Buy 8 shares of Align Technology at the current market price.", "completion": "PlaceMarketOrderCommand, ALGN, buy, 8"}
+{"prompt": "Can you sell 10 shares of Advanced Micro Devices for me?", "completion": "PlaceMarketOrderCommand, AMD, sell, 10"}
+{"prompt": "Place an order for 12 shares of Alexion Pharmaceuticals.", "completion": "PlaceMarketOrderCommand, ALXN, buy, 12"}
+{"prompt": "I want to add 15 shares of Adobe to my holdings.", "completion": "PlaceMarketOrderCommand, ADBE, buy, 15"}
+{"prompt": "Can you help me purchase 20 shares of Amgen?", "completion": "PlaceMarketOrderCommand, AMGN, buy, 20"}
+{"prompt": "Add 8 shares of Analog Devices to my portfolio.", "completion": "PlaceMarketOrderCommand, ADI, buy, 8"}
+{"prompt": "I need to sell 10 shares of Autodesk, can you place an order for me?", "completion": "PlaceMarketOrderCommand, ADSK, sell, 10"}
+{"prompt": "Sell 15 shares of Applied Info Tech for me at the current market price.", "completion": "PlaceMarketOrderCommand, AIT, sell, 15"}
+{"prompt": "Place an order for 8 shares of Amazon for me.", "completion": "PlaceMarketOrderCommand, AMZN, buy, 8"}
+{"prompt": "I want to purchase 12 shares of American Electric Power, can you help me?", "completion": "PlaceMarketOrderCommand, AEP, buy, 12"}
+{"prompt": "Can you add 15 shares of Analogic to my holdings?", "completion": "PlaceMarketOrderCommand, ALOG, buy, 15"}
+{"prompt": "Get me 20 shares of Alphabet at the current market price.", "completion": "PlaceMarketOrderCommand, GOOGL, buy, 20"}
+{"prompt": "I want to sell 10 shares of Alteryx, place a market order for me.", "completion": "PlaceMarketOrderCommand, AYX, sell, 10"}
+{"prompt": "Place an order for 12 shares of Automatic Data Processing.", "completion": "PlaceMarketOrderCommand, ADP, buy, 12"}
+{"prompt": "Can you purchase 8 shares of Applied Materials for me?", "completion": "PlaceMarketOrderCommand, AMAT, buy, 8"}
+{"prompt": "I need to sell 15 shares of Aptiv, can you place an order for me?", "completion": "PlaceMarketOrderCommand, APTV, sell, 15"}
+{"prompt": "Buy 20 shares of Apple at the current market price.", "completion": "PlaceMarketOrderCommand, AAPL, buy, 20"}
+{"prompt": "Can you sell 10 shares of American Tower for me?", "completion": "PlaceMarketOrderCommand, AMT, sell, 10"}
+{"prompt": "Place an order for 15 shares of Applied Optoelectronics for me.", "completion": "PlaceMarketOrderCommand, AAOI, buy, 15"}
+{"prompt": "I want to add 10 shares of Alignvest Acquisition II to my holdings, can you help me buy it?", "completion": "PlaceMarketOrderCommand, AQY.A, buy, 10"}
+{"prompt": "Can you sell 8 shares of Aon for me?", "completion": "PlaceMarketOrderCommand, AON, sell, 8"}
+{"prompt": "Get me 12 shares of Adobe at the current market price.", "completion": "PlaceMarketOrderCommand, ADBE, 12"}
+{"prompt": "Place an order for 10 shares of Amazon for me.", "completion": "PlaceMarketOrderCommand, AMZN, 10"}
+{"prompt": "I want to purchase 8 shares of Amphenol, can you help me?", "completion": "PlaceMarketOrderCommand, APH, 8"}
+{"prompt": "Can you get me 15 shares of Alphabet?", "completion": "PlaceMarketOrderCommand, GOOGL, 15"}
+{"prompt": "Add 20 shares of Applied Materials to my portfolio.", "completion": "PlaceMarketOrderCommand, AMAT, 20"}
+{"prompt": "I need to sell 8 shares of Autodesk, can you place an order for me?", "completion": "PlaceMarketOrderCommand, ADSK, 8"}
+{"prompt": "Place an order for 10 shares of Applied Optoelectronics.", "completion": "PlaceMarketOrderCommand, AAOI, 10"}
+{"prompt": "I want to add 12 shares of Amazon to my holdings.", "completion": "PlaceMarketOrderCommand, AMZN, 12"}
+{"prompt": "Can you help me purchase 15 shares of Alexion Pharmaceuticals?", "completion": "PlaceMarketOrderCommand, ALXN, 15"}
+{"prompt": "Get me 8 shares of Advanced Micro Devices at the current market price.", "completion": "PlaceMarketOrderCommand, AMD, 8"}
+{"prompt": "Place an order for 10 shares of American Electric Power for me.", "completion": "PlaceMarketOrderCommand, AEP, 10"}
+{"prompt": "I need to sell 15 shares of Analogic, can you place an order for me?", "completion": "PlaceMarketOrderCommand, ALOG, 15"}
+{"prompt": "Can you add 8 shares of Align Technology to my holdings?", "completion": "PlaceMarketOrderCommand, ALGN, 8"}
+{"prompt": "I want to purchase 10 shares of American Tower, can you help me?", "completion": "PlaceMarketOrderCommand, AMT, 10"}
+{"prompt": "Can you help me buy 20 shares of Alphabet?", "completion": "PlaceMarketOrderCommand, GOOGL, 20"}
+{"prompt": "Get me 15 shares of Alteryx at the current market price.", "completion": "PlaceMarketOrderCommand, AYX, 15"}
+{"prompt": "Place an order for 10 shares of Aptiv for me.", "completion": "PlaceMarketOrderCommand, APTV, 10"}
+{"prompt": "I want to add 12 shares of Apple to my portfolio.", "completion": "PlaceMarketOrderCommand, AAPL, 12"}
+{"prompt": "Can you help me purchase 8 shares of Analog Devices?", "completion": "PlaceMarketOrderCommand, ADI, 8"}
+{"prompt": "Place an order for 10 shares of Alexco Resource for me.", "completion": "PlaceMarketOrderCommand, AXU, 10"}
+{"prompt": "I need to sell 15 shares of American International Group, can you place an order for me?", "completion": "PlaceMarketOrderCommand, AIG, 15"}
+{"prompt": "Can you get me 20 shares of Alignvest Acquisition II?", "completion": "PlaceMarketOrderCommand, AQY.A, 20"}

@@ -826,3 +826,534 @@
 {"prompt":"Eliminate or remove the task to go to a pilates class ->","completion":"DeleteTaskCommand, go to a pilates class\n"}
 {"prompt":"Cancel the task to try a new type of juice ->","completion":"DeleteTaskCommand, try a new type of juice\n"}
 {"prompt":"Remove or scratch out the task to take a pottery class ->","completion":"DeleteTaskCommand, take a pottery class\n"}
+{"prompt":"I need some help, what can you do? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other commands do you know? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm not sure what to ask for, can you give me some options? ->","completion":"FallbackCommand\n"}
+{"prompt":"What can I do with this software? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm lost, what should I do next? ->","completion":"FallbackCommand\n"}
+{"prompt":"What are my options? ->","completion":"FallbackCommand\n"}
+{"prompt":"I don't understand, can you explain further? ->","completion":"FallbackCommand\n"}
+{"prompt":"Can you help me with something? ->","completion":"FallbackCommand\n"}
+{"prompt":"What else can you do? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm stuck, what can I do? ->","completion":"FallbackCommand\n"}
+{"prompt":"What are some other things I can ask? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other features do you have? ->","completion":"FallbackCommand\n"}
+{"prompt":"I need some assistance, what should I do? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other functionalities do you possess? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm not sure what I'm looking for, can you give me some guidance? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other things can you do besides the ones I know? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm not sure what to do next, what do you suggest? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other capabilities do you have? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm stuck, what other options do I have? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other features are there in this software? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm confused, what other things can you help me with? ->","completion":"FallbackCommand\n"}
+{"prompt":"What are my choices? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other things are you capable of? ->","completion":"FallbackCommand\n"}
+{"prompt":"I need some direction, what do you suggest? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other things can I ask you to do? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm not sure what I need, what other options are there? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other functions do you have? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm lost, what other things can you assist me with? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other commands do you have besides the ones I've used? ->","completion":"FallbackCommand\n"}
+{"prompt":"I need some help, what other options do I have? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other things can you do for me? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm not sure what to do next, what are my other options? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other capabilities are there? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm confused, what other commands do you know? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other things can I ask you for? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm stuck, what other functionalities are there? ->","completion":"FallbackCommand\n"}
+{"prompt":"What else can you do besides the commands I've used? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm not sure what I'm doing, what other options do I have? ->","completion":"FallbackCommand\n"}
+{"prompt":"What else can you assist me with? ->","completion":"FallbackCommand\n"}
+{"prompt":"I need some assistance, what other functions do you have? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm not sure what to do next, what other features are there? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other things can you do besides the ones you've mentioned? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm lost, what other functionalities do you have? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other options are available? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm confused, what other things can you do? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other things are possible? ->","completion":"FallbackCommand\n"}
+{"prompt":"I need some help, what other features are there? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other capabilities do you possess? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm not sure what to do next, what else can you suggest? ->","completion":"FallbackCommand\n"}
+{"prompt":"What else can I ask you for? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm stuck, what other things can you do to help me? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other things are you capable of doing? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm confused, what other functionalities do you have? ->","completion":"FallbackCommand\n"}
+{"prompt":"What else can you help me with? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm lost, what other commands can you do? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other things can you do besides the ones I've requested? ->","completion":"FallbackCommand\n"}
+{"prompt":"I need some assistance, what else can you do? ->","completion":"FallbackCommand\n"}
+{"prompt":"What else can I do with this software? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm not sure what to do next, what other capabilities do you have? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other options do I have? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm stuck, what other things can you suggest? ->","completion":"FallbackCommand\n"}
+{"prompt":"What other features can you provide? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm confused, what other things can you suggest? ->","completion":"FallbackCommand\n"}
+{"prompt":"What else can you offer? ->","completion":"FallbackCommand\n"}
+{"prompt":"I need some help, what other functionalities do you have? ->","completion":"FallbackCommand\n"}
+{"prompt":"What else can you do to assist me? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm not sure what to do next, what else can you do? ->","completion":"FallbackCommand\n"}
+{"prompt":"What else can I ask you? ->","completion":"FallbackCommand\n"}
+{"prompt":"I'm lost, what other things can you provide? ->","completion":"FallbackCommand\n"}
+{"prompt":"What else is possible? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the meaning of life? ->","completion":"FallbackCommand\n"}
+{"prompt":"Can you tell me a joke? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best movie of all time? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite food? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to relax? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite hobby? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most interesting fact you know? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing in life? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite book? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite TV show? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to exercise? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite music genre? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite animal? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to make friends? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important lesson you've learned? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to learn new things? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing to do in your free time? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to stay healthy? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to be successful? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite place to visit? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to stay motivated? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most inspiring quote you know? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about technology? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to stay organized? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about nature? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to be creative? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing to do outdoors? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing in a friendship? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to learn a new language? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite type of weather? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to overcome challenges? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite color? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to be kind to others? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about your hometown? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to look for in a partner? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to stay positive? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about yourself? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to be productive? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to be a good listener? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about traveling? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to teach children? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to stay focused? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about the internet? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to look for in a job? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to stay motivated when things get tough? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about the holiday season? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to teach young adults? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to be a good team player? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about your job? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when making a decision? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to be a good leader? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about sports? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when starting a new project? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to be a good communicator? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about social media? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when dealing with conflict? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to be a good problem solver? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about the arts? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when giving a presentation? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about exercise? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when dealing with stress? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to be a good time manager? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about reading? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when setting goals? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about the environment? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when dealing with change? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about pets? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when trying to learn something new? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to be a good decision maker? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about the beach? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when trying to stay organized? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to be a good public speaker? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about history? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when trying to save money? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the best way to be a good collaborator? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about cooking? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when trying to be more productive? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about the mountains? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when trying to stay focused? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about fashion? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when trying to achieve a goal? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about animals? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when trying to be more efficient? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about art? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when trying to make a good first impression? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about literature? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when trying to be more creative? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about music? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when trying to be more organized? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about science? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when trying to make a difficult decision? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's your favorite thing about gardening? ->","completion":"FallbackCommand\n"}
+{"prompt":"What's the most important thing to remember when trying to be more confident? ->","completion":"FallbackCommand\n"}
+{"prompt":"Describe your favorite activity to do in your free time ->","completion":"FallbackCommand\n"}
+{"prompt":"Explain how to make a perfect cup of coffee ->","completion":"FallbackCommand\n"}
+{"prompt":"List the most important qualities of a good friend ->","completion":"FallbackCommand\n"}
+{"prompt":"Tell me about a time when you overcame a challenge ->","completion":"FallbackCommand\n"}
+{"prompt":"Discuss the best way to learn a new skill ->","completion":"FallbackCommand\n"}
+{"prompt":"Share your thoughts on the importance of self-care ->","completion":"FallbackCommand\n"}
+{"prompt":"Describe a place you've always wanted to visit ->","completion":"FallbackCommand\n"}
+{"prompt":"Explain your favorite recipe to cook ->","completion":"FallbackCommand\n"}
+{"prompt":"List your favorite books of all time ->","completion":"FallbackCommand\n"}
+{"prompt":"Tell me about a time when you had to make a tough decision ->","completion":"FallbackCommand\n"}
+{"prompt":"Discuss the best way to handle stress ->","completion":"FallbackCommand\n"}
+{"prompt":"Share your thoughts on the importance of education ->","completion":"FallbackCommand\n"}
+{"prompt":"Describe your favorite childhood memory ->","completion":"FallbackCommand\n"}
+{"prompt":"Explain your favorite exercise routine ->","completion":"FallbackCommand\n"}
+{"prompt":"List the most important skills for a successful career ->","completion":"FallbackCommand\n"}
+{"prompt":"Tell me about a time when you had to think creatively ->","completion":"FallbackCommand\n"}
+{"prompt":"Discuss the best way to deal with difficult people ->","completion":"FallbackCommand\n"}
+{"prompt":"Share your thoughts on the importance of travel ->","completion":"FallbackCommand\n"}
+{"prompt":"Describe your dream job ->","completion":"FallbackCommand\n"}
+{"prompt":"Explain your favorite hobby ->","completion":"FallbackCommand\n"}
+{"prompt":"List the most important qualities of a good teacher ->","completion":"FallbackCommand\n"}
+{"prompt":"Tell me about a time when you had to overcome a fear ->","completion":"FallbackCommand\n"}
+{"prompt":"Discuss the best way to handle rejection ->","completion":"FallbackCommand\n"}
+{"prompt":"Share your thoughts on the importance of family ->","completion":"FallbackCommand\n"}
+{"prompt":"Describe your favorite type of music ->","completion":"FallbackCommand\n"}
+{"prompt":"Explain your favorite type of cuisine ->","completion":"FallbackCommand\n"}
+{"prompt":"List the most important qualities of a good leader ->","completion":"FallbackCommand\n"}
+{"prompt":"Tell me about a time when you had to persevere through a difficult task ->","completion":"FallbackCommand\n"}
+{"prompt":"Discuss the best way to deal with failure ->","completion":"FallbackCommand\n"}
+{"prompt":"Share your thoughts on the importance of mindfulness ->","completion":"FallbackCommand\n"}
+{"prompt":"Describe your favorite outdoor activity ->","completion":"FallbackCommand\n"}
+{"prompt":"Explain your favorite method of relaxation ->","completion":"FallbackCommand\n"}
+{"prompt":"List the most important qualities of a good listener ->","completion":"FallbackCommand\n"}
+{"prompt":"Tell me about a time when you had to learn a new skill quickly ->","completion":"FallbackCommand\n"}
+{"prompt":"Discuss the best way to handle criticism ->","completion":"FallbackCommand\n"}
+{"prompt":"Share your thoughts on the importance of volunteering ->","completion":"FallbackCommand\n"}
+{"prompt":"Could you say that again? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat that? ->","completion":"RepeatCommand\n"}
+{"prompt":"Please say that again. ->","completion":"RepeatCommand\n"}
+{"prompt":"I didn't catch that, can you repeat it? ->","completion":"RepeatCommand\n"}
+{"prompt":"Say that again, please. ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat yourself? ->","completion":"RepeatCommand\n"}
+{"prompt":"One more time? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you say that once more? ->","completion":"RepeatCommand\n"}
+{"prompt":"I didn't understand that, can you repeat it? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you say that again for me? ->","completion":"RepeatCommand\n"}
+{"prompt":"Please repeat that last part. ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you say that again, but clearer? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you say that again, but louder? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you say that again, but slower? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you say that again, but faster? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat that last bit? ->","completion":"RepeatCommand\n"}
+{"prompt":"Say that again, but in a different way? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat that more slowly? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you say that again, but in a more upbeat tone? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you say that again, but with more emphasis? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat that once more? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat that again, please? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you say that again, but with a different inflection? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat that phrase? ->","completion":"RepeatCommand\n"}
+{"prompt":"Could you repeat that last part? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat that, but with more detail? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat that in a different way? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat that more clearly? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat that, but with more feeling? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you say that one more time, but in a different tone? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat that, but with more context? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you say that again, but more precisely? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat that in simpler terms? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you say that again, but with more animation? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat that, but in a more formal way? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat that, but in a more casual way? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you say that again, but with more detail? ->","completion":"RepeatCommand\n"}
+{"prompt":"Can you repeat that, but more loudly? ->","completion":"RepeatCommand\n"}
+{"prompt":"Place a market order to buy 500 shares of MSFT. ->","completion":"PlaceMarketOrderCommand, MSFT, buy, 500\n"}
+{"prompt":"Sell 1000 shares of IBM at the current market price. ->","completion":"PlaceMarketOrderCommand, IBM, sell, 1000\n"}
+{"prompt":"Buy 50 shares of NFLX at the current market price. ->","completion":"PlaceMarketOrderCommand, NFLX, buy, 50\n"}
+{"prompt":"Sell 200 shares of BAC at market price. ->","completion":"PlaceMarketOrderCommand, BAC, sell, 200\n"}
+{"prompt":"Place a market order to buy 300 shares of NVDA. ->","completion":"PlaceMarketOrderCommand, NVDA, buy, 300\n"}
+{"prompt":"Buy 20 shares of JPM at market price. ->","completion":"PlaceMarketOrderCommand, JPM, buy, 20\n"}
+{"prompt":"Sell 50 shares of AAPL at the current market price. ->","completion":"PlaceMarketOrderCommand, AAPL, sell, 50\n"}
+{"prompt":"Buy 100 shares of AMZN at market price. ->","completion":"PlaceMarketOrderCommand, AMZN, buy, 100\n"}
+{"prompt":"Place a market order to sell 150 shares of MSFT. ->","completion":"PlaceMarketOrderCommand, MSFT, sell, 150\n"}
+{"prompt":"Sell 25 shares of GOOGL at the current market price. ->","completion":"PlaceMarketOrderCommand, GOOGL, sell, 25\n"}
+{"prompt":"Buy 50 shares of TSLA at market price. ->","completion":"PlaceMarketOrderCommand, TSLA, buy, 50\n"}
+{"prompt":"Place a market order to buy 200 shares of BABA. ->","completion":"PlaceMarketOrderCommand, BABA, buy, 200\n"}
+{"prompt":"Sell 75 shares of FB at the current market price. ->","completion":"PlaceMarketOrderCommand, FB, sell, 75\n"}
+{"prompt":"Buy 500 shares of NVDA at market price. ->","completion":"PlaceMarketOrderCommand, NVDA, buy, 500\n"}
+{"prompt":"Place a market order to sell 50 shares of NFLX. ->","completion":"PlaceMarketOrderCommand, NFLX, sell, 50\n"}
+{"prompt":"Sell 100 shares of BAC at the current market price. ->","completion":"PlaceMarketOrderCommand, BAC, sell, 100\n"}
+{"prompt":"Buy 200 shares of AAPL at market price. ->","completion":"PlaceMarketOrderCommand, AAPL, buy, 200\n"}
+{"prompt":"Place a market order to sell 300 shares of GOOGL. ->","completion":"PlaceMarketOrderCommand, GOOGL, sell, 300\n"}
+{"prompt":"Sell 20 shares of IBM at the current market price. ->","completion":"PlaceMarketOrderCommand, IBM, sell, 20\n"}
+{"prompt":"Buy 50 shares of MSFT at market price. ->","completion":"PlaceMarketOrderCommand, MSFT, buy, 50\n"}
+{"prompt":"Place a market order to buy 1000 shares of TSLA. ->","completion":"PlaceMarketOrderCommand, TSLA, buy, 1000\n"}
+{"prompt":"Sell 150 shares of BABA at the current market price. ->","completion":"PlaceMarketOrderCommand, BABA, sell, 150\n"}
+{"prompt":"Sell 200 shares of ADBE at the current market price. ->","completion":"PlaceMarketOrderCommand, ADBE, sell, 200\n"}
+{"prompt":"Buy 300 shares of BIDU at market price. ->","completion":"PlaceMarketOrderCommand, BIDU, buy, 300\n"}
+{"prompt":"Place a market order to sell 500 shares of CELG. ->","completion":"PlaceMarketOrderCommand, CELG, sell, 500\n"}
+{"prompt":"Buy 150 shares of CHTR at the current market price. ->","completion":"PlaceMarketOrderCommand, CHTR, buy, 150\n"}
+{"prompt":"Sell 100 shares of CMCSA at market price. ->","completion":"PlaceMarketOrderCommand, CMCSA, sell, 100\n"}
+{"prompt":"Place a market order to buy 400 shares of CTAS. ->","completion":"PlaceMarketOrderCommand, CTAS, buy, 400\n"}
+{"prompt":"Buy 50 shares of CTSH at the current market price. ->","completion":"PlaceMarketOrderCommand, CTSH, buy, 50\n"}
+{"prompt":"Place a market order to sell 150 shares of DLTR. ->","completion":"PlaceMarketOrderCommand, DLTR, sell, 150\n"}
+{"prompt":"Sell 200 shares of EA at market price. ->","completion":"PlaceMarketOrderCommand, EA, sell, 200\n"}
+{"prompt":"Buy 300 shares of EBAY at the current market price. ->","completion":"PlaceMarketOrderCommand, EBAY, buy, 300\n"}
+{"prompt":"Place a market order to buy 250 shares of EQIX. ->","completion":"PlaceMarketOrderCommand, EQIX, buy, 250\n"}
+{"prompt":"Sell 50 shares of EXC at market price. ->","completion":"PlaceMarketOrderCommand, EXC, sell, 50\n"}
+{"prompt":"Buy 1000 shares of FAST at the current market price. ->","completion":"PlaceMarketOrderCommand, FAST, buy, 1000\n"}
+{"prompt":"Place a market order to sell 500 shares of GILD. ->","completion":"PlaceMarketOrderCommand, GILD, sell, 500\n"}
+{"prompt":"Buy 150 shares of HAS at market price. ->","completion":"PlaceMarketOrderCommand, HAS, buy, 150\n"}
+{"prompt":"Sell 300 shares of HON at the current market price. ->","completion":"PlaceMarketOrderCommand, HON, sell, 300\n"}
+{"prompt":"Place a market order to buy 200 shares of INTU. ->","completion":"PlaceMarketOrderCommand, INTU, buy, 200\n"}
+{"prompt":"Buy 50 shares of ISRG at market price. ->","completion":"PlaceMarketOrderCommand, ISRG, buy, 50\n"}
+{"prompt":"Place a market order to sell 150 shares of LBTYA. ->","completion":"PlaceMarketOrderCommand, LBTYA, sell, 150\n"}
+{"prompt":"Sell 500 shares of LRCX at the current market price. ->","completion":"PlaceMarketOrderCommand, LRCX, sell, 500\n"}
+{"prompt":"Buy 300 shares of MAR at market price. ->","completion":"PlaceMarketOrderCommand, MAR, buy, 300\n"}
+{"prompt":"Place a market order to buy 100 shares of MNST. ->","completion":"PlaceMarketOrderCommand, MNST, buy, 100\n"}
+{"prompt":"Place a market order to sell 25 shares of ADBE. ->","completion":"PlaceMarketOrderCommand, ADBE, sell, 25\n"}
+{"prompt":"Buy 50 shares of BIDU at the current market price. ->","completion":"PlaceMarketOrderCommand, BIDU, buy, 50\n"}
+{"prompt":"Sell 10 shares of CELG at market price. ->","completion":"PlaceMarketOrderCommand, CELG, sell, 10\n"}
+{"prompt":"Place a market order to buy 20 shares of CHTR. ->","completion":"PlaceMarketOrderCommand, CHTR, buy, 20\n"}
+{"prompt":"Buy 30 shares of CMCSA at the current market price. ->","completion":"PlaceMarketOrderCommand, CMCSA, buy, 30\n"}
+{"prompt":"Sell 15 shares of CTAS at market price. ->","completion":"PlaceMarketOrderCommand, CTAS, sell, 15\n"}
+{"prompt":"Place a market order to buy 10 shares of CTSH. ->","completion":"PlaceMarketOrderCommand, CTSH, buy, 10\n"}
+{"prompt":"Buy 25 shares of DLTR at the current market price. ->","completion":"PlaceMarketOrderCommand, DLTR, buy, 25\n"}
+{"prompt":"Sell 30 shares of EA at market price. ->","completion":"PlaceMarketOrderCommand, EA, sell, 30\n"}
+{"prompt":"Place a market order to buy 40 shares of EBAY. ->","completion":"PlaceMarketOrderCommand, EBAY, buy, 40\n"}
+{"prompt":"Buy 15 shares of EQIX at the current market price. ->","completion":"PlaceMarketOrderCommand, EQIX, buy, 15\n"}
+{"prompt":"Sell 20 shares of EXC at market price. ->","completion":"PlaceMarketOrderCommand, EXC, sell, 20\n"}
+{"prompt":"Place a market order to sell 25 shares of FAST. ->","completion":"PlaceMarketOrderCommand, FAST, sell, 25\n"}
+{"prompt":"Buy 10 shares of GILD at the current market price. ->","completion":"PlaceMarketOrderCommand, GILD, buy, 10\n"}
+{"prompt":"Sell 35 shares of HAS at market price. ->","completion":"PlaceMarketOrderCommand, HAS, sell, 35\n"}
+{"prompt":"Place a market order to buy 20 shares of HON. ->","completion":"PlaceMarketOrderCommand, HON, buy, 20\n"}
+{"prompt":"Buy 5 shares of INTU at the current market price. ->","completion":"PlaceMarketOrderCommand, INTU, buy, 5\n"}
+{"prompt":"Sell 10 shares of ISRG at market price. ->","completion":"PlaceMarketOrderCommand, ISRG, sell, 10\n"}
+{"prompt":"Place a market order to buy 15 shares of LBTYA. ->","completion":"PlaceMarketOrderCommand, LBTYA, buy, 15\n"}
+{"prompt":"Buy 20 shares of LRCX at the current market price. ->","completion":"PlaceMarketOrderCommand, LRCX, buy, 20\n"}
+{"prompt":"Sell 25 shares of MAR at market price. ->","completion":"PlaceMarketOrderCommand, MAR, sell, 25\n"}
+{"prompt":"Place a market order to sell 10 shares of MNST. ->","completion":"PlaceMarketOrderCommand, MNST, sell, 10\n"}
+{"prompt":"Place a market order to buy 30 shares of AAPL. ->","completion":"PlaceMarketOrderCommand, AAPL, buy, 30\n"}
+{"prompt":"Sell 20 shares of AEP at market price. ->","completion":"PlaceMarketOrderCommand, AEP, sell, 20\n"}
+{"prompt":"Buy 25 shares of AMGN at the current market price. ->","completion":"PlaceMarketOrderCommand, AMGN, buy, 25\n"}
+{"prompt":"Place a market order to sell 15 shares of AMZN. ->","completion":"PlaceMarketOrderCommand, AMZN, sell, 15\n"}
+{"prompt":"Buy 10 shares of AXP at market price. ->","completion":"PlaceMarketOrderCommand, AXP, buy, 10\n"}
+{"prompt":"Sell 30 shares of BA at the current market price. ->","completion":"PlaceMarketOrderCommand, BA, sell, 30\n"}
+{"prompt":"Place a market order to buy 5 shares of BAC. ->","completion":"PlaceMarketOrderCommand, BAC, buy, 5\n"}
+{"prompt":"Buy 20 shares of BKNG at market price. ->","completion":"PlaceMarketOrderCommand, BKNG, buy, 20\n"}
+{"prompt":"Sell 15 shares of BLK at the current market price. ->","completion":"PlaceMarketOrderCommand, BLK, sell, 15\n"}
+{"prompt":"Place a market order to buy 10 shares of BMY. ->","completion":"PlaceMarketOrderCommand, BMY, buy, 10\n"}
+{"prompt":"Buy 30 shares of CAT at market price. ->","completion":"PlaceMarketOrderCommand, CAT, buy, 30\n"}
+{"prompt":"Sell 25 shares of CHD at the current market price. ->","completion":"PlaceMarketOrderCommand, CHD, sell, 25\n"}
+{"prompt":"Place a market order to buy 20 shares of CL. ->","completion":"PlaceMarketOrderCommand, CL, buy, 20\n"}
+{"prompt":"Buy 15 shares of CME at market price. ->","completion":"PlaceMarketOrderCommand, CME, buy, 15\n"}
+{"prompt":"Sell 5 shares of COF at the current market price. ->","completion":"PlaceMarketOrderCommand, COF, sell, 5\n"}
+{"prompt":"Place a market order to buy 10 shares of COST. ->","completion":"PlaceMarketOrderCommand, COST, buy, 10\n"}
+{"prompt":"Buy 25 shares of CRM at market price. ->","completion":"PlaceMarketOrderCommand, CRM, buy, 25\n"}
+{"prompt":"Sell 20 shares of CSCO at the current market price. ->","completion":"PlaceMarketOrderCommand, CSCO, sell, 20\n"}
+{"prompt":"Place a market order to buy 5 shares of CVX. ->","completion":"PlaceMarketOrderCommand, CVX, buy, 5\n"}
+{"prompt":"Buy 10 shares of DHR at market price. ->","completion":"PlaceMarketOrderCommand, DHR, buy, 10\n"}
+{"prompt":"Sell 15 shares of DOW at the current market price. ->","completion":"PlaceMarketOrderCommand, DOW, sell, 15\n"}
+{"prompt":"Place a market order to buy 30 shares of DUK. ->","completion":"PlaceMarketOrderCommand, DUK, buy, 30\n"}
+{"prompt":"Place a market order to sell 5 shares of AAPL. ->","completion":"PlaceMarketOrderCommand, AAPL, sell, 5\n"}
+{"prompt":"Buy 10 shares of AEP at the current market price. ->","completion":"PlaceMarketOrderCommand, AEP, buy, 10\n"}
+{"prompt":"Sell 15 shares of AMGN at market price. ->","completion":"PlaceMarketOrderCommand, AMGN, sell, 15\n"}
+{"prompt":"Place a market order to buy 5 shares of AMZN. ->","completion":"PlaceMarketOrderCommand, AMZN, buy, 5\n"}
+{"prompt":"Buy 8 shares of AXP at the current market price. ->","completion":"PlaceMarketOrderCommand, AXP, buy, 8\n"}
+{"prompt":"Sell 10 shares of BA at market price. ->","completion":"PlaceMarketOrderCommand, BA, sell, 10\n"}
+{"prompt":"Buy 12 shares of BKNG at the current market price. ->","completion":"PlaceMarketOrderCommand, BKNG, buy, 12\n"}
+{"prompt":"Sell 5 shares of BLK at market price. ->","completion":"PlaceMarketOrderCommand, BLK, sell, 5\n"}
+{"prompt":"Place a market order to buy 5 shares of BMY. ->","completion":"PlaceMarketOrderCommand, BMY, buy, 5\n"}
+{"prompt":"Buy 8 shares of CAT at the current market price. ->","completion":"PlaceMarketOrderCommand, CAT, buy, 8\n"}
+{"prompt":"Sell 10 shares of CHD at market price. ->","completion":"PlaceMarketOrderCommand, CHD, sell, 10\n"}
+{"prompt":"Place a market order to buy 5 shares of CL. ->","completion":"PlaceMarketOrderCommand, CL, buy, 5\n"}
+{"prompt":"Buy 7 shares of CME at the current market price. ->","completion":"PlaceMarketOrderCommand, CME, buy, 7\n"}
+{"prompt":"Sell 5 shares of COF at market price. ->","completion":"PlaceMarketOrderCommand, COF, sell, 5\n"}
+{"prompt":"Place a market order to buy 5 shares of COST. ->","completion":"PlaceMarketOrderCommand, COST, buy, 5\n"}
+{"prompt":"Buy 10 shares of CRM at the current market price. ->","completion":"PlaceMarketOrderCommand, CRM, buy, 10\n"}
+{"prompt":"Sell 8 shares of CSCO at market price. ->","completion":"PlaceMarketOrderCommand, CSCO, sell, 8\n"}
+{"prompt":"Buy 6 shares of DHR at the current market price. ->","completion":"PlaceMarketOrderCommand, DHR, buy, 6\n"}
+{"prompt":"Sell 10 shares of DOW at market price. ->","completion":"PlaceMarketOrderCommand, DOW, sell, 10\n"}
+{"prompt":"Place a market order to buy 8 shares of DUK. ->","completion":"PlaceMarketOrderCommand, DUK, buy, 8\n"}
+{"prompt":"Place a market order to sell 2 shares of AAPL. ->","completion":"PlaceMarketOrderCommand, AAPL, sell, 2\n"}
+{"prompt":"Buy 3 shares of AEP at the current market price. ->","completion":"PlaceMarketOrderCommand, AEP, buy, 3\n"}
+{"prompt":"Sell 4 shares of AMGN at market price. ->","completion":"PlaceMarketOrderCommand, AMGN, sell, 4\n"}
+{"prompt":"Place a market order to buy 2 shares of AMZN. ->","completion":"PlaceMarketOrderCommand, AMZN, buy, 2\n"}
+{"prompt":"Buy 2 shares of AXP at the current market price. ->","completion":"PlaceMarketOrderCommand, AXP, buy, 2\n"}
+{"prompt":"Sell 3 shares of BA at market price. ->","completion":"PlaceMarketOrderCommand, BA, sell, 3\n"}
+{"prompt":"Place a market order to buy 1 share of BAC. ->","completion":"PlaceMarketOrderCommand, BAC, buy, 1\n"}
+{"prompt":"Buy 4 shares of BKNG at the current market price. ->","completion":"PlaceMarketOrderCommand, BKNG, buy, 4\n"}
+{"prompt":"Sell 2 shares of BLK at market price. ->","completion":"PlaceMarketOrderCommand, BLK, sell, 2\n"}
+{"prompt":"Place a market order to buy 1 share of BMY. ->","completion":"PlaceMarketOrderCommand, BMY, buy, 1\n"}
+{"prompt":"Buy 2 shares of CAT at the current market price. ->","completion":"PlaceMarketOrderCommand, CAT, buy, 2\n"}
+{"prompt":"Sell 3 shares of CHD at market price. ->","completion":"PlaceMarketOrderCommand, CHD, sell, 3\n"}
+{"prompt":"Place a market order to buy 1 share of CL. ->","completion":"PlaceMarketOrderCommand, CL, buy, 1\n"}
+{"prompt":"Buy 1 share of CME at the current market price. ->","completion":"PlaceMarketOrderCommand, CME, buy, 1\n"}
+{"prompt":"Sell 2 shares of COF at market price. ->","completion":"PlaceMarketOrderCommand, COF, sell, 2\n"}
+{"prompt":"Place a market order to buy 1 share of COST. ->","completion":"PlaceMarketOrderCommand, COST, buy, 1\n"}
+{"prompt":"Buy 2 shares of CRM at the current market price. ->","completion":"PlaceMarketOrderCommand, CRM, buy, 2\n"}
+{"prompt":"Sell 1 share of CSCO at market price. ->","completion":"PlaceMarketOrderCommand, CSCO, sell, 1\n"}
+{"prompt":"Place a market order to buy 1 share of CVX. ->","completion":"PlaceMarketOrderCommand, CVX, buy, 1\n"}
+{"prompt":"Buy 1 share of DHR at the current market price. ->","completion":"PlaceMarketOrderCommand, DHR, buy, 1\n"}
+{"prompt":"Sell 1 share of DOW at market price. ->","completion":"PlaceMarketOrderCommand, DOW, sell, 1\n"}
+{"prompt":"Place a market order to buy 2 shares of DUK. ->","completion":"PlaceMarketOrderCommand, DUK, buy, 2\n"}
+{"prompt":"Place a market order to sell 10 shares of Apple. ->","completion":"PlaceMarketOrderCommand, AAPL, sell, 10\n"}
+{"prompt":"Buy 15 shares of American Electric Power at the current market price. ->","completion":"PlaceMarketOrderCommand, AEP, buy, 15\n"}
+{"prompt":"Sell 20 shares of Amgen at market price. ->","completion":"PlaceMarketOrderCommand, AMGN, sell, 20\n"}
+{"prompt":"Place a market order to buy 10 shares of Amazon. ->","completion":"PlaceMarketOrderCommand, AMZN, buy, 10\n"}
+{"prompt":"Buy 12 shares of American Express at the current market price. ->","completion":"PlaceMarketOrderCommand, AXP, buy, 12\n"}
+{"prompt":"Sell 15 shares of Boeing at market price. ->","completion":"PlaceMarketOrderCommand, BA, sell, 15\n"}
+{"prompt":"Place a market order to buy 10 shares of Bank of America. ->","completion":"PlaceMarketOrderCommand, BAC, buy, 10\n"}
+{"prompt":"Buy 20 shares of Booking Holdings at the current market price. ->","completion":"PlaceMarketOrderCommand, BKNG, buy, 20\n"}
+{"prompt":"Sell 10 shares of BlackRock at market price. ->","completion":"PlaceMarketOrderCommand, BLK, sell, 10\n"}
+{"prompt":"Place a market order to buy 10 shares of Bristol-Myers Squibb. ->","completion":"PlaceMarketOrderCommand, BMY, buy, 10\n"}
+{"prompt":"Buy 15 shares of Caterpillar at the current market price. ->","completion":"PlaceMarketOrderCommand, CAT, buy, 15\n"}
+{"prompt":"Sell 20 shares of Church & Dwight at market price. ->","completion":"PlaceMarketOrderCommand, CHD, sell, 20\n"}
+{"prompt":"Place a market order to buy 10 shares of Colgate-Palmolive. ->","completion":"PlaceMarketOrderCommand, CL, buy, 10\n"}
+{"prompt":"Buy 10 shares of CME Group at the current market price. ->","completion":"PlaceMarketOrderCommand, CME, buy, 10\n"}
+{"prompt":"Sell 5 shares of Capital One Financial at market price. ->","completion":"PlaceMarketOrderCommand, COF, sell, 5\n"}
+{"prompt":"Place a market order to buy 10 shares of Costco Wholesale. ->","completion":"PlaceMarketOrderCommand, COST, buy, 10\n"}
+{"prompt":"Buy 20 shares of Salesforce.com at the current market price. ->","completion":"PlaceMarketOrderCommand, CRM, buy, 20\n"}
+{"prompt":"Sell 15 shares of Cisco Systems at market price. ->","completion":"PlaceMarketOrderCommand, CSCO, sell, 15\n"}
+{"prompt":"Place a market order to buy 10 shares of Chevron. ->","completion":"PlaceMarketOrderCommand, CVX, buy, 10\n"}
+{"prompt":"Buy 12 shares of Danaher at the current market price. ->","completion":"PlaceMarketOrderCommand, DHR, buy, 12\n"}
+{"prompt":"Sell 8 shares of Dow Inc. at market price. ->","completion":"PlaceMarketOrderCommand, DOW, sell, 8\n"}
+{"prompt":"Place a market order to buy 10 shares of Duke Energy. ->","completion":"PlaceMarketOrderCommand, DUK, buy, 10\n"}
+{"prompt":"Place a market order to sell 10 shares of Adobe. ->","completion":"PlaceMarketOrderCommand, ADBE, sell, 10\n"}
+{"prompt":"Buy 15 shares of Advanced Micro Devices at the current market price. ->","completion":"PlaceMarketOrderCommand, AMD, buy, 15\n"}
+{"prompt":"Sell 20 shares of Align Technology at market price. ->","completion":"PlaceMarketOrderCommand, ALGN, sell, 20\n"}
+{"prompt":"Buy 12 shares of American Airlines Group at the current market price. ->","completion":"PlaceMarketOrderCommand, AAL, buy, 12\n"}
+{"prompt":"Sell 15 shares of Applied Materials at market price. ->","completion":"PlaceMarketOrderCommand, AMAT, sell, 15\n"}
+{"prompt":"Place a market order to buy 10 shares of Apple. ->","completion":"PlaceMarketOrderCommand, AAPL, buy, 10\n"}
+{"prompt":"Buy 20 shares of ASML Holding at the current market price. ->","completion":"PlaceMarketOrderCommand, ASML, buy, 20\n"}
+{"prompt":"Sell 10 shares of Autodesk at market price. ->","completion":"PlaceMarketOrderCommand, ADSK, sell, 10\n"}
+{"prompt":"Place a market order to buy 10 shares of Baidu. ->","completion":"PlaceMarketOrderCommand, BIDU, buy, 10\n"}
+{"prompt":"Buy 15 shares of Biogen at the current market price. ->","completion":"PlaceMarketOrderCommand, BIIB, buy, 15\n"}
+{"prompt":"Sell 20 shares of Booking Holdings at market price. ->","completion":"PlaceMarketOrderCommand, BKNG, sell, 20\n"}
+{"prompt":"Place a market order to buy 10 shares of Cadence Design Systems. ->","completion":"PlaceMarketOrderCommand, CDNS, buy, 10\n"}
+{"prompt":"Buy 10 shares of Cerner at the current market price. ->","completion":"PlaceMarketOrderCommand, CERN, buy, 10\n"}
+{"prompt":"Sell 5 shares of Charter Communications at market price. ->","completion":"PlaceMarketOrderCommand, CHTR, sell, 5\n"}
+{"prompt":"Place a market order to buy 10 shares of Comcast. ->","completion":"PlaceMarketOrderCommand, CMCSA, buy, 10\n"}
+{"prompt":"Buy 20 shares of Costco Wholesale at the current market price. ->","completion":"PlaceMarketOrderCommand, COST, buy, 20\n"}
+{"prompt":"Place a market order to buy 10 shares of DocuSign. ->","completion":"PlaceMarketOrderCommand, DOCU, buy, 10\n"}
+{"prompt":"Buy 12 shares of eBay at the current market price. ->","completion":"PlaceMarketOrderCommand, EBAY, buy, 12\n"}
+{"prompt":"Sell 8 shares of Electronic Arts at market price. ->","completion":"PlaceMarketOrderCommand, EA, sell, 8\n"}
+{"prompt":"Buy 10 shares of Facebook at the current market price. ->","completion":"PlaceMarketOrderCommand, FB, buy, 10\n"}
+{"prompt":"Sell 15 shares of Fastenal at market price. ->","completion":"PlaceMarketOrderCommand, FAST, sell, 15\n"}
+{"prompt":"Place a market order to buy 10 shares of Gilead Sciences. ->","completion":"PlaceMarketOrderCommand, GILD, buy, 10\n"}
+{"prompt":"Buy 12 shares of Hasbro at the current market price. ->","completion":"PlaceMarketOrderCommand, HAS, buy, 12\n"}
+{"prompt":"Sell 8 shares of Henry Schein at market price. ->","completion":"PlaceMarketOrderCommand, HSIC, sell, 8\n"}
+{"prompt":"Place a market order to buy 10 shares of Intel. ->","completion":"PlaceMarketOrderCommand, INTC, buy, 10\n"}
+{"prompt":"Buy 15 shares of Intuit at the current market price. ->","completion":"PlaceMarketOrderCommand, INTU, buy, 15\n"}
+{"prompt":"Sell 20 shares of JD.com at market price. ->","completion":"PlaceMarketOrderCommand, JD, sell, 20\n"}
+{"prompt":"Place a market order to buy 10 shares of KLA Corporation. ->","completion":"PlaceMarketOrderCommand, KLAC, buy, 10\n"}
+{"prompt":"Buy 20 shares of Lam Research at the current market price. ->","completion":"PlaceMarketOrderCommand, LRCX, buy, 20\n"}
+{"prompt":"Sell 15 shares of Liberty Global at market price. ->","completion":"PlaceMarketOrderCommand, LBTYA, sell, 15\n"}
+{"prompt":"Place a market order to buy 10 shares of Marvell Technology Group. ->","completion":"PlaceMarketOrderCommand, MRVL, buy, 10\n"}
+{"prompt":"Buy 12 shares of MercadoLibre at the current market price. ->","completion":"PlaceMarketOrderCommand, MELI, buy, 12\n"}
+{"prompt":"Sell 10 shares of Moderna at market price. ->","completion":"PlaceMarketOrderCommand, MRNA, sell, 10\n"}
+{"prompt":"Place a market order to buy 10 shares of Micron Technology. ->","completion":"PlaceMarketOrderCommand, MU, buy, 10\n"}
+{"prompt":"Buy 15 shares of Microsoft at the current market price. ->","completion":"PlaceMarketOrderCommand, MSFT, buy, 15\n"}
+{"prompt":"Sell 20 shares of Mondelez International at market price. ->","completion":"PlaceMarketOrderCommand, MDLZ, sell, 20\n"}
+{"prompt":"Place a market order to buy 10 shares of Netflix. ->","completion":"PlaceMarketOrderCommand, NFLX, buy, 10\n"}
+{"prompt":"Buy 12 shares of NVIDIA at the current market price. ->","completion":"PlaceMarketOrderCommand, NVDA, buy, 12\n"}
+{"prompt":"Sell 8 shares of NXP Semiconductors at market price. ->","completion":"PlaceMarketOrderCommand, NXPI, sell, 8\n"}
+{"prompt":"Place a market order to buy 10 shares of PayPal. ->","completion":"PlaceMarketOrderCommand, PYPL, buy, 10\n"}
+{"prompt":"Sell 15 shares of Pinduoduo at market price. ->","completion":"PlaceMarketOrderCommand, PDD, sell, 15\n"}
+{"prompt":"Place a market order to buy 10 shares of Qualcomm. ->","completion":"PlaceMarketOrderCommand, QCOM, buy, 10\n"}
+{"prompt":"Buy 12 shares of Regeneron Pharmaceuticals at the current market price. ->","completion":"PlaceMarketOrderCommand, REGN, buy, 12\n"}
+{"prompt":"Sell 20 shares of Ross Stores at market price. ->","completion":"PlaceMarketOrderCommand, ROST, sell, 20\n"}
+{"prompt":"Place a market order to buy 10 shares of Skyworks Solutions. ->","completion":"PlaceMarketOrderCommand, SWKS, buy, 10\n"}
+{"prompt":"Buy 15 shares of Starbucks at the current market price. ->","completion":"PlaceMarketOrderCommand, SBUX, buy, 15\n"}
+{"prompt":"Sell 8 shares of Seagen at market price. ->","completion":"PlaceMarketOrderCommand, SGEN, sell, 8\n"}
+{"prompt":"Place a market order to buy 10 shares of Splunk. ->","completion":"PlaceMarketOrderCommand, SPLK, buy, 10\n"}
+{"prompt":"Buy 12 shares of Synopsys at the current market price. ->","completion":"PlaceMarketOrderCommand, SNPS, buy, 12\n"}
+{"prompt":"Sell 15 shares of T-Mobile US at market price. ->","completion":"PlaceMarketOrderCommand, TMUS, sell, 15\n"}
+{"prompt":"Place a market order to buy 10 shares of Take-Two Interactive. ->","completion":"PlaceMarketOrderCommand, TTWO, buy, 10\n"}
+{"prompt":"Buy 15 shares of Tesla at the current market price. ->","completion":"PlaceMarketOrderCommand, TSLA, buy, 15\n"}
+{"prompt":"Sell 20 shares of Texas Instruments at market price. ->","completion":"PlaceMarketOrderCommand, TXN, sell, 20\n"}
+{"prompt":"Place a market order to buy 10 shares of Ulta Beauty. ->","completion":"PlaceMarketOrderCommand, ULTA, buy, 10\n"}
+{"prompt":"Buy 12 shares of Vertex Pharmaceuticals at the current market price. ->","completion":"PlaceMarketOrderCommand, VRTX, buy, 12\n"}
+{"prompt":"Sell 8 shares of Vodafone Group at market price. ->","completion":"PlaceMarketOrderCommand, VOD, sell, 8\n"}
+{"prompt":"Place a market order to buy 10 shares of Walgreens Boots Alliance. ->","completion":"PlaceMarketOrderCommand, WBA, buy, 10\n"}
+{"prompt":"Buy 15 shares of Western Digital at the current market price. ->","completion":"PlaceMarketOrderCommand, WDC, buy, 15\n"}
+{"prompt":"Sell 15 shares of Workday at market price. ->","completion":"PlaceMarketOrderCommand, WDAY, sell, 15\n"}
+{"prompt":"Place a market order to buy 10 shares of Xcel Energy. ->","completion":"PlaceMarketOrderCommand, XEL, buy, 10\n"}
+{"prompt":"Buy 12 shares of Xilinx at the current market price. ->","completion":"PlaceMarketOrderCommand, XLNX, buy, 12\n"}
+{"prompt":"Place a market order to buy 10 shares of Alphabet Inc. ->","completion":"PlaceMarketOrderCommand, GOOGL, buy, 10\n"}
+{"prompt":"Buy 15 shares of Facebook at the current market price. ->","completion":"PlaceMarketOrderCommand, FB, buy, 15\n"}
+{"prompt":"Sell 8 shares of Intel Corp. at market price. ->","completion":"PlaceMarketOrderCommand, INTC, sell, 8\n"}
+{"prompt":"Place a market order to buy 10 shares of J.B. Hunt Transport Services. ->","completion":"PlaceMarketOrderCommand, JBHT, buy, 10\n"}
+{"prompt":"Buy 12 shares of JD.com at the current market price. ->","completion":"PlaceMarketOrderCommand, JD, buy, 12\n"}
+{"prompt":"Sell 15 shares of Kraft Heinz Company at market price. ->","completion":"PlaceMarketOrderCommand, KHC, sell, 15\n"}
+{"prompt":"Place a market order to buy 10 shares of Lam Research. ->","completion":"PlaceMarketOrderCommand, LRCX, buy, 10\n"}
+{"prompt":"Buy 15 shares of Marriott International at the current market price. ->","completion":"PlaceMarketOrderCommand, MAR, buy, 15\n"}
+{"prompt":"Sell 20 shares of MercadoLibre at market price. ->","completion":"PlaceMarketOrderCommand, MELI, sell, 20\n"}
+{"prompt":"Place a market order to buy 10 shares of Moderna. ->","completion":"PlaceMarketOrderCommand, MRNA, buy, 10\n"}
+{"prompt":"Sell 8 shares of Netflix at market price. ->","completion":"PlaceMarketOrderCommand, NFLX, sell, 8\n"}
+{"prompt":"Place a market order to buy 10 shares of PACCAR. ->","completion":"PlaceMarketOrderCommand, PCAR, buy, 10\n"}
+{"prompt":"Buy 15 shares of PayPal Holdings at the current market price. ->","completion":"PlaceMarketOrderCommand, PYPL, buy, 15\n"}
+{"prompt":"Place a market order to buy 10 shares of Peloton Interactive. ->","completion":"PlaceMarketOrderCommand, PTON, buy, 10\n"}
+{"prompt":"Buy 12 shares of Qualcomm at the current market price. ->","completion":"PlaceMarketOrderCommand, QCOM, buy, 12\n"}
+{"prompt":"Place a market order to buy 10 shares of Sirius XM Holdings. ->","completion":"PlaceMarketOrderCommand, SIRI, buy, 10\n"}
+{"prompt":"Buy 15 shares of Skyworks Solutions at the current market price. ->","completion":"PlaceMarketOrderCommand, SWKS, buy, 15\n"}
+{"prompt":"Sell 8 shares of Tesla at market price. ->","completion":"PlaceMarketOrderCommand, TSLA, sell, 8\n"}
+{"prompt":"Place an order for 10 shares of Amazon. ->","completion":"PlaceMarketOrderCommand, AMZN, buy, 10\n"}
+{"prompt":"I want to purchase 15 shares of Zoom Video Communications. ->","completion":"PlaceMarketOrderCommand, ZM, buy, 15\n"}
+{"prompt":"Get me 8 shares of Applied Materials. ->","completion":"PlaceMarketOrderCommand, AMAT, buy, 8\n"}
+{"prompt":"I need 10 shares of DocuSign, can you buy it for me? ->","completion":"PlaceMarketOrderCommand, DOCU, buy, 10\n"}
+{"prompt":"Add 12 shares of Baidu to my portfolio. ->","completion":"PlaceMarketOrderCommand, BIDU, buy, 12\n"}
+{"prompt":"Can you place an order for me to sell 15 shares of Comcast? ->","completion":"PlaceMarketOrderCommand, CMCSA, sell, 15\n"}
+{"prompt":"I want to get rid of 10 shares of Cintas, place a market order for me. ->","completion":"PlaceMarketOrderCommand, CTAS, sell, 10\n"}
+{"prompt":"Sell 8 shares of Dollar Tree for me at the current market price. ->","completion":"PlaceMarketOrderCommand, DLTR, sell, 8\n"}
+{"prompt":"Place an order for 10 shares of eBay. ->","completion":"PlaceMarketOrderCommand, EBAY, buy, 10\n"}
+{"prompt":"Can you purchase 15 shares of Fastenal for me? ->","completion":"PlaceMarketOrderCommand, FAST, buy, 15\n"}
+{"prompt":"Add 8 shares of Hasbro to my holdings. ->","completion":"PlaceMarketOrderCommand, HAS, buy, 8\n"}
+{"prompt":"I need to get 10 shares of Intel, can you help me buy it? ->","completion":"PlaceMarketOrderCommand, INTC, buy, 10\n"}
+{"prompt":"Place an order for 12 shares of Lam Research at the current market price. ->","completion":"PlaceMarketOrderCommand, LRCX, buy, 12\n"}
+{"prompt":"I want to add 15 shares of Monster Beverage to my portfolio. ->","completion":"PlaceMarketOrderCommand, MNST, buy, 15\n"}
+{"prompt":"Can you sell 20 shares of Moderna for me? ->","completion":"PlaceMarketOrderCommand, MRNA, sell, 20\n"}
+{"prompt":"Place an order for 10 shares of NetEase for me. ->","completion":"PlaceMarketOrderCommand, NTES, buy, 10\n"}
+{"prompt":"I would like to purchase 15 shares of Nvidia, can you help me? ->","completion":"PlaceMarketOrderCommand, NVDA, buy, 15\n"}
+{"prompt":"I want to get rid of 8 shares of Peloton, place a market order for me. ->","completion":"PlaceMarketOrderCommand, PTON, sell, 8\n"}
+{"prompt":"Can you add 10 shares of Regeneron Pharmaceuticals to my holdings? ->","completion":"PlaceMarketOrderCommand, REGN, buy, 10\n"}
+{"prompt":"Place an order for 12 shares of Sirius XM Holdings at the current market price. ->","completion":"PlaceMarketOrderCommand, SIRI, buy, 12\n"}
+{"prompt":"Buy 8 shares of Align Technology at the current market price. ->","completion":"PlaceMarketOrderCommand, ALGN, buy, 8\n"}
+{"prompt":"Can you sell 10 shares of Advanced Micro Devices for me? ->","completion":"PlaceMarketOrderCommand, AMD, sell, 10\n"}
+{"prompt":"Place an order for 12 shares of Alexion Pharmaceuticals. ->","completion":"PlaceMarketOrderCommand, ALXN, buy, 12\n"}
+{"prompt":"I want to add 15 shares of Adobe to my holdings. ->","completion":"PlaceMarketOrderCommand, ADBE, buy, 15\n"}
+{"prompt":"Can you help me purchase 20 shares of Amgen? ->","completion":"PlaceMarketOrderCommand, AMGN, buy, 20\n"}
+{"prompt":"Add 8 shares of Analog Devices to my portfolio. ->","completion":"PlaceMarketOrderCommand, ADI, buy, 8\n"}
+{"prompt":"I need to sell 10 shares of Autodesk, can you place an order for me? ->","completion":"PlaceMarketOrderCommand, ADSK, sell, 10\n"}
+{"prompt":"Sell 15 shares of Applied Info Tech for me at the current market price. ->","completion":"PlaceMarketOrderCommand, AIT, sell, 15\n"}
+{"prompt":"Place an order for 8 shares of Amazon for me. ->","completion":"PlaceMarketOrderCommand, AMZN, buy, 8\n"}
+{"prompt":"I want to purchase 12 shares of American Electric Power, can you help me? ->","completion":"PlaceMarketOrderCommand, AEP, buy, 12\n"}
+{"prompt":"Can you add 15 shares of Analogic to my holdings? ->","completion":"PlaceMarketOrderCommand, ALOG, buy, 15\n"}
+{"prompt":"Get me 20 shares of Alphabet at the current market price. ->","completion":"PlaceMarketOrderCommand, GOOGL, buy, 20\n"}
+{"prompt":"I want to sell 10 shares of Alteryx, place a market order for me. ->","completion":"PlaceMarketOrderCommand, AYX, sell, 10\n"}
+{"prompt":"Place an order for 12 shares of Automatic Data Processing. ->","completion":"PlaceMarketOrderCommand, ADP, buy, 12\n"}
+{"prompt":"Can you purchase 8 shares of Applied Materials for me? ->","completion":"PlaceMarketOrderCommand, AMAT, buy, 8\n"}
+{"prompt":"I need to sell 15 shares of Aptiv, can you place an order for me? ->","completion":"PlaceMarketOrderCommand, APTV, sell, 15\n"}
+{"prompt":"Buy 20 shares of Apple at the current market price. ->","completion":"PlaceMarketOrderCommand, AAPL, buy, 20\n"}
+{"prompt":"Can you sell 10 shares of American Tower for me? ->","completion":"PlaceMarketOrderCommand, AMT, sell, 10\n"}
+{"prompt":"Place an order for 15 shares of Applied Optoelectronics for me. ->","completion":"PlaceMarketOrderCommand, AAOI, buy, 15\n"}
+{"prompt":"I want to add 10 shares of Alignvest Acquisition II to my holdings, can you help me buy it? ->","completion":"PlaceMarketOrderCommand, AQY.A, buy, 10\n"}
+{"prompt":"Can you sell 8 shares of Aon for me? ->","completion":"PlaceMarketOrderCommand, AON, sell, 8\n"}
+{"prompt":"Get me 12 shares of Adobe at the current market price. ->","completion":"PlaceMarketOrderCommand, ADBE, 12\n"}
+{"prompt":"Place an order for 10 shares of Amazon for me. ->","completion":"PlaceMarketOrderCommand, AMZN, 10\n"}
+{"prompt":"I want to purchase 8 shares of Amphenol, can you help me? ->","completion":"PlaceMarketOrderCommand, APH, 8\n"}
+{"prompt":"Can you get me 15 shares of Alphabet? ->","completion":"PlaceMarketOrderCommand, GOOGL, 15\n"}
+{"prompt":"Add 20 shares of Applied Materials to my portfolio. ->","completion":"PlaceMarketOrderCommand, AMAT, 20\n"}
+{"prompt":"I need to sell 8 shares of Autodesk, can you place an order for me? ->","completion":"PlaceMarketOrderCommand, ADSK, 8\n"}
+{"prompt":"Place an order for 10 shares of Applied Optoelectronics. ->","completion":"PlaceMarketOrderCommand, AAOI, 10\n"}
+{"prompt":"I want to add 12 shares of Amazon to my holdings. ->","completion":"PlaceMarketOrderCommand, AMZN, 12\n"}
+{"prompt":"Can you help me purchase 15 shares of Alexion Pharmaceuticals? ->","completion":"PlaceMarketOrderCommand, ALXN, 15\n"}
+{"prompt":"Get me 8 shares of Advanced Micro Devices at the current market price. ->","completion":"PlaceMarketOrderCommand, AMD, 8\n"}
+{"prompt":"Place an order for 10 shares of American Electric Power for me. ->","completion":"PlaceMarketOrderCommand, AEP, 10\n"}
+{"prompt":"I need to sell 15 shares of Analogic, can you place an order for me? ->","completion":"PlaceMarketOrderCommand, ALOG, 15\n"}
+{"prompt":"Can you add 8 shares of Align Technology to my holdings? ->","completion":"PlaceMarketOrderCommand, ALGN, 8\n"}
+{"prompt":"I want to purchase 10 shares of American Tower, can you help me? ->","completion":"PlaceMarketOrderCommand, AMT, 10\n"}
+{"prompt":"Can you help me buy 20 shares of Alphabet? ->","completion":"PlaceMarketOrderCommand, GOOGL, 20\n"}
+{"prompt":"Get me 15 shares of Alteryx at the current market price. ->","completion":"PlaceMarketOrderCommand, AYX, 15\n"}
+{"prompt":"Place an order for 10 shares of Aptiv for me. ->","completion":"PlaceMarketOrderCommand, APTV, 10\n"}
+{"prompt":"I want to add 12 shares of Apple to my portfolio. ->","completion":"PlaceMarketOrderCommand, AAPL, 12\n"}
+{"prompt":"Can you help me purchase 8 shares of Analog Devices? ->","completion":"PlaceMarketOrderCommand, ADI, 8\n"}
+{"prompt":"Place an order for 10 shares of Alexco Resource for me. ->","completion":"PlaceMarketOrderCommand, AXU, 10\n"}
+{"prompt":"I need to sell 15 shares of American International Group, can you place an order for me? ->","completion":"PlaceMarketOrderCommand, AIG, 15\n"}
+{"prompt":"Can you get me 20 shares of Alignvest Acquisition II? ->","completion":"PlaceMarketOrderCommand, AQY.A, 20\n"}

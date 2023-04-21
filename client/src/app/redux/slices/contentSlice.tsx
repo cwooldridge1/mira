@@ -10,7 +10,7 @@ const initialState: InitialState = {
   activeContent: null,
 };
 
-export const containerSlice = createSlice({
+export const contentSlice = createSlice({
   name: UpdateContentAction,
   initialState: initialState,
   reducers: {
@@ -33,8 +33,6 @@ export const containerSlice = createSlice({
   },
 });
 
-// Action creators are generated for each case reducer function
 export const { addContent, deleteContent, setActiveContent, toggleContent } =
-  containerSlice.actions;
-// You must export the reducer as follows for it to be able to be read by the store.
-export default containerSlice.reducer;
+  contentSlice.actions;
+export default contentSlice.reducer;
