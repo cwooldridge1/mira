@@ -9,17 +9,19 @@ def tradeExecutionListener():
     while True:
         if len(orders):
             with ThreadPoolExecutor() as executor:
-                results = [executor.submit(Trades.getOrder, oid=order) for order in orders]
+                results = [executor.submit(
+                    Trades.getOrder, oid=order) for order in orders]
                 for result in as_completed(results):
                     result = result.result()
+                    print(result)
                     if result.status == 'filled':
-                        #emit and remove id
+                        # emit and remove id
                         del orders[result.id]
-                        sio.emit('notification', TradeNotificationResponse(data=result._raw)) #._raw is the raw json data
+                        sio.emit('notification', TradeNotificationResponse(
+                            data=result._raw))  # ._raw is the raw json data
                     elif result.status == 'canceled':
-                        #remove id and let client know
+                        # remove id and let client know
                         del orders[result.id]
-                        sio.emit('notification', TradeNotificationResponse(data=result._raw)) #._raw is the raw json data
-        sio.sleep(5)          
-
-
+                        sio.emit('notification', TradeNotificationResponse(
+                            data=result._raw))  # ._raw is the raw json data
+        sio.sleep(5)

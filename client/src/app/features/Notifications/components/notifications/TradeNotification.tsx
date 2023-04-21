@@ -11,14 +11,18 @@ const TradeNotification = ({ data, time, id, ...props }: NotificationProps) => {
       : status === 'canceled'
       ? 'Order Canceled'
       : 'Order Executed';
+
   let desc: string =
-    status === 'accepted' || status === 'pending_new'
-      ? `${side === 'buy' ? 'Buy' : 'Sell'} order for ${qty}x of ${symbol}`
-      : status === 'canceled'
+    status === 'canceled'
       ? `Canceled ${side} order for ${qty}x of ${symbol}`
-      : `${
+      : status === 'filled'
+      ? `${
           side === 'buy' ? 'Bought' : 'Sold'
-        } ${qty}x ${qty} of ${symbol} @ $${filled_avg_price.toFixed(2)}`;
+        } ${qty}x ${qty} of ${symbol} @ $${parseFloat(filled_avg_price).toFixed(
+          2
+        )}`
+      : `${side === 'buy' ? 'Buy' : 'Sell'} order for ${qty}x of ${symbol}`;
+
   return (
     <NotificationTile
       {...props}
