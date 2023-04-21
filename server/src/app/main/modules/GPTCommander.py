@@ -10,8 +10,6 @@ openai.api_key = environ.get('OPENAI_KEY')
 class GPTCommander():
     def __init__(self, ) -> None:
         self.__model = environ.get('OPENAI_COMMAND_MODEL')
-        self.temperature = 0.7
-        self.maxTokens = 100
         self.commands: Dict[str, Command] = {
             'ChartCommand': ChartCommand,
             'CodeCommand': CodeCommand,
