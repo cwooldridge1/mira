@@ -12,7 +12,7 @@ const initialState: InitialState = {
   serverErrorMsg: null,
 };
 
-export const containerSlice = createSlice({
+export const audioSlice = createSlice({
   name: AudioAction,
   initialState: initialState,
   reducers: {
@@ -36,12 +36,10 @@ export const containerSlice = createSlice({
   },
 });
 
-// Action creators are generated for each case reducer function
 export const {
   addTranscript,
   setServerIsListening,
   setServerIsLoadingResponse,
   setServerErrorMsg,
-} = containerSlice.actions;
-// You must export the reducer as follows for it to be able to be read by the store.
-export default containerSlice.reducer;
+} = audioSlice.actions;
+export default audioSlice.reducer;

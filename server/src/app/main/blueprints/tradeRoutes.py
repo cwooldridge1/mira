@@ -1,10 +1,9 @@
 from flask import Blueprint, request
 from ..modules.Trades import Trades
-from  ...types.orders import MarketOrder
+from ...types.orders import MarketOrder, OrderType
 from alpaca_trade_api.entity import Order
 
 tradeRoutes = Blueprint('tradeRoutes',  __name__, url_prefix='/trade')
-
 
 
 @tradeRoutes.route('/market-order-percentage', methods=['POST'])
@@ -21,13 +20,22 @@ def marketOrderPercentage():
     :return : a json payload of the Order object contain the order details
     '''
     post = request.get_json()
-    #first get the amount of equity in the portfolio
+    # first get the amount of equity in the portfolio
     equity = float(Trades.getAccount().equity)
-    #create the market order
-    order = MarketOrder(symbol=post['symbol'], side=post['side'], qty=int(equity * post['qty'] / post['price']))
+    # create the market order
+    order = MarketOrder(symbol=post['symbol'], side=post['side'], qty=int(
+        equity * post['qty'] / post['price']))
     resp: Order = Trades.placeTrade(order)
     # we want to return the raw json of the Order object
     return resp._raw, 200
+
+
+@tradeRoutes.route('/execute', methods=['POST'])
+def executeTrade():
+    order = OrderType.parse_obj(request.get_json())
+    resp: Order = Trades.placeTrade(order)
+    return resp._raw, 200
+
 
 @tradeRoutes.route('close-position', methods=['POST'])
 def closePosition():
@@ -40,9 +48,3 @@ def closePosition():
     '''
     order = Trades.closePosition(request.get_json()['symbol'])
     return order._raw
-
-
-    
-
-
-

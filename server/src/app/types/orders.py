@@ -1,12 +1,12 @@
 from pydantic import BaseModel, validator
 from abc import ABC
-
+from typing import Optional
 
 
 class OrderType(BaseModel, ABC):
     @validator('side')
     def sideValidator(side):
-        if side not in ['buy','sell']:
+        if side not in ['buy', 'sell']:
             raise ValueError('side must be "buy" or "sell"')
         return side
 
@@ -19,14 +19,17 @@ class OrderType(BaseModel, ABC):
     @validator('time_in_force')
     def tifValidator(tif):
         if tif not in ['day', 'gtc', 'opg', 'cls', 'ioc', 'fok']:
-            raise ValueError('tif must be "day", "gtc", "opg", "cls", "ioc", or "fok"')
+            raise ValueError(
+                'tif must be "day", "gtc", "opg", "cls", "ioc", or "fok"')
         return tif
 
     symbol: str
     side: str
     type: str
     qty: int
+    limit_price: Optional[float]
     time_in_force: str = 'gtc'
+
 
 class MarketOrder(OrderType):
     type: str = 'market'
