@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../redux';
 import { deleteNotificationToastById } from '../../redux/slices/notificationSlice';
 import { renderNotification } from './utils/notifications';
+import { AnimatedWrapper } from 'app/components/AnimatedWrapper';
 
 const ToastManager = () => {
   const dispatch = useDispatch();
@@ -15,14 +16,14 @@ const ToastManager = () => {
 
   return (
     <div className="absolute top-0 right-0 max-h-full overflow-auto no-scrollbar z-30 w-80 mr-2">
-      {notificationToasts.map((obj, i) => (
-        <div key={i}>
-          {renderNotification({
+      <AnimatedWrapper showEmptyText={false}>
+        {notificationToasts.map((obj, i) =>
+          renderNotification({
             ...obj,
             onLeftSwipe: () => onLeftSwipe(obj.id),
-          })}
-        </div>
-      ))}
+          })
+        )}
+      </AnimatedWrapper>
     </div>
   );
 };
