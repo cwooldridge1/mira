@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 type Props = {
   children: React.ReactElement[] | React.ReactElement;
+  showEmptyText?: boolean;
 };
 
 const variants = {
@@ -43,7 +44,7 @@ const variants = {
   },
 };
 
-export const AnimatedWrapper = ({ children }: Props) => {
+export const AnimatedWrapper = ({ children, showEmptyText = true }: Props) => {
   children = Array.isArray(children) ? children : children ? [children] : [];
 
   return (
@@ -51,7 +52,7 @@ export const AnimatedWrapper = ({ children }: Props) => {
       <motion.div variants={variants.container}>
         <AnimatePresence>
           <motion.div variants={variants.content}>
-            {!children.length && (
+            {!children.length && showEmptyText && (
               <motion.div
                 className="w-full px-6 py-2 text-center text-muted"
                 initial={{ opacity: 0 }}
