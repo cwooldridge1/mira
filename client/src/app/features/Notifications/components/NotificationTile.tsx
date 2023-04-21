@@ -3,6 +3,7 @@ import Tile from 'app/components/Tile';
 import { NotificationTileProps } from '../../../types';
 import { useDispatch } from 'react-redux';
 import { deleteNotificationById } from '../../../redux/slices/notificationSlice';
+import SwipeableWrapper from 'app/components/SwipeableWrapper';
 
 const NotificationTile = ({
   title,
@@ -64,26 +65,28 @@ const NotificationTile = ({
   };
 
   return (
-    <Tile onLeftSwipe={onLeftSwipe || defaultOnLeftSwipe}>
-      <>
-        {!!img && (
-          <div className="shrink-0">
-            <img
-              className="h-100 w-12"
-              src={img}
-              alt={'icon for notification'}
-            />
+    <SwipeableWrapper onLeftSwipe={onLeftSwipe || defaultOnLeftSwipe}>
+      <Tile>
+        <>
+          {!!img && (
+            <div className="shrink-0">
+              <img
+                className="h-100 w-12"
+                src={img}
+                alt={'icon for notification'}
+              />
+            </div>
+          )}
+        </>
+        <div className="w-full">
+          <div className="flex justify-between">
+            <div className="text-lg font-medium text-black">{title}</div>
+            <div className="text-slate-500 text-sm">{formattedDate}</div>
           </div>
-        )}
-      </>
-      <div className="w-full">
-        <div className="flex justify-between">
-          <div className="text-lg font-medium text-black">{title}</div>
-          <div className="text-slate-500 text-sm">{formattedDate}</div>
+          <p className="text-slate-500">{desc}</p>
         </div>
-        <p className="text-slate-500">{desc}</p>
-      </div>
-    </Tile>
+      </Tile>
+    </SwipeableWrapper>
   );
 };
 
